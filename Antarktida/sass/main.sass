@@ -1,0 +1,1080 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "app/libs/font-awesome/css/font-awesome.min"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.flex
+	display: flex
+	&-wrap
+		flex-wrap: wrap
+	&-column
+		flex-direction: column
+	&-row
+		flex-direction: row
+.justify
+	&-center
+		justify-content: center
+	&-end
+		justify-content: flex-end
+	&-between
+		justify-content: space-between
+	&-around
+		justify-content: space-around
+.align
+	&-center
+		align-items: center
+
+a
+	text-decoration: none
+	color: #fff
+	transition: color 0.3s ease
+	outline: none
+	&:hover
+		color: $accent
+		text-decoration: none
+		outline: none
+
+.btn
+	&_1
+		padding: 15px 25px
+		border: 1px solid #fff
+		border-radius: 50px
+		font-family: "Montserrat-SemiBold", sans-serif
+		font-size: 0.750em
+		text-transform: uppercase
+		transition: 0.3s
+		&:hover
+			border: 1px solid $accent
+			color: $accent
+	&_3
+		padding: 10px 35px
+		border: 1px solid $accent
+		border-radius: 50px
+		font-size: .5em
+		color: $accent
+		text-transform: uppercase
+		font-family: "Montserrat-Bold", sans-serif
+	&_2
+		color: $blue
+		text-transform: uppercase
+		font-family: "Montserrat-Bold", sans-serif
+		font-size: .5em
+	&_4
+		font-size: .625em
+		font-family: "Montserrat-Bold", sans-serif
+		background-color: $accent
+		color: #fff
+		padding: 25px 103px
+		text-align: center
+		text-transform: uppercase
+		&:hover
+			color: #fff
+	&_5
+		font-family: "Montserrat-Regular", sans-serif
+		width: auto
+		background-color: $accent
+		border: none
+		color: #fff
+		text-transform: uppercase
+		font-size: 0.5em
+		line-height: 1.5em
+		letter-spacing: 1px
+		padding: 12px 12px
+		border-radius: 50px
+		display: inline-block
+
+.bl_media
+	margin-bottom: 20px
+	.active
+		padding: 10px 35px
+		border: 1px solid $accent
+		border-radius: 50px
+		font-size: .5em
+		color: $accent
+		text-transform: uppercase
+		font-family: "Montserrat-Bold", sans-serif
+	a
+		margin-left: 20px
+		margin-right: 20px
+
+#menuToggle
+	display: block
+	position: relative
+	z-index: 1
+	-webkit-user-select: none
+	user-select: none
+	input
+		display: block
+		width: 20px
+		height: 16px
+		position: absolute
+		cursor: pointer
+		opacity: 0
+		z-index: 2
+	span
+		display: block
+		width: 20px
+		height: 2px
+		margin-bottom: 4px
+		position: relative
+		background: #fff
+		z-index: 1
+		transform-origin: 2px 0px
+		transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease
+		&:first-child
+			transform-origin: 0% 0%
+		&:nth-last-child(2)
+			transform-origin: 0% 100%
+			margin-bottom: 0
+	input:checked ~ span
+		opacity: 1
+		transform: rotate(45deg) translate(-2px, -1px)
+		background: #fff
+		width: 20px
+		height: 3px
+		margin-bottom: 2.5px
+		&:nth-last-child(3)
+			opacity: 0
+			transform: rotate(0deg) scale(0.2, 0.2)
+		&:nth-last-child(2)
+			transform: rotate(-45deg) translate(0, -1px)
+
+.top
+	position: fixed
+	margin-bottom: 0
+	margin-top: 55px
+	background: $blue-light
+	list-style-type: none
+	-webkit-font-smoothing: antialiased
+	transform-origin: 0% 0%
+	transform: translate(-100%, 0)
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1)
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 0
+	text-align: center
+	text-transform: uppercase
+	font-family: "Montserrat-Medium", sans-serif
+	z-index: 999
+	heightЖ 100vh
+	overflow: auto
+#menu
+	padding: 0
+	li
+		padding: 0
+		font-size: 0.625em
+		letter-spacing: 1px
+	li
+		&:first-child
+			margin-top: 45px
+	li
+		position: relative
+		padding-bottom: 12px
+		margin-bottom: 28px
+		&:hover
+			&::after
+				content: ''
+				width: 50px
+				height: 3px
+				background-color: $accent
+				position: absolute
+				bottom: 0
+				left: calc(50% - 25px)
+
+
+
+#menuToggle input:checked ~ .top
+	transform: none
+
+.lang
+	a
+		font-size: 0.813em
+		&:hover
+			color: #fff
+	.active
+		color: $accent
+		font-size: 1.2em
+		font-family: "Montserrat-Bold", sans-serif
+	div
+		color: #fff
+		margin-left: 15px
+		margin-right: 15px
+
+.social
+	width: 165px
+	height: 55px
+	background-color: $accent
+	margin: 0 auto
+	margin-top: 30px
+	&_item
+		width: 35px
+		height: 35px
+		padding: 5px
+		img
+			max-height: 90%
+			width: 100%
+
+.header
+	form
+		margin-top: 40px
+		z-index: 2
+	.title
+		margin-bottom: 26px
+	&_top
+		position: fixed
+		height: 55px
+		background-color: $blue
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 999
+		.fa
+			font-size: 1.25em
+	&_bottom
+		margin-top: 55px
+		color: #fff
+		position: relative
+		.container
+			padding-right: 35px
+			padding-left: 35px
+			text-align: right
+	&_bg
+		min-height: 600px
+		background-position: 80% 65%
+		z-index: 1
+	&_content
+		padding-top: 70px
+	&_coop
+		margin-top: 110px
+	&_video
+		z-index: 99
+		background-color: $accent
+		padding-top: 8px
+		padding-bottom: 8px
+
+.play
+	width: 240px
+	&_img
+		margin-right: 16px
+		width: 44px
+		height: 44px
+		img
+			width: 100%
+	&_content
+		font-family: "Montserrat-Medium", sans-serif
+		font-size: 0.538em
+		text-transform: uppercase
+		line-height: 1.388em
+		letter-spacing: 2px
+
+.header_video
+	position: relative
+	.video
+		position: absolute
+		top: -136px
+		outline: 4px solid $accent
+		outline-offset: -4px
+		max-width: 250px
+		min-width: 250px
+		height: 133px
+		&_img
+			img
+				outline: 4px solid $accent
+				outline-offset: -4px
+	a
+		&:hover
+			color: #fff
+	&__now
+		box-shadow: 0px 0px 10px 0px rgba(255,49,59,0.72)
+
+
+
+	strong
+		font-family: "Montserrat-Bold", sans-serif
+		font-size: 1.288em
+
+
+.cooperation
+	font-family: "Montserrat-Medium", sans-serif
+	font-size: 0.688em
+	text-transform: uppercase
+	margin-bottom: 40px
+	&_title
+		margin-bottom: 10px
+	&_item
+		display: inline-block
+		margin-left: 8px
+
+
+
+.fa
+	color: #fff
+
+.title
+	font-family: "Montserrat-Regular", sans-serif
+	font-size: 0.88em
+	&_up
+		text-transform: uppercase
+
+h1
+	font-family: "Montserrat-Bold", sans-serif
+	font-size: 2.36em
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 1px
+	margin-bottom: 20px
+
+form
+	position: relative
+	input
+		border: 1px solid #B8D0DB
+		border-radius: 50px
+		padding: 12px
+		font-size: 0.625em
+		line-height: 0.625em
+		font-family: "Montserrat-Regular", sans-serif
+		width: 250px
+		background-color: #F2FAFE
+		box-sizing: border-box
+		&::placeholder
+			color: #B8D0DB
+		&[type="submit"]
+			font-family: "Montserrat-Regular", sans-serif
+			position: absolute
+			width: auto
+			background-color: $accent
+			border: none
+			color: #fff
+			text-transform: uppercase
+			font-size: 0.5em
+			line-height: 1.5em
+			top: 0
+			right: 0
+			letter-spacing: 1px
+			height: 100%
+			padding: 12px 18px
+
+.logo
+	img
+		width: 100px
+
+.section
+	padding-top: 40px
+	padding-bottom: 40px
+
+h2
+	color: $title
+	font-family: "Montserrat-Bold", sans-serif
+	font-size: 1.188em
+	letter-spacing: 6px
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 30px
+
+.content
+	// text-align: justify
+	font-family: "Montserrat-Regular", sans-serif
+	font-size: 0.750em
+	color: #666
+	font-weight: 100
+
+
+.section_light, .section_blue
+	.container
+		padding-right: 35px
+		padding-left: 35px
+
+.section_blue
+	background-color: $blue
+	color: #fff
+
+.bl_numbers
+	width: 45%
+	flex-wrap: wrap
+	text-align: center
+	.number
+		font-family: "Montserrat-Medium", sans-serif
+		font-size: 2.5em
+		letter-spacing: 6px
+	.text
+		font-family: "Montserrat-Regular", sans-serif
+		font-size: 0.500em
+		text-transform: uppercase
+
+.slider
+	width: 100%
+	// overflow: hidden
+
+// .slider_2, .slider_5, .slider_6
+// 	width: 100%
+	// overflow: hidden
+	// margin-left: -15px
+
+.slider_6
+	justify-content: flex-start
+.people
+	margin-left: 7.5px
+	margin-right: 7.5px
+	min-width: 282px
+	position: relative
+	&:hover
+		transition: 0.7s
+		background-color: #003d7c
+		.people_img
+			opacity: .21
+		.people_info
+			color: #fff
+			top: 50px
+			padding: 0 30px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			justify-content: center
+		.people_life
+			display: block
+			font-family: "Montserrat-Regular", sans-serif
+			font-size: 0.625em
+			margin-top: 30px
+			// text-align: justify
+	&_img
+		position: relative
+	img
+		width: 100%
+	&_life
+		display: none
+	&_info
+		position: absolute
+		bottom: 45px
+		font-family: "Montserrat-Bold", sans-serif
+		width: 100%
+		text-align: center
+	&_name
+		font-size: 0.813em
+		text-transform: uppercase
+		letter-spacing: 2px
+		margin-bottom: 5px
+	&_about
+		font-size: 0.625em
+		letter-spacing: 1px
+
+.bl
+	&_arrow
+		margin-top: 30px
+		margin-bottom: 30px
+		&__big
+			.fa-angle-left
+				margin-right: 40px
+			.fa-angle-right
+				margin-left: 40px
+		div
+			margin: 0  35px
+			color: #C2D6E2
+		.fa
+			font-weight: bold
+		a
+			color: $blue
+			&:hover
+				color: $accent
+				.fa
+					color: $accent
+					transition: 0.3s
+		.fa
+			color: #111
+		.disabled
+			opacity: .25
+			&:hover
+				color: #111
+				opacity: .25
+				.fa
+					color: #111
+		&__last
+			margin-top: 60px
+			div
+				color: $text
+				text-transform: uppercase
+				font-family: "Montserrat-Bold", sans-serif
+				font-size: 1em
+				letter-spacing: 6px
+		&__full
+			a
+				font-family: "Montserrat-Bold", sans-serif
+				text-transform: uppercase
+				font-size: 0.500em
+				line-height: 3.6em
+			.fa
+				font-size: 2em
+				font-weight: bold
+				position: relative
+				top: 2px
+			.fa-angle-left
+				margin-left: 35px
+			.fa-angle-right
+				margin-right: 35px
+
+
+
+
+
+.cal
+	display: block
+	width: 288px
+	margin: 0 auto
+	margin-bottom: 40px
+	.bl_arrow
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 0.625em
+		font-family: "Montserrat-Bold", sans-serif
+		text-transform: uppercase
+		letter-spacing: 2px
+		div
+			margin: 0 20px
+			color: #21374A
+	caption
+		caption-side: top
+	.active
+		a
+			border: 5px solid #FF3437
+			color: #FF3437
+			box-sizing: border-box
+			width: 40px
+			height: 40px
+			padding: 2px
+			span
+				color: #FF3437
+				padding: 0
+
+	// .days
+	// 	a
+	// 		display: -webkit-flex
+	// 		display: -moz-flex
+	// 		display: -ms-flex
+	// 		display: -o-flex
+	// 		display: flex
+	// 		flex-direction: column
+	// 		align-items: center
+	.clr
+		span
+			color: #FF3437
+	tbody
+		border-right: 1px solid #A2C0CF
+		border-bottom: 1px solid #A2C0CF
+		margin: 0 auto
+	a
+		text-decoration: none
+	td
+		width: 40px
+		box-sizing: border-box
+		letter-spacing: 1px
+		span
+			display: block
+			font-size: .95em
+			line-height: 0.8em
+			font-family: "Montserrat-Medium", sans-serif
+	.days
+		&_numb
+			span
+				font-size: 0.43em
+				text-transform: uppercase
+				font-family: "Montserrat-Light", sans-serif
+				color: #A2C0CF
+				text-align: center
+				margin-top: 10px
+	td
+		font-size: 0.563em
+		line-height: 1.263em
+		font-family: "Montserrat-Bold", sans-serif
+		border-top: 1px solid #A2C0CF
+		border-left: 1px solid #A2C0CF
+		padding: 0
+		a
+			clear: both
+			display: block
+			position: relative
+			width: 40px
+			height: 40px
+			padding: 7px
+			color: #666
+			&:hover
+				border: 5px solid #FF3437
+				color: #FF3437
+				box-sizing: border-box
+				width: 40px
+				height: 40px
+				padding: 2px
+				span
+					color: #FF3437
+					padding: 0
+					transition: 0.3s
+		&.off a
+			background: #E2F1F7
+
+caption
+	font-family: "Montserrat-Bold", sans-serif
+	.fa
+		font-weight: bold
+.bl
+	&_lft
+		padding: 12px 30px
+		color: $accent
+		font-size: 0.500em
+		line-height: 0
+		background-color: #E2F1F7
+	&_days
+		font-size: 0.500em
+		line-height: 2.5em
+		text-transform: uppercase
+		color: #21374A
+
+.section
+	overflow: hidden
+	&_people, &_news
+		.container
+			padding-right: 15px
+			padding-left: 15px
+
+.day-info
+	h3
+		margin-bottom: 15px
+	&_img
+		position: relative
+		margin-bottom: 30px
+		img
+			width: 100%
+	&_date
+		position: absolute
+		bottom: 20px
+		right: 20px
+
+
+.day-info_date, .news_date
+	span
+		font-family: "Montserrat-Medium", sans-serif
+		font-size: 0.625em
+		display: block
+	strong
+		font-size: 3.188em
+		line-height: 0.888em
+		font-family: "Montserrat-Bold", sans-serif
+
+
+
+h3
+	font-family: "Montserrat-Bold", sans-serif
+	font-size: 1.063em
+	text-transform: uppercase
+	color: $accent
+	letter-spacing: 4px
+	line-height: 1.35em
+
+.video
+	background-color: #132738
+	position: relative
+	min-width: 280px
+	margin: 2%
+	&:hover
+		outline: 4px solid $accent
+		outline-offset: -4px
+	&_img
+		position: relative
+		opacity: .6
+		img
+			width: 100%
+			max-height: 100%
+		&:hover
+			outline: 4px solid $accent
+			outline-offset: -4px
+	&_go
+		position: absolute
+		bottom: calc(50% - 18px)
+		left: calc(50% - 13px)
+
+.section_news
+	h3
+		color: $text
+		letter-spacing: 1px
+		margin-top: 20px
+		margin-bottom: 20px
+	.content_bold
+		font-family: "Montserrat-Bold", sans-serif
+
+
+.news
+	&_img
+		margin-bottom: 30px
+		img
+			width: 100%
+	&_title
+		&__right
+			font-family: "Montserrat-Bold", sans-serif
+			font-size: 0.625em
+			text-transform: uppercase
+			margin-left: 10px
+			letter-spacing: 2px
+	&_date
+		margin-right: 15px
+
+.wrapper
+	&_btn
+		text-align: center
+		margin-top: 50px
+
+.news
+	margin: 30px
+	min-width: 255px
+	margin: 0 auto
+	margin-right: 5%
+	.content
+		text-align: left
+	.bl_left
+		margin-right: 15px
+		min-width: 75px
+		img
+			width: 100%
+	.bl_right
+		.content_sm
+			font-family: "Montserrat-Bold", sans-serif
+			font-size: 0.625em
+
+.section_aqua
+	background-color: $aqua
+	.bl_arrow
+		margin-bottom: 0
+
+.bl_light
+	background-color: #fff
+	padding: 20px
+	position: relative
+	.year
+		position: absolute
+		right: 0
+		top: 0
+		background-color: $accent
+		color: #fff
+		font-family: "Montserrat-Bold", sans-serif
+		font-size: 0.8em
+		padding: 0 25px
+
+	.bl_left
+		min-width: 115px
+		margin-right: 20px
+		img
+			width: 100%
+	.bl_right
+		h2
+			font-size: 0.7em
+			letter-spacing: 0
+			text-align: left
+			line-height: 1.2em
+			margin-bottom: 20px
+		.content
+			font-size: 0.5em
+			line-height: 1.3em
+
+.partner
+	min-width: 90px
+	height: 60px
+	background-color: $aqua
+	padding: 5px 10px
+	margin: 0 15px
+	img
+		max-height: 90%
+		max-width: 100%
+
+
+.section_form
+	overflow: hidden
+	position: relative
+	form
+		.wrapper_form
+			position: relative
+		.valid
+			background-image: url(../img/val.png)
+			background-repeat: no-repeat
+			border: 1px solid #00B647
+			background-position: right center
+		.not-valid
+			background-image: url(../img/not-val.png)
+			background-repeat: no-repeat
+			border: 1px solid $accent
+			background-position: right center
+		input
+			margin-bottom: 15px
+			border: none
+			border-radius: 0
+			width: 100%
+			padding: 10px 15px
+		textarea
+			background-color: #f2fafe
+			font-size: 0.625em
+			line-height: 0.625em
+			font-family: "Montserrat-Regular", sans-serif
+			height: 120px
+			width: 100%
+			padding: 10px 15px
+			margin-bottom: 15px
+			border: none
+			&::placeholder
+				color: #B8D0DB
+		input[type="checkbox"], input[type="radio"]
+			display: inline-block
+			width: 20px
+			height: 20px
+			margin-bottom: 0
+			margin-right: 15px
+		label
+			display: inline-block
+			color: #fff
+			font-family: "Montserrat-Regular", sans-serif
+			font-size: 0.8em
+			margin-bottom: 0.2em
+			position: relative
+	h2
+		color: #fff
+		font-size: 1.3em
+	&__bg
+		padding-top: 40px
+		padding-bottom: 40px
+	.inp_sm
+		width: 49%
+	form input[type="submit"]
+		height: auto
+		position: relative
+		width: 100%
+		padding: 20px 0
+		cursor: pointer
+		margin-top: 43px
+	.arr_top
+		background-color: $accent
+		padding: 15px
+		width: 40px
+		height: 45px
+		position: absolute
+		right: 0
+		bottom: 105px
+		img
+			width: 100%
+			max-height: 100%
+
+.popup
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	width: 100%
+	background-color: #fff
+	padding: 40px
+	text-align: center
+	font-size: 0.625em
+	font-family: 'Montserrat-SemiBold', sans-serif
+	text-transform: uppercase
+	color: #0059AB
+	z-index: 99
+	display: none
+	div
+		margin-top: 30px
+
+.item_wrapper
+	
+.item
+	position: relative
+	min-width: 240px
+	background-color: #132738
+	margin-top: 20px
+	margin-left: 30px
+	&_img
+		opacity: .6
+		img
+			width: 100%
+	&:hover
+		outline: 4px solid $accent
+		outline-offset: -4px
+		background-color: #003d7c
+		.item_wrapper
+			padding: 20px
+			position: absolute
+			top: 0
+			width: 100%
+			bottom: 0
+		.item_img
+			outline: 4px solid $accent
+			outline-offset: -4px
+			opacity: .21
+			img
+				width: 100%
+		.people_life
+			margin-top: 20px
+			display: block
+			// position: absolute
+			// top: 0
+			font-family: "Montserrat-Regular", sans-serif
+			font-size: .625em
+			// margin-top: 80%
+			// text-align: justify
+			color: #fff
+			// padding: 30px
+		.project_name
+			// top: 50px
+			position: relative
+			margin-top: 20px
+			top: 0
+			padding: 0
+		.project_date
+			// position: absolute
+			// left: 30px
+			width: auto
+			position: absolute
+			bottom: 25px
+		.project_info
+			position: absolute
+			bottom: 34px
+			right: 20px
+			display: block
+			// position: absolute
+			// right: 30px
+			// bottom: 33px
+			color: $accent
+			font-size: 0.725em
+			font-family: "Montserrat-Bold", sans-serif
+			text-transform: uppercase
+			a
+				color: $accent
+			.bl_arrow
+				margin-top: 0
+				.fa
+					color: $accent
+					margin-left: 10px
+					font-size: 1.3em
+			.bl_arrow, div
+				display: inline-block
+
+.project
+	&_name
+		top: calc(50% - 65px)
+		color: #fff
+		padding-left: 15px
+		padding-right: 15px
+		font-size: 1.313em
+		position: absolute
+		font-family: "Montserrat-Bold", sans-serif
+		width: 100%
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: 2px
+	&_date
+		position: absolute
+		bottom: 25px
+		color: $accent
+		font-size: 1.313em
+		font-family: "Montserrat-Bold", sans-serif
+		width: 100%
+		text-align: center
+	&_info
+		display: none
+
+.section_back
+	.content_bold
+		margin-bottom: 20px
+	span
+		font-family: "Montserrat-Bold", sans-serif
+		text-transform: uppercase
+		font-size: 0.8em
+		letter-spacing: 1px
+	.content
+		&:nth-child(3)
+			margin-bottom: 20px
+		&:last-child
+			margin-bottom: 20px
+
+.back
+	background-color: $accent
+	width: 90px
+	height: 20px
+	padding: 5px
+	text-align: center
+	margin-bottom: 30px
+	img
+		max-width: 100%
+	&_img
+		margin-bottom: 30px
+		img
+			width: 100%
+	&_title
+		font-family: "Montserrat-Regular", sans-serif
+		font-size: 1.1em
+		margin-bottom: 30px
+
+.video_title
+	font-family: "Montserrat-Bold", sans-serif
+	font-size: 0.5em
+	text-transform: uppercase
+	// position: absolute
+	// bottom: -45px
+	// left: 0
+	// right: 0
+	text-align: center
+	margin-top: 20px
+
+.video_wrap
+	margin: 2%
+
+
+.section_copyright
+	padding-top: 45px
+	padding-bottom: 40px
+	text-align: center
+	text-transform: none
+	.content
+		font-size: 0.8em
+		color: #fff
+	
+
+
+
+
+
+
+@import "media" // Always at the end
