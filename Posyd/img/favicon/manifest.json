@@ -1,0 +1,11 @@
+{
+    "name": "%title%",
+    "icons": [
+        {
+            "src": "\/favicon.png",
+            "sizes": "16x16",
+            "type": "image\/png",
+            "density": "1.0"
+        }
+    ]
+}

@@ -1,0 +1,315 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.tab, .tab:hover
+		font-size: 14px
+		line-height: 14px
+
+	.tab:not(:last-child)
+		margin-right: 11px
+
+	.tabs
+		display: flex
+		align-items: center
+
+	.footer_top
+		flex-direction: column
+
+	.footer_menu
+		width: 100%
+		margin-bottom: 20px
+
+	.footer_text
+		width: 100%
+
+	.help_left a:not(:last-child)
+		margin-right: 25px
+
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.sidebar
+		display: none
+
+	.main
+		margin-left: 0
+
+	.header_logo
+		padding-left: 15px
+
+	.header_right
+		padding-right: 15px
+
+	.main_text
+		padding: 14px 15px 14px 15px
+
+	.banner
+		padding: 66px 15px
+
+	.section-blue-light, .section-avtomats, .footer_top, .help, .footer_partners, .footer_drop
+		padding: 30px 15px 30px 15px
+
+	.best-game_title, .btn-wrap-providers
+		padding-right: 0
+
+	.btn-wrap-providers
+		margin-top: 25px
+
+	.bonus
+		padding-top: 30px
+		margin-right: 0
+
+	.bonus-block
+		padding: 15px
+
+	.bonus_deposit
+		margin: 20px 0
+
+	.bonus_deposit-left
+		margin-bottom: 15px
+		margin-right: 0
+		width: 40%
+
+	.bonus_deposit-right
+		width: 40%
+
+	.avtomats-category
+		flex-direction: column
+
+	.tabs
+		margin-bottom: 20px
+		a, a:hover
+			font-size: 18px
+	.tab:not(:last-child)
+		margin-right: 30px
+
+	.selectric-wrapper, .wrap-input
+		width: 49%
+
+	.selectric, .wrap-input input
+		width: 100%
+
+	.avtomats-category_right
+		justify-content: space-between
+
+	.best-avtomat .game
+		width: 24%
+
+	.best-game-slider
+		margin-top: 20px
+
+	.footer
+		margin-left: 0
+
+	.bonus_deposit
+		flex-direction: column
+
+	.header_right
+		position: absolute
+		width: 100vw
+		height: 100vh
+		background-color: #090A36
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+
+	.hamburger
+		width: 17px
+		height: 17px
+		background: url(../img/menu.svg) no-repeat center
+		display: block
+		margin-left: 20px
+		cursor: pointer
+		z-index: 999999
+		&.active
+			background: url(../img/menu_close.svg) no-repeat center
+
+	.header_mob
+		width: 100%
+		justify-content: flex-end
+		margin-right: 15px
+		align-items: center
+
+	.btn
+		padding: 6px 14px
+
+	.header_right
+		transform: translateX(-100%)
+		position: absolute
+		width: 100vw
+		height: 100vh
+		background-color: #090a36
+		left: 0
+		bottom: 0
+		top: 0
+		right: 0
+		padding-top: 70px
+		transition: .3s
+		&.active
+			transform: translateX(0)
+
+	.header_page, .header_right-block
+		flex-direction: column
+
+	.header_page
+		margin-left: -15px
+
+	.header_page li.active a
+		border-left: 2px solid #d64684
+		border-bottom: 0
+
+	.header_page a
+		padding: 3px 17px
+		margin-bottom: 10px
+
+	.header_right-block
+		flex-direction: column-reverse
+		justify-content: flex-end
+
+	.header_lang
+		margin-left: 0
+		margin-bottom: 10px
+
+	.header_logo
+		z-index: 9999
+
+	.header_lang-select
+		top: 25px
+		right: 63px
+		height: 55px
+
+	.header_right.active
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		padding-left: 15px
+
+	.bonus_right
+		right: 0
+
+	.header_page a
+		font-size: 16px
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.banner_content .h1
+		font-size: 28px
+		line-height: 28px
+
+	.bonus_deposit-left span
+		min-width: 100%
+
+	.best-avtomat .game
+		width: 32%
+
+	.help_left
+		flex-direction: column
+		align-items: flex-start
+
+	.help
+		align-items: center
+
+	.pay
+		flex-wrap: wrap
+		img
+			width: 21%
+			margin-bottom: 5px
+
+	.help
+		padding: 15px
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.best-avtomat .game
+		width: 49%
+
+	.banner
+		background: url(../img/banner.jpg) no-repeat 70%
+
+	.banner_content .h1_description
+		color: #c3c5d6
+
+	.best-game-arrow-scroll1
+		display: none
+
+	.best-game-slider::after
+		display: none
+
+	.btn-wrap-providers
+		justify-content: center
+
+	.bonus_right
+		display: none
+
+	.bonus_deposit-left, .bonus_deposit-right
+		width: 100%
+
+	.tab:not(:last-child)
+		margin-right: 22px
+
+	.tabs a, .tabs a:hover
+		font-size: 16px
+
+	.footer_menu
+		flex-direction: column
+
+	.footer_menu-column, .footer_menu-column:last-child
+		width: 100%
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		a
+			margin-right: 10px
+			font-size: 16px
+
+	.footer_menu-column:last-child
+		margin-top: 20px
+
+	.help
+		flex-direction: column
+		align-items: flex-start
+
+	.pay img
+		width: 21%
+
+	.providers img:not(:last-child)
+		margin-right: 18px
+
+	.footer_partners
+		padding: 15px
+
+	.footer_drop
+		padding: 15px 15px 5px
+
+	.footer_drop-text h2
+		font-size: 24px
+		line-height: 28px
+
+	.footer_drop-text h3
+		line-height: 24px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

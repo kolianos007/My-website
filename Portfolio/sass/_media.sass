@@ -1,0 +1,259 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.photo img
+		max-height: 100%
+
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.social a
+		width: 35px
+		height: 35px
+
+	.btn_animate span
+		padding: 10px
+
+	.btn
+		padding: 10px
+
+	.btn_animate span
+		font-size: 16px
+
+	.h1_title
+		font-size: 30px
+
+	.h1
+		font-size: 70px
+		line-height: 80px
+
+	.header_bot>.container, .header_bot .col
+		height: calc(100vh - 65px)
+
+	.btn_radiance
+		padding: 15px 40px
+
+	.photo_2
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+
+	.skill
+		height: 240px
+
+	.slider-for .slide
+		flex-direction: column
+
+	.slider-for .slide_left, .slider-for .slide_right
+		width: 100%
+
+	.slider-for .slide_right
+		height: auto
+		padding: 25px
+		align-items: center
+
+	.slider-for .slide_title
+		margin-bottom: 10px
+
+	.slider-for .text
+		margin-bottom: 20px
+
+	.slider-for .ico
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+
+	.slider-for .slick-arrow
+		top: unset
+		bottom: 210px
+
+	.slider-for .prev
+		left: 30px
+
+	.slider-for .next
+		right: 30px
+
+	.slider-nav .slide
+		height: 160px
+
+	.bloquote
+		font-size: 50px
+		line-height: 60px
+		width: 95%
+		min-height: 100%
+
+	.h1_title::before
+		width: 66px
+
+	.photo::before
+		left: -60px
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.menu_icon
+		display: inline-block
+
+	.menu
+		position: absolute
+		top: 80px
+		left: -1000px
+		opacity: 0
+		transition: .3s
+		background-color: $accent
+		width: 100%
+		z-index: 99
+		text-align: center
+		overflow: auto
+
+	.nav_open .menu
+		display: block
+		opacity: 1
+		left: 0
+		z-index: 99999
+
+	.social a .fab, .social a .fas
+		font-size: 26px
+
+	.h1_title
+		font-size: 25px
+
+	.h1
+		font-size: 50px
+		line-height: 55px
+
+	.btn_radiance
+		padding: 15px 12px
+
+	.photo_2
+		height: 200px
+		img
+			height: 100%
+
+	.block-about
+		margin-top: 10px
+		align-items: center
+
+	.text
+		text-align: justify
+
+	.skill-slider .prev, .slider-nav .prev
+		right: unset
+		left: 15px
+
+	.slider-for .slide_left
+		height: 370px
+
+	.slider-for .slide_img
+		height: auto
+
+	.footer>.container
+		flex-direction: column-reverse
+
+	.footer .social
+		margin-bottom: 20px
+
+	.footer
+		padding: 20px 0
+
+	.social a
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+
+	.h1_title::before
+		width: 56px
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.menu .social
+		display: flex
+
+	.nav
+		display: flex
+
+	.menu .social
+		justify-content: center
+		margin-bottom: 10px
+
+	.social a .fab, .social a .fas
+		font-size: 20px
+
+	.header_bot .col, .header_bot>.container
+		align-items: center
+	.header_bot .col:first-child
+		z-index: 999
+
+	.wrap-h1
+		text-align: center
+
+	.header_bot .row .col:last-child
+		position: absolute
+		opacity: .4
+		overflow: hidden
+
+	.photo::before
+		width: 450px
+		height: 450px
+		bottom: -36px
+		left: calc(50% - 225px)
+
+	.section
+		padding-top: 40px
+
+	.slider-for .slide_left
+		padding: 10px 20px 30px
+		height: auto
+
+	.slider-for .slide_img
+		height: 130px
+		margin-bottom: 15px
+
+	.slider-for .slick-arrow
+		bottom: unset
+		top: 225px
+
+	.slider-for .ico
+		margin: 5px
+
+	.slider-for .icons
+		justify-content: center
+
+	.slider-nav .slide
+		height: 105px
+
+	.bloquote
+		font-size: 30px
+		line-height: 36px
+		width: 100%
+
+	.footer-left
+		text-align: center
+
+	.slider-for .slide_img img
+		height: 100%
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

@@ -1,0 +1,205 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+	
+	.tab_photo
+		margin-right: 5px
+
+	.tab_time
+		margin-left: 5px
+
+	.groups-list a
+		padding: 7px
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.header
+		&_right
+			.header-chat-logo
+					display: none
+		&_title
+			i.mob
+				display: none
+		&.active
+			.header_hamburger
+				display: none
+			.header_right 
+				.header-chat-logo
+					display: block
+					width: 48px
+					height: 48px
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: 5px
+					cursor: pointer
+					border-radius: 50%
+					overflow: hidden
+					margin-left: 2px
+					img
+						border-radius: 50%
+						max-width: 100%
+			.header_left
+				display: none
+			.header_title
+				display: flex
+				position: relative
+				padding-left: 30px
+				padding-top: 7px
+				padding-bottom: 5px
+				i.mob
+					display: block
+					position: absolute
+					margin-left: -18px
+					margin-top: 8px
+					width: 11px
+					height: 19px
+					opacity: .8
+					background-image: url(../img/IconsetW.png)
+					background-repeat: no-repeat
+					background-position: -15px -835px
+				.mob-back
+					display: flex
+					flex-direction: column
+
+	.content_right
+		display: none
+		&.active
+			display: block
+			width: 100%
+			height: calc(100vh - 48px)
+
+	.content_left
+		display: none
+		&.active
+			display: block
+			width: 100%
+
+	.tab_photo
+		margin-right: 15px
+
+	.tab_time
+		margin-left: 15px
+
+	.groups-list a
+		padding: 7px 10px
+
+	.desc
+		display: none
+
+	.mob
+		display: block
+
+	.header_hamburger-left
+		width: 30px
+		height: 30px
+		display: block
+		padding: 8px 15px
+		padding-left: 0
+		margin-right: 20px
+		background-image: url(../img/General.png)
+		background-repeat: no-repeat
+		background-position: -5px -10px
+		span
+			display: none
+
+	.header_left
+		padding-left: 10px
+		padding-right: 10px
+		width: auto
+
+	.header_title
+		display: none
+
+	.header_right
+		display: flex
+		justify-content: flex-end
+		width: 100%
+
+	.header_hamburger.mob
+		display: flex
+		// margin-top: 16px
+		// margin-right: 10px
+		// margin-left: 20px
+		padding: 16px 15px 16px 15px
+		height: 100%
+		width: 50px
+		margin-right: 0
+		cursor: pointer
+		transition: .3s
+		&:hover
+			background: #497799
+		// padding: 5px 19px
+
+	.content
+		border: none
+
+	.groups
+		height: calc(100vh - 48px)
+
+	.posts_wrap, .groups_wrap
+		overflow: auto
+
+	.groups-list a
+		border-bottom: 1px solid #eee
+    border-top: 1px solid #eee
+    margin-top: -1px
+
+	.post_body
+  	background-color: #F1F1F1
+  	padding: 7px 10px
+  	padding-bottom: 20px
+
+	.posts-item
+  	padding: 0
+
+	.post
+		margin: 8px
+
+	.post_img
+		width: 40px
+		height: 40px
+		margin-right: 4px
+
+	.post_time
+		display: flex
+		position: absolute
+		bottom: 13px
+		right: 8px
+
+	.post_time-see
+		position: relative
+		left: 0
+		margin-right: 8px
+
+	.post_time-tick
+		padding: 0
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

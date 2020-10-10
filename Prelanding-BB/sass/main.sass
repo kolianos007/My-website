@@ -1,0 +1,282 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.main
+	height: 100vh
+	width: 100vw
+	position: relative
+	overflow: hidden
+
+.main-bg
+	height: 100vh
+	width: 100vw
+	background-image: url(../img/bg-with-fog.jpg)
+	// background-position: 50% 33%
+	background-position: 50% 43%
+	background-repeat: no-repeat
+	position: absolute
+	display: flex
+	justify-content: center
+	align-items: center
+
+.main-open
+	height: 100vh
+	width: 100vw
+	background-image: url(../img/bg-with-fog-open.jpg)
+	// background-position: 50% 33%
+	background-position: 50% 43%
+	background-repeat: no-repeat
+	position: absolute
+	display: flex
+	justify-content: center
+	align-items: center
+	opacity: 0
+	top: 0
+
+img
+	max-width: 100% 
+
+.door
+	width: 247px
+	height: 500px
+	position: absolute
+	z-index: 9999
+	// top: 20%
+
+// body
+// 	cursor: none
+
+
+
+.parallax
+	background: url(../img/bullets.png) no-repeat center
+	position: absolute
+	left: -5%
+	right: 0
+	bottom: -150px
+	height: 455px
+	width: 110%
+	z-index: 999
+
+.wrapper, .hand
+	width: 580px
+	height: 1000px 
+
+.wrapper
+	position: absolute
+	z-index: 9999
+	transition: top 0.2s, left 0.2s, opacity 0.5s
+	opacity: 1
+	&.active
+		opacity: 0
+.hand
+	background: url(../img/hand.png) no-repeat center
+	background-size: 100%
+	position: absolute
+	z-index: 9999
+.smoke
+	width: 340px
+	height: 279px
+	background-image: url(../img/smoke.png)
+	position: absolute
+	left: calc(50% - 60px)
+	top: 20px
+	z-index: -1
+	display: block
+	opacity: 0
+	// opacity: 1
+
+.btn-wrap
+	position: absolute
+	width: auto
+	left: calc(50% - 99.5px)
+	bottom: -200%
+	display: flex
+	z-index: 99999
+	transition: .3s
+	&.active
+		bottom: 40%
+
+.btn
+	text-transform: uppercase
+	font-size: 24px
+	color: #fff
+	background-color: #000
+	border-radius: 10px
+	border: 2px solid #FFE408
+	padding: 5px 15px
+	box-shadow: 0 0 30px 13px #973d17
+	transition: .3s
+	cursor: pointer
+	font-family: 'Fira Sans Extra Condensed'
+	&:hover
+		box-shadow: 0 0 30px 18px #DC5D28
+		text-decoration: none
+		color: #fff
+
+.sign
+	position: absolute
+	top: 0
+	left: calc(50% - 200px)
+	width: 400px
+	height: 200px
+	z-index: 999
+
+.image, .image_1, .image_2
+	position: absolute
+
+
+.main-mob
+	.smoke
+		top: 50px
+		left: calc(50% - 90px)
+
+
+
+// .main-mob .wrapper
+// 	animation: road 2s ease 1
+
+// @keyframes road
+// 	0%
+// 		bottom: -100%
+// 	100%
+// 		bottom: 0
+
+// .main-mob .target
+// 	animation: opac 2s ease 1, scl 1s ease infinite alternate
+
+// @keyframes opac
+// 	0%
+// 		opacity: 0
+// 	90%
+// 		opacity: 0
+// 	95%
+// 		opacity: 0.5
+// 	100%
+// 		opacity: 1
+
+// @keyframes scl
+
+// 	0%
+// 		transform: scale(1)
+// 	100%
+// 		transform: scale(1.2)
+
+
+
+
+//animation-blick
+
+.sign-blick-1
+	animation: blick 1s ease infinite alternate
+
+.sign-blick-2
+	animation: blick 1s 3s ease infinite alternate
+
+@keyframes blick
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+
+
+.main-mob .door img.hid
+	display: none
+
+
+//animation-shot
+
+.smoke-open
+	animation: shot 0.3s ease 
+
+@keyframes shot 
+	0%
+		transform: scale(0)
+		opacity: 0
+	25%
+		transform: scale(0.5)
+		opacity: 0.5
+	50%
+		transform: scale(1)
+		opacity: 1
+	75%
+		transform: scale(0.5)
+		opacity: 0.5
+	100%
+		transform: scale(0)
+		opacity: 0
+
+.door img
+	display: none
+
+
+.main-mob 
+	.wrapper
+		display: none
+	.door 
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+			display: block
+			width: 120px
+			height: 120px
+			animation: roadTarget 2s linear infinite alternate
+			position: absolute
+// 	.fog
+// 		animation: qwe 20s linear infinite 
+// 		background-repeat: repeat-y
+// @keyframes qwe
+// 	0%
+// 		transform: translate3d(0, 0, 0)
+// 	100%
+// 		transform: translate3d(0, 10%, 0)
+
+
+@keyframes roadTarget
+	0%
+		top: 0
+	100%
+		top: calc(100% - 120px)
+
+
+
+
+@import "media" // Always at the end

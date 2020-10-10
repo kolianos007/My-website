@@ -1,0 +1,536 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+//height
+
+@media screen and (max-height: 800px) and (max-width: 1920px)
+
+	.fog
+		background-image: url(../img/fog.png)
+		background-position: 50% 100%
+		background-repeat: no-repeat
+		height: 800px
+		width: 100%
+		position: absolute
+		bottom: -100px
+		z-index: 999
+	
+
+
+@media screen and (max-height: 700px) and (min-width: 1200px)
+
+	.sign
+		width: 300px
+		left: calc(50% - 150px)
+
+@media screen and (min-height: 700px)
+
+	.parallax
+		bottom: -150px
+		// height: 400px
+		height: 450px
+		background-size: cover
+
+	// .main-mob .parallax
+	// 	height: 200px
+	// 	bottom: 0
+
+@media screen and (min-height: 800px)
+
+	.wrapper, .hand
+		min-width: 700px
+		height: 1200px
+		background-size: cover
+
+
+	.smoke
+		left: calc(50% - 42px)
+		top: 50px
+
+
+@media screen and (min-height: 850px)
+
+	.btn
+		font-size: 48px
+		padding: 5px 25px
+		border-radius: 15px
+
+	.btn-wrap
+		left: calc(50% - 191.5px)
+		&.active
+			bottom: 10%
+
+	.parallax
+		bottom: -100px
+		height: 450px
+		background-size: cover
+
+	// .main-mob .parallax
+	// 	height: 200px
+	// 	bottom: 0
+
+
+
+
+
+
+@media screen and (min-height: 950px)
+
+	.wrapper, .hand
+		width: 900px
+		height: 1500px
+		background-size: cover
+
+	.smoke
+		left: calc(50% - 0px)
+		top: 86px
+
+	.parallax
+		height: 455px
+
+	// .main-mob .parallax
+	// 	height: 200px
+	// 	bottom: 0
+
+@media screen and (min-height: 950px) and (min-width: 1920px)
+
+	.parallax
+		bottom: -150px
+
+@media screen and (min-height: 1100px)
+
+	.parallax
+		bottom: -100px
+		height: 455px
+		background-size: cover
+
+
+
+
+@media screen and (min-height: 1250px)
+
+	.wrapper, .hand
+		width: 1100px
+		height: 1700px
+		background-size: cover
+
+	.smoke
+		left: calc(50% + 40px)
+		top: 87px
+
+
+
+
+@media screen and (min-height: 1400px)
+
+	.wrapper, .hand
+		width: 1400px
+		height: 2000px
+		background-size: cover
+
+	.smoke
+		left: calc(50% + 100px)
+		top: 65px
+
+	.sign
+		width: 600px
+		height: auto
+		left: calc(50% - 300px)
+		img
+			width: 100%
+
+	.btn
+		font-size: 72px
+
+	.btn-wrap
+		left: calc(50% - 273.5px)
+
+
+
+@media screen and (min-height: 1700px)
+
+	.wrapper, .hand
+		width: 1400px
+		height: 2300px
+		background-size: cover
+
+	.smoke
+		left: calc(50% + 40px)
+		top: 146px
+		width: 440px
+		height: 379px
+		background-size: cover
+
+
+
+@media screen and (min-height: 1900px)
+
+	.wrapper, .hand
+		width: 1700px
+		height: 2500px
+
+	.smoke
+		left: calc(50% + 94px)
+		top: 104px
+
+	.btn
+		font-size: 96px
+
+	.btn-wrap
+		left: calc(50% - 355.5px)
+
+
+
+@media screen and (min-height: 2140px)
+
+	.wrapper, .hand
+		width: 1700px
+		height: 2800px
+
+	.smoke
+		left: calc(50% + 100px)
+		top: 234px
+
+
+@media screen and (min-height: 2300px)
+
+	.wrapper, .hand
+		width: 1900px
+		height: 3200px
+
+	.smoke
+		left: calc(50% + 140px)
+		top: 324px
+
+
+		
+
+
+
+
+
+//width
+
+
+@media screen and (max-width: 1300px) and (max-height: 800px)
+
+	.parallax
+		bottom: 0
+		height: 355px
+		background-size: contain
+
+	.fog
+		background-image: url(../img/fog.png)
+		background-position: 50% 100%
+		background-repeat: no-repeat
+		height: 800px
+		width: 100%
+		position: absolute
+		bottom: -100px
+		z-index: 999
+
+	.sign
+		width: 300px
+		left: calc(50% - 150px)
+
+
+@media screen and (max-width: 1400px) and (max-height: 700px)
+
+	.parallax
+		bottom: 0
+		height: 300px
+		background-size: contain
+
+@media screen and (max-width: 1200px) and (max-height: 600px)
+
+	.parallax
+		bottom: -100px
+		height: 300px
+
+	.main-mob .parallax
+		bottom: 0
+		height: 200px
+
+
+// planshets, mobile
+
+
+
+
+
+
+@media screen and (min-width: 1024px)and (min-height: 1024px) 
+
+	.main-mob 
+		.main-bg
+			background-size: cover
+		.door 
+			img
+				width: 50%
+				height: 50%
+
+	.main-mob+.main-open
+		background-size: cover
+
+	@keyframes roadTarget
+		0%
+			top: -20%
+		100%
+			top: calc(100% - 50%)
+
+@media screen and (max-width: 1024px)and (max-height: 1024px) 
+
+	.main-bg
+		background-image: url(../img/1024x1024_background_1.jpg)
+		// background-position: 50% 0
+
+	.main-open
+		background-image: url(../img/1024x1024_background_2.jpg)
+		// background-position: 50% 0
+
+	.door
+		width: 218px
+		height: 450px
+
+	.smoke
+		top: 70px
+		left: calc(50% - 16px)
+
+
+@media screen and (max-width: 780px) and (max-height: 780px)
+	
+	.main-mob 
+		.main-bg
+			background-image: url(../img/780х780_background_1.jpg)
+			background-position: 50% 0
+	.main-open
+		background-image: url(../img/780х780_background_2.jpg)
+		background-position: 50% 0
+
+	.main-mob .door
+		top: 157px
+		width: 134px
+		height: 264px
+		img
+			width: 80px
+			height: 80px
+
+	@keyframes roadTarget
+		0%
+			top: 0
+		100%
+			top: calc(100% - 80px)
+
+	.main-mob .smoke
+		width: 150px
+		height: 150px
+		background-size: cover
+		left: calc(50% - 14px)
+		top: calc(50% + 80px)
+
+
+@media screen and (min-width: 1025px) and (max-width: 1920px) and (min-height: 600px) and (max-height: 1080px)
+
+	.main-mob 
+		.main-bg
+			background-image: url(../img/bg-with-fog.jpg)
+			background-position: 50% 43%
+
+	.main-open
+		background-image: url(../img/bg-with-fog-open.jpg)
+		background-position: 50% 43%
+
+
+@media screen and (min-width: 700px) and (min-height: 700px) 
+
+	.parallax
+		bottom: -100px
+		height: 350px
+		background-size: contain
+
+
+
+@media screen and (max-height: 1000px)
+
+	.main-mob .parallax
+		bottom: 0
+		height: 200px
+
+
+@media screen and (max-height: 700px) and (max-width: 500px)
+
+	.parallax
+		bottom: 0
+		height: 200px
+
+@media screen and (max-height: 700px) and (max-width: 360px)
+
+	.main-mob .parallax
+		bottom: 0
+		height: 100px
+
+@media screen and (min-height: 100px)
+	
+	.main-mob .btn-wrap.active
+		bottom: 10%
+
+
+
+
+
+
+//mobile end
+
+
+
+	
+
+@media screen and (min-width: 1921px)
+
+	.main-bg, .main-open
+		background-position: 50% 43%
+		// background-position: 50% 33%
+
+	.door
+		width: 375px
+		height: 750px
+
+	.parallax
+		background-size: cover
+		bottom: 0
+
+	.parallax
+		min-height: 445px
+		height: 550px
+
+	.main-bg
+		background-image: url(../img/3000х1876_background_1.jpg)
+
+	.main-open
+		background-image: url(../img/3000х1876_background_2.jpg)
+
+
+
+@media screen and (min-width: 2400px)
+
+	.parallax
+		min-height: 445px
+		height: 600px
+		// background-size: cover
+		background-size: contain
+		bottom: -200px
+
+	.fog
+		background-image: url(../img/fog.png)
+		background-position: 50% 100%
+		background-repeat: no-repeat
+		height: 800px
+		width: 100%
+		position: absolute
+		bottom: -100px
+		z-index: 999
+		height: 100%
+		background-size: cover
+
+
+@media screen and (max-width: 2400px)
+
+	.fog
+		background-image: url(../img/fog.png)
+		background-position: 50% 100%
+		background-repeat: no-repeat
+		height: 800px
+		width: 100%
+		position: absolute
+		bottom: -100px
+		z-index: 999
+		height: 100%
+
+
+@media screen and (min-width: 3000px)
+
+	.main-bg
+		background-image: url(../img/4000х2499_background_1.jpg)
+
+	.main-open
+		background-image: url(../img/4000х2499_background_2.jpg)
+
+	.door
+		width: 436px
+		height: 968px
+
+	.sign
+		width: 800px
+		left: calc(50% - 400px)
+
+	.parallax
+		background-size: cover
+		height: 900px
+
+@media screen and (min-width: 3000px) and (min-height: 2000px)
+
+	.parallax
+		bottom: -100px
+
+
+@media screen and (min-width: 4001px)
+	
+	.main-bg, .main-open
+		background-size: cover
+
+	.parallax
+		height: 1200px
+		bottom: -200px
+
+
+
+
+
+
+
+
+
+
+// @media screen and (min-height: 600px) and (max-height: 800px)
+
+// 	.door
+// 		top: 20%
+
+// 	.main-bg, .main-open
+// 		background-position: 50% 33%
+
+
+
+
+
+
+
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

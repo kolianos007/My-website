@@ -1,0 +1,1542 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.product-row--info
+		display: none!important
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+	.repr_logo
+		padding-top: 50px
+
+	.tender_bl
+		border: 1px solid #E2E4E8
+
+
+	.section_copyright--wrapper
+		display: flex
+		justify-content: space-between
+
+	.tender_table--part
+		margin: 0 -30px
+		padding: 30px 30px
+
+	.tab_registr--wrap
+		margin: 0
+		padding: 0
+		margin-bottom: 20px
+
+	.tab_registr
+		margin: 0
+
+
+	.form_request, .section_plan td, .date, .tender_bl
+		margin-left: 0
+		margin-right: 0
+		padding-left: 30px
+		padding-right: 30px
+
+
+
+
+	//new
+	//news
+
+	.section_tidings .news_list-item--img
+		height: auto
+
+	.sub-news
+		margin-left: 0
+		margin-right: 0
+		padding-left: 30px
+		padding-right: 30px
+
+	//article
+
+	.article_img
+		height: auto
+		margin-bottom: 30px
+		img
+			width: 100%
+
+	.bloquote
+		margin-top: 0
+
+	.section_video .news_list-item--img
+		height: auto
+
+	.slick-initialized .slick-slide
+		margin: 5px
+		margin-top: 0
+	
+	.slick-initialized .slick-slide
+		border: 1px solid  #E2E4E8
+
+	.slick-slider
+		border: none
+
+
+
+// ≤768px
++media-breakpoint-up(md)
+
+	.carousel-nav .owl-nav button.owl-next
+		right: -35px
+
+	.carousel-nav .owl-nav button.owl-prev
+		left: -35px
+
+	.section_plan td
+		padding: 0 10px
+
+	.section_copyright--wrapper
+		display: flex
+		justify-content: space-between
+
+
+	.contacts_item--phone
+		flex-direction: row
+
+	.contacts_item--phone a
+		margin-right: 20px
+
+	.form .wrap_input	
+		width: 100%
+
+	//mission
+
+	.breadcrumbs
+		div, a, span
+			color: #96989F
+			display: inline!important
+
+
+	//services
+
+	.form_request
+		padding-left: 35px
+		padding-right: 35px
+
+	//new
+	//contact
+
+	.contact-block
+		height: 100%
+		padding-left: 30px
+		padding-right: 30px
+
+	//news
+	.sub-news_wrap
+		display: flex
+		justify-content: space-between
+
+	.sub-news input
+		width: 48%
+
+	//article
+
+	.df
+		display: flex
+
+	.article_text
+		border-left: 2px solid $c_href
+		padding-left: 30px
+		margin-left: 1px
+
+	.download
+		margin-right: 20px
+
+	.header-article .h1, .header-politic .h3
+		font-size: 35px
+
+	.section_video
+		.news_list-item__video::after
+			top: 30px
+			right: 30px
+
+	.section_partners .owl_trust-item
+		margin-top: 12px
+
+	.section_partners .wrap
+		margin-bottom: 0
+
+	.section_partners .wrap
+		border-bottom: none
+
+	.line-hrzntl
+		border-bottom: 1px solid #E9E9EB
+		margin-bottom: 25px
+
+	.tender_bl--bot
+		display: flex
+		justify-content: space-between
+		.wrap_select
+			width: 48%
+
+	//registr
+
+	.tab_registr--item
+		display: flex
+		justify-content: center
+
+	.form_in
+		min-width: 400px
+
+	.tab_registr--wrap
+		margin-bottom: 25px
+
+	.slick-prev
+		left: -25px
+	.slick-next
+		right: -25px
+
+
+// ≤992px
++media-breakpoint-up(lg)
+
+	//tender
+
+
+
+	.tender_table
+		display: flex
+	.tender_table--part
+		margin: 0
+		padding: 15px
+	.tender_table--second
+		.ico_left
+			margin-top: 18px
+	.tender_table--third div
+		margin-bottom: 9px
+
+	.tender_bl
+		padding: 10px
+
+	.tender_table--second, .tender_table--third
+		border: none
+	.tender_table--img
+		margin-top: 5px
+	.ico_right
+		margin-top: 58px
+	.tender_bl--under
+		margin: 0 -10px
+		padding: 0 30px
+		border-top: 1px solid #E2E4E8
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 10px
+		.ico_left
+			margin-bottom: 0
+			align-items: center
+			.fas, .far
+				margin-top: 0
+		.ico_right
+			margin-top: 0
+			margin-left: 40px
+
+	.tender_bl--sz
+		padding: 25px 
+
+	//services
+
+	.wrap-img
+		margin-bottom: 60px
+
+	.form_request input
+		margin-bottom: 0
+
+	.wrap_inputs
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 10px
+		.wrap_input
+			width: 46%
+			margin: 15px
+	.form_fileinput
+		width: 300px
+		display: inline-block
+	.form input[type="button"]
+		display: inline-block
+		float: right
+		margin-right: 25px
+		width: auto
+		padding: 15px 85px
+
+	//plan
+
+	.section_plan
+		padding-bottom: 90px
+
+	// .header-plan>.container
+	// 	height: 370px
+
+	table
+		width: 100%
+		margin: 0
+		padding: 0
+		border-collapse: collapse
+		border-spacing: 0
+		margin-top: 40px
+		td
+			font-size: 20px
+		thead
+			display: block
+			background-color: $accent
+		tr
+			padding: 0 5px
+			display: flex
+			justify-content: space-around
+			margin-bottom: 0
+		th, td
+		  text-align: center
+		  width: 11.6667%
+		td::before
+			display: none
+		th
+			min-height: 55px
+			display: flex
+			align-items: center
+			letter-spacing: 1px
+			font-size: 20px
+			color: $c-default
+			font-weight: 300
+		tbody tr
+			&:nth-child(odd)
+				background-color: $secondary-bg
+			td:nth-child(2n+1)
+	  		background-color: inherit
+			td:first-child
+	  		background-color: inherit
+	  		color: $c-black
+
+	// Main
+	.repr
+		&_logo
+			margin-left: 0
+			margin-right: 0
+
+
+	.form_in .wrap_inputs
+		justify-content: center
+		flex-direction: column 
+		width: 100%
+
+	.form_in .wrap_input
+		margin: 0
+		width: 100%
+
+	.form_in .green
+		margin-bottom: 10px
+
+	.form_in
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+
+	.form_in .green
+		text-align: center
+
+	.form_in input[type="button"]
+		width: 300px
+		margin: 0 auto
+
+	.section_title-sync .h3	
+		font-size: 35px
+
+
+
+
+
+
+
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+	.news_nav-wrapper--block .news_nav-item a:hover
+		transition: 0.3s
+
+	.scroll.active
+		right: 30px
+
+	.slick-initialized .slick-slide
+		border: none
+
+	.slick-slider
+		border: 1px solid  #E2E4E8
+
+
+	.pagination a:hover
+		margin-right: -1px
+
+	.pagination li:first-child:hover
+		margin-right: 0
+		width: 51px
+
+	.pagination li:last-child:hover
+		width: 126.617px
+		border: 1px solid transparent
+
+	.pagination li:last-child a:hover
+		margin-right: -2px
+		// padding: 0 19px
+
+
+	.news_nav-wrapper--block .news_nav-item:hover
+		transition: 0.3s
+
+	.news_nav-item
+		padding: 9px 0
+	.copy_wrap
+		display: flex
+		flex-direction: row
+		align-items: center
+		a
+			margin-left: 20px
+
+	.section_copyright	
+		display: flex
+		align-items: center
+
+	.section_copyright--wrapper
+		align-items: center
+
+	.section_copyright--info
+		margin-bottom: 0
+
+	.footer_light
+		border-top: 1px solid #F8F8F8
+		background-color: #fff
+
+	.footer_light .form input
+		background-color: #F2F4F7
+
+	.contacts_item--addres
+		max-width: 540px
+
+	.contacts_item--phone a
+		margin-right: 10px
+		font-size: 18px
+
+	.form_submit
+		background-image: none
+		min-width: 190px
+		color: #fff
+		font-size: 18px
+		font-weight: 300
+
+	.footer_menu--list
+		margin-top: -10px
+
+	.footer_contacts
+		margin-top: 0
+
+	.footer_menu--item
+		line-height: 44px
+
+
+	//services
+
+	.header-plan>.container
+		height: 370px
+
+
+	.section .news_nav-wrapper--block
+		overflow-x: hidden
+		width: 100%
+		padding: 34px 0
+		margin: 0
+		margin-top: 30px
+		background-color: $c-href
+
+
+	.news_nav-wrapper--block .news_nav
+		display: block
+		border: none
+		padding: 0
+
+	.news_nav-wrapper--block .news_nav-item.active a, .news_nav-wrapper--block .news_nav-item a:hover
+		color: $c-default
+
+	.news_nav-wrapper--block .news_nav-item a
+		color: $c-secondary
+		white-space: normal
+		display: block
+
+	.news_nav-wrapper--block .news_nav-item
+		padding-left: 30px
+
+	.news_nav-wrapper--block .news_nav-item:hover, .news_nav-wrapper--block .news_nav-item.active
+		padding-left: 26px
+		border-left: 4px solid #076476
+		box-sizing: content-box
+
+	.section
+		margin-top: 20px
+
+	.breadcrumbs
+		margin-bottom: 30px
+
+	.form_fileinput
+		position: relative
+		// right: -516px
+		right: 0
+		width: 210px
+
+	.form_fileinput .fakefile
+		width: 190px
+
+	.form_fileinput .file
+		padding: 0
+		margin-bottom: 30px
+
+	// Header
+
+	.header
+		&_content
+			padding-bottom: 0
+		&_play
+			margin-top: 55px
+		&_title
+			.h1
+				span
+					display: block
+		&_top
+			justify-content: center
+			padding: 0
+			height: 80px
+			> *
+				height: 100%
+			&-wrapper
+				border-bottom: 1px solid rgba(255,255,255,.2)
+				.container
+					max-width: 100%
+		.logo
+			// margin-right: 10px
+			margin-right: 0
+			display: flex
+			align-items: center
+			img
+				width: 140px
+		.menu
+			height: 100%
+			ul
+				height: 100%
+				display: flex
+				flex-direction: row
+			&_close-btn
+				display: none
+			&_btn
+				display: none
+			&_item
+				border-bottom: none
+				white-space: nowrap
+				border-bottom: 4px solid transparent
+				transition: 0.3s
+				&.active, &:hover
+					border-bottom-color: #fff
+				&:not(:last-child)
+					margin-right: 8px
+				a
+					color: $c-default
+					font-size: 14px
+				&-toggle, &-submenu
+					display: none!important
+
+			&_wrapper
+				position: relative
+				width: auto
+				top: auto
+				left: auto
+				height: 100%
+				display: flex
+				background-color: transparent
+				flex-direction: row-reverse
+				align-items: center
+				overflow: unset
+
+			&_actions
+				height: 100%
+				font-size: 15px
+				> *
+					height: 100%
+				.search
+					&_input
+						display: none
+					&_btn
+						border: none
+						order: 1
+						width: 45px
+				.lang
+					width: 45px
+					order: 0
+					border-bottom: none
+					border-left: 1px solid rgba(255,255,255,.2)
+					border-right: 1px solid rgba(255,255,255,.2)
+					&_item
+						color: $c-default
+						border: none
+						display: none
+						padding: 0
+						margin-left: 0
+						&.active
+							display: block
+				.auth_btn
+					width: 85px
+					order: 3
+					border-bottom: none
+					border-left: 1px solid rgba(255,255,255,.2)
+					color: $c-default
+				.tel
+					width: auto
+					order: 4
+					border-bottom: none
+					border-left: 1px solid rgba(255,255,255,.2)
+					color: $c-default
+					padding-left: 20px
+
+
+
+	// Main
+	.desctop
+		&_categories
+			margin-top: 15px!important
+			.row
+				margin: 0
+				> div
+					padding: 0
+		&_category
+			display: flex
+			flex-direction: column
+			font-size: 30px
+			font-weight: 500
+			color: #fff
+			justify-content: center
+			padding-left: 16%
+			border: 15px solid $bg
+			cursor: pointer
+			position: relative
+			a
+				position: relative
+				z-index: 1
+				&.active
+					text-decoration: underline
+			&::before
+				content: ''
+				background-color: rgba(3, 146, 159, .9)
+				position: absolute
+				opacity: 0
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				transition: 0.3s
+			&.active, &:hover
+				&::before
+					opacity: 1
+
+	.category
+		margin-bottom: 30px
+		&_main-image
+			background-size: cover
+			margin-left: 15px
+			margin-right: 15px
+
+		&_img
+			&::before
+				transition: 0.3s
+				opacity: 0
+		&_title
+			span
+				display: block
+			br
+				display: none
+		&:hover
+			.category_img
+				&::before
+					opacity: 1
+			.category_title
+				text-decoration: underline
+		&_1
+			height: 400px
+		&_2
+			height: 300px
+		&_3
+			height: 300px
+			padding-left: 5%
+		&_4
+			height: 400px
+			padding-left: 5%
+
+
+
+
+
+
+	.section_about
+		margin-top: 30px
+		.section_title
+			margin-top: 25px
+			margin-bottom: 27px
+		.h4
+			border-left: 3px solid #03929f
+			padding-left: 47px
+			padding-top: 10px
+			padding-bottom: 30px
+			margin-bottom: 25px
+		.btn-wrapper
+			margin-top: 56px
+
+	.repr
+		&_content
+			margin-left: 20px
+			margin-right: 20px
+
+	.section_news
+		.section_title
+			.h1
+				br
+					display: none
+	.section_news .news_nav-wrapper
+		display: none
+
+	.news_carousel
+		.owl-nav
+			position: absolute
+			top: 45px
+			right: 0
+
+	.section_categories
+		margin-top: 30px
+		.container-fluid
+			padding: 0 30px
+		.category_title
+			font-size: 30px
+		.category
+			&_1, &_2
+				.category_title
+					margin-left: 17.5%
+	.section_catalog
+		margin-top: 50px
+		padding-top: 110px
+	.catalog_carousel
+		&--img
+			padding: 0 50px
+		&--title
+			padding: 0 40px
+
+	.section_repr
+		margin-top: 60px!important
+		padding-bottom: 75px
+		.section_title
+			margin-top: 65px
+			.h2
+				font-size: 60px
+		.repr
+			&_wrapper
+				margin-top: 45px
+			&_logo
+				padding-top: 75px
+				// img
+				// 	width: 380px
+			// &_content
+			// 	margin-left: 40px
+
+				.btn
+					margin-top: 10px
+			&_text
+				padding-left: 40px
+				padding-right: 40px
+
+	.section_news
+		padding-top: 100px
+		.section_title
+			margin-bottom: 35px
+	.news_carousel-item .btn
+		margin-top: 22px
+
+	.section_trust
+		margin-top: 80px
+	.owl_trust
+		margin-top: 40px
+		&-item
+			height: 215px
+
+	//mission
+
+	.interactive
+		margin-top: 30px
+
+
+	//history
+
+	.date
+		margin-top: 30px
+
+	.tabs
+		display: flex
+		margin-left: -15px
+		margin-right: -15px
+		.tab
+			width: 33.33%
+			display: block
+			padding-left: 15px
+			padding-right: 15px
+			display: flex
+			flex-direction: column
+			.btn-wrapper
+				margin-top: auto
+
+	//new
+	//news
+
+	.sub-news 
+		margin-top: 30px
+
+	.sub-news input
+		width: 100%
+
+	.sub-news_wrap
+		flex-direction: column
+
+	.section_tidings .news_list-item
+		margin-top: 30px
+		margin-bottom: 10px
+
+	.section_tidings
+		margin-bottom: 0
+
+	.section_tidings .more
+		margin-bottom: 50px
+		margin-top: 30px
+
+
+	//activity
+
+	.section_activity .news_carousel-item
+		margin-top: 30px
+		margin-bottom: 20px
+
+	.section_activity
+		padding-bottom: 60px
+
+	.section_activity .sub-news
+		margin-top: 30px
+
+	.section_video .news_list-item__video
+		margin-top: 30px
+		margin-bottom: 10px
+
+
+	// Komment
+
+	.product-row
+		display: flex
+		align-items: center
+		// padding-left: 35px
+		// padding-right: 25px
+		// padding-bottom: 20px
+		// padding-top: 20px
+		.btn
+			margin-left: auto
+		.title
+			font-size: 25px
+		.image
+			width: 190px
+			text-align: left
+		&--main
+			padding-left: 35px
+			padding-right: 25px
+			padding-bottom: 20px
+			padding-top: 20px
+			width: 100%
+			display: flex
+			align-items: center
+		&--has-info
+			width: 100%
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			padding-top: 0
+			padding-bottom: 0
+			.product-row--info
+				display: none
+				padding-left: 50px
+				padding-top: 40px
+				padding-bottom: 40px
+				.main
+					font-size: 22px
+					font-weight: 500
+					margin-bottom: 10px
+				ul
+					text-align: left
+					list-style-type: none
+					font-weight: 300
+					margin-left: 30px
+					li
+						margin-bottom: 10px
+				a
+					&:hover
+						color: $accent
+			&.active
+				.product-row--main
+					background-color: $accent
+				.title
+					color: #fff
+				.btn
+					background-color: #fff
+					color: $c-black
+
+	.search_form
+		&-button
+			background-image: none
+			font-weight: 300
+			font-size: 18px
+			width: 235px
+
+	.filters
+		margin-top: 0!important
+		&-title
+			border: none
+			padding-left: 0
+
+	.product-row
+		&_vertical
+			display: flex
+			flex-direction: column
+			margin-bottom: 25px
+			.image
+				text-align: center
+			.btn
+				margin-right: auto
+
+	//result-search
+
+	.section_result-search .h2
+		font-size: 60px
+		margin-bottom: 20px
+
+	.block_result--title
+		font-size: 30px
+
+	.block_search
+		margin-bottom: 40px
+
+	.tab_registr--wrap
+		margin-bottom: 35px
+
+	.header-white .menu_item a, .header-white .menu_actions .lang_item.active, .header-white .menu_actions i, .header-white .menu_actions .auth_btn span, .header-white .menu_actions .tel
+		color: #000
+
+	.header .menu_actions .tel
+		// padding-left: 10px
+		padding-left: 5px
+
+	.header-white .menu_item.active, .header-white .menu_item:hover
+		border-bottom-color: #000
+
+	.header-white
+		margin-bottom: 30px
+
+	.wrap_inset
+		position: relative
+		overflow: hidden
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 1px
+			background-color: #E1E7EC
+			top: 106px
+			left: 390px
+
+	.btn-long
+		width: 350px
+
+	.wrap_h5 
+		display: flex
+
+	.section_sync .wrap_h5  .h5	
+		font-size: 25px
+		margin-right: 10px
+		margin-bottom: 0
+		margin-top: 15px
+
+	.section_sync .h5
+		font-size: 35px
+		margin-bottom: 35px
+
+	.inline-svg-icon
+		width: 50px
+		height: 60px
+
+	.inset
+	   width: 390px
+    border-left: none
+    border-bottom: none
+    position: relative
+    // &::before
+    // 	content: ''
+    // 	width: 500px
+    // 	position: absolute
+    // 	right: 0
+    // 	height: 1px
+    // 	color: #E1E7EC
+
+	.carousel-nav .owl-nav button.owl-next
+		right: -30px
+
+	.carousel-nav .owl-nav button.owl-prev
+		left: -30px
+
+	.news_carousel .owl-nav
+		top: 18px
+
+	.slick-slider
+		margin-top: 10px
+
+	.header-white 
+		.dropdown
+			// padding-top: 0
+			padding-bottom: 0
+			div, a
+				font-size: 16px
+				// margin-top: 7px
+				// margin-bottom: 7px
+
+	.header .dropdown div, .header .dropdown a
+		font-size: 16px
+
+	.header-main > .container 
+		min-height: calc(100vh - 81px)
+
+	.sub-news_title
+		font-size: 20px
+		line-height: 28px
+
+
+
+
+
+// ≤1366px
++media-breakpoint-up(xxl)
+
+
+
+	.date_number::before, .date_number::after
+		display: block
+
+	.header-main > .container 
+		min-height: calc(100vh - 96px)
+
+
+	.slick_img.slick-slide
+		height: 100%
+
+	.slick-initialized.slick-big
+		border: 1px solid  #E2E4E8
+
+	.slick-slider
+		border: none
+
+	.slick-vertical.slick-initialized .slick-slide, .slick-vertical.slick-dotted.slick-slider
+		width: 110px!important
+		height: 110px
+		margin-left: 0
+		margin-top: 0
+
+	.slick-vertical.slick-slider
+		width: 110px
+		margin-top: 0
+
+	.slick-vertical .slick-prev
+		top: -28px
+		left: 40px
+		transform: rotate(270deg)
+
+	.slick-vertical .slick-next
+		top: 100%
+		right: 40px
+		transform: rotate(90deg)
+
+	.slick-big.slick-slider .slick-list, .slick-big.slick-slider .slick-track
+		height: 455px
+
+	.slick-vertical.slick-slider
+		display: inline-block
+
+	.wrap_slick
+		display: flex
+		margin-top: 10px
+
+	.slick-big.slick-initialized .slick-slide, .slick-big.slick-slider
+		width: 100%
+
+	.slick-big.slick-slider
+		width: 500px!important
+		height: 100%
+		margin-left: 20px
+		margin-top: 0
+
+
+	.slick-initialized .slick-slide.slick-current.slick-active
+		opacity: 1!important
+
+	.slick-vertical .slick-current
+		border: 2px solid $accent
+
+	.form_descr
+		width: 500px
+
+	.h1
+		font-size: 60px
+		line-height: 70px
+
+	.h2
+		font-size: 35px
+		line-height: 45px
+
+	.h3
+		font-size: 30px
+		line-height: 40px
+
+	.h4
+		font-size: 28px
+		line-height: 40px
+
+	.h5
+		font-size: 25px
+		line-height: 35px
+
+	.h6
+		font-size: 25px
+		line-height: 35px
+
+	.header
+		&_top
+			height: 95px
+			.logo
+				margin-right: 50px
+				img
+					// width: 258px
+					width: 220px
+			.menu
+				&_item
+					&:not(:last-child)
+						// margin-right: 25px
+						margin-right: 8px
+					a
+						font-size: 15px
+				&_actions
+					font-size: 16px
+					.lang
+						width: 60px
+					.search_btn
+						width: 55px
+					.auth_btn
+						width: 90px
+
+	.header .menu_actions .tel
+		padding-left: 12px
+
+	// Main
+
+	.repr
+		&_content
+			margin-left: 40px
+			margin-right: 40px
+
+	//plan
+
+
+	.section_plan td
+		padding: 0
+
+	//result
+
+	.download
+		width: 250px
+		display: flex
+		flex-direction: column
+		margin-top: 30px
+		margin-bottom: 0
+		&:hover
+			.inline-svg-icon-desc
+				stroke: $c-href
+				fill: none
+				color: $c-href
+				transition: 0.3s
+		.img-desc img, .img-desc
+			width: 250px
+			height: 100%
+			margin-bottom: 20px
+		&_info
+			position: relative
+			margin-bottom: 15px
+			.img-desc svg
+				// stroke:#E9E9EB
+				// fill:#E9E9EB
+			.inline-svg-icon-desc
+				fill: none
+				stroke:#E9E9EB
+				color:#E9E9EB
+				width: 250px
+				height: 336px
+			&--top
+				position: absolute
+				top: 127px
+				left: 35px
+				img
+					margin-top: 50px
+					width: 33px
+					height: 67px
+
+	//leadership
+
+	.person_img
+		margin-top: 30px
+
+	//sertificat
+
+	.sertificat
+		margin-top: 20px
+
+	.sertificat_info
+		text-align: center
+
+
+
+	//politic
+
+	.header-politic .h3
+		font-size: 60px
+
+	//new
+	//contact
+
+	.section_contact iframe
+		height: 500px
+
+	.section_contact .h2
+		font-size: 30px
+
+	.contact-block
+		padding-left: 40px
+		padding-right: 40px
+		padding-top: 15px
+		margin-bottom: 38px	
+		padding-bottom: 22px
+
+	.contact-block_part .h5
+		margin-top: 10px
+
+
+	//article
+
+	.section_article .download
+		width: auto
+		display: flex
+		flex-direction: row
+
+	.section_article .download_wrap
+		display: flex
+		flex-direction: column
+
+	.section_article .download_info--top
+		position: relative
+		top: 0
+		left: 0
+
+	.section_article .download
+		margin-right: 30px
+
+	.section_article
+		padding-bottom: 30px
+
+	.header-article .h1
+		font-size: 60px
+
+	//tender
+
+	.tender_bl--under .ico_right
+		margin-left: 52px
+
+	.section_title-sync .h3
+		font-size: 60px
+
+	.section_sync .download
+		flex-direction: row
+		width: 100%
+		position: relative
+		margin-bottom: 30px
+
+	.section_sync .breadcrumbs
+		margin-bottom: 50px
+
+	.section_sync .download .download_info--top
+		position: absolute
+		top: 32px
+		left: 56px
+
+	.section_title-sync
+		height: 300px
+
+
+
+
+
+// ≤1700px
++media-breakpoint-up(xxxl)
+
+	.header-main > .container 
+		min-height: calc(100vh - 111px)
+
+	.section_sync .download
+		margin-bottom: 5px
+
+	.slick-big.slick-slider
+		width: 680px!important
+
+	.footer
+		padding-top: 60px
+		padding-bottom: 80px
+
+	.header-plan .header_content
+		margin-bottom: 115px
+
+	.header-plan
+		height: 600px
+
+	.header-plan>.container
+		height: 530px
+		min-height: auto
+
+	//services
+
+	.section .news_nav-wrapper--block
+		padding: 45px 0 36px
+
+	.news_nav-wrapper--block .news_nav-item
+		padding-left: 37px
+		box-sizing: content-box
+
+	.news_nav-wrapper--block .news_nav-item:hover, .news_nav-wrapper--block .news_nav-item.active
+		padding-left: 33px
+		box-sizing: content-box
+
+	.news_nav-wrapper--block .news_nav-item a
+		font-size: 20px
+		line-height: 35px
+
+	.wrap-img img
+		height: 390px
+
+	.form_request
+		margin-top: 30px
+		.h3
+			text-align: left
+			margin-left: 15px
+
+	.form .wrap_input img
+		left: 22px
+
+	.form_request .form_fileinput
+		right: -500px
+
+	.form_request .wrap_inputs
+		margin-bottom: 27px
+
+	.form_request .wrap_input
+		width: 47%
+
+	.form_request
+		padding-bottom: 54px
+
+	.section_services
+		padding-bottom: 130px
+
+	//suppliers
+
+	.section_suppliers .acordeon
+		margin-top: 32px
+
+	.acordeon_title--arr strong
+		width: 50px
+		height: 50px
+		margin-right: 30px
+		font-size: 18px
+
+	.acordeon_list--sz
+		padding-left: 55px
+		margin-bottom: 10px
+
+	.section_suppliers
+		padding-bottom: 140px
+
+	.acordeon_title--arr
+		font-size: 25px
+		line-height: 70px
+
+	.header
+		&_top
+			height: 110px
+
+			.logo
+				margin-right: 80px
+				margin-left: 26px
+				img
+					width: 258px
+			.menu
+				margin-left: 20px
+				&_item
+					&:not(:last-child)
+						// margin-right: 40px
+						margin-right: 25px
+					a
+						font-size: 18px
+				&_actions
+					margin-left: 11px
+					font-size: 18px
+					.logo
+						margin-right: 110px
+					.lang
+						width: 80px
+					.search_btn
+						width: 63px
+					.auth_btn
+						width: 115px
+						img
+							margin-right: 13px
+						span
+							margin-right: 9px
+					.tel
+						font-size: 20px
+						i
+							margin-left: 5px
+
+	.header_top
+		justify-content: space-around
+
+	.header_top .logo
+		margin-left: 0
+		margin-right: 0
+
+	//clients
+
+	.section_clients .owl_trust-item img
+		width: 100%
+
+	.section_clients .owl_trust-item
+		height: 248px
+
+	.section_clients
+		padding-bottom: 50px
+
+	//leadership
+
+	.person
+		margin-bottom: 20px
+
+	.person_img
+		height: 415px
+		img
+			width: 55%
+
+	.person_name
+		font-size: 25px
+		line-height: 35px
+		margin-top: 10px
+
+	//politic
+
+	.politic_item span
+		min-width: 50px
+		height: 50px
+		margin-right: 28px
+
+	.politic_item
+		margin-top: 15px
+
+	.politic_item span
+		font-size: 16px
+		margin-top: -6px
+
+	//mission
+
+	.interactive
+		margin-bottom: 54px
+
+	.section_mission
+		padding-bottom: 100px
+
+	//history
+
+	.section_history
+		padding-bottom: 75px
+
+	.date
+		padding-left: 40px
+		padding-right: 40px
+		margin-bottom: 40px
+
+	.date_number::after
+		left: -127px
+
+	.date_number::before
+		left: -132px
+
+
+	//article
+
+	.more_back
+		margin-top: 0
+		margin-bottom: 26px
+		font-size: 25px
+
+	.more_back div
+		margin-right: 12px
+
+	.article_text .text
+		font-size: 28px
+
+	.article_text
+		padding-left: 45px
+		margin-bottom: 60px
+
+	//tender
+
+	.tender_bl--under .ico_right
+		margin-left: 153px
+
+	.carousel-nav .owl-nav button.owl-next
+		right: -50px
+
+	.carousel-nav .owl-nav button.owl-prev
+		left: -50px
+
+	.section_registr
+		margin-top: 50px
+
+	.sub-news_title
+		font-size: 25px
+		line-height: 35px
+

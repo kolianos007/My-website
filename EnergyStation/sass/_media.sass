@@ -1,0 +1,1367 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1470px
++media-breakpoint-down(xd)
+
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.header-wrapper .logo
+		margin-left: 160px
+
+	.header-block
+		padding-top: 200px
+		// min-height: 760px
+		background-size: cover
+
+	.header-block h1
+		font-size: 36px
+
+	.header-block h2
+		font-size: 20px
+		line-height: 26px
+
+	.play
+		margin-bottom: 20px
+
+
+
+	.section-title h2
+		font-size: 32px
+
+	.header-block h2
+		padding-left: 100px
+		padding-right: 100px
+
+	.section-title h2::before
+		left: 0
+		top: 5px
+
+	.section-title
+		margin-bottom: 20px
+
+	.section-about .marg-top
+		margin-top: 15px
+
+	.section-about p
+		font-size: 16px
+		margin-bottom: 15px
+
+	.section-about--images
+		margin-top: -27px
+		img
+			width: 450px
+
+	.section-about--play
+		margin-top: 30px
+
+	.section-about .marg-left
+		margin-top: 40px
+
+	.section-about--play::before
+		top: 118px
+
+	.section-about--play::before
+		display: none
+
+	.item-news
+		padding-top: 20px
+		margin-bottom: 10px
+
+	.section-news--images .news-img
+		// height: 300px
+
+	.section-news--content h3
+		font-size: 20px
+		line-height: 25px
+
+	.h3-marg
+		margin-bottom: 20px
+
+	.section-news--content p
+		font-size: 17px
+		margin-bottom: 60px
+		line-height: 22px
+
+	.btn
+		font-size: 16px
+
+	.first-width, .first-width:hover
+		width: 240px
+
+	.second-width, .second-width:hover
+		width: 330px
+
+	.third-width, .third-width:hover
+		width: 124px
+
+	.contacts-info p
+		font-size: 22px
+		top: 10px
+
+	.contacts-info--img
+		margin-right: 10px
+
+	iframe
+		width: 100%
+		height: 586px
+
+	.section-contacts--wrapper
+		margin-bottom: 50px
+
+	.section-contacts--form label
+		font-size: 18px
+		margin-bottom: 0
+
+	.section-contacts--form .input
+		height: 40px
+
+	.section-contacts .btn-3
+		margin-top: 20px
+		display: block
+		margin: 0 auto;
+		margin-top: 12px
+
+	.btn-3
+		width: 230px
+
+	.captcha
+		max-width: 201px
+		display: block
+		margin-left: 0
+		position: unset
+		margin: 0 auto
+		margin-top: 12px
+
+	.up
+		right: 18px
+		bottom: 11px
+
+
+	//category
+
+	.items .btn-center
+		width: 184px
+
+	.items .item-figures:nth-child(even)::after
+		height: 121px
+		width: 122px
+
+	.items .item-figures:last-of-type::before
+		bottom: 60px
+
+	.btn-1
+		line-height: 19px
+		height: 43px
+	.btn-1:hover
+		line-height: 25px
+
+	.section-news--images-sm
+		width: 100%
+
+	.section-news--content-left
+		margin-left: 0
+
+	.section-news--content .news-p--lg
+		margin-bottom: 61px
+
+	.section-news--content-left h3
+		font-size: 18px
+
+	.section-news .item-bl-news
+		margin-top: 27px
+
+	.category-news
+		padding-bottom: 25px
+
+	//product
+
+	.section-product .btn-center
+		width: 185px
+
+	.products-news .section-news--content .h3-margin
+		font-size: 18px
+
+	.block-item--content .pos-mb
+		margin-bottom: 80px
+
+	.section-product .pos-mb::after
+		bottom: -86px
+
+	.block-item--top
+		margin-bottom: 10px
+
+	.section-news--content .news-p--sm
+		margin-bottom: 80px
+
+	.block-item .btn-2::before
+		top: 14px
+
+	.block-item .btn-center::before
+		top: 16px
+
+	//news-all
+
+	.news-all .btn-center
+		width: 263px
+
+	//news-full
+
+	.news-full p, .news-full ul
+		font-size: 17px
+		line-height: 22px
+
+	.news-full ul li
+		margin-bottom: 13px
+
+	.news-full img:nth-of-type(1)
+		margin-right: 45px
+
+	.news-full
+		h3
+			font-size: 22px
+			margin-bottom: 25px
+
+	.news-full img 
+    margin-right: 16px
+    max-width: 31.3%
+
+	.news-full
+		&::before
+			bottom: 400px
+			left: -30px
+
+
+	//contacts
+
+	.partners-maps .partners-adress
+		width: 374px
+		// top: 37px
+		// right: 0
+
+	.partners
+		.btn-2::before
+			top: 15px
+
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.menu-btn
+		margin-left: 10px
+
+	.header-tel
+		font-size: 18px
+
+	.header-block h1
+		font-size: 28px
+
+	.header-block .container::before
+		top: 7px
+		left: -88px
+
+	.section-news--content .btn-2, .btn-center, .btn-2--sm
+		padding: 6.5px 25px 6.5px 42px
+		&:hover
+			background-color: #f5a623
+			color: #373737
+			padding-left: 20px
+			padding: 6.5px 34px 6.5px 33px
+		&:hover::before
+			display: none
+
+			
+
+	.header-block .container::before, .header-block .container::after
+		display: none
+
+	.header-block h2
+		font-size: 15px
+
+	.header-block h2
+		padding-left: 70px
+		padding-right: 70px
+
+	.play img
+		width: 70px
+
+	.section-about--play .btn-play
+		left: calc(50% - 35px)
+		top: calc(50% - 35px)
+		width: 70px
+		height: 70px
+
+	.section-about--play::before
+		display: none
+
+	.btn-1, .btn-1:hover
+		width: 280px
+	.btn-1
+		line-height: 22px
+	.btn-1:hover
+		line-height: 28px
+
+	.header-block
+		padding-top: 150px
+
+	.header-block .container::after
+		bottom: 106px
+
+	.section-title h2
+		font-size: 24px
+
+	.section-title h2::before
+		top: 0
+
+	.section-about--images
+		margin-top: 12px
+		margin-left: -12px
+
+	.section-about--play .video-play
+		// height: 216px
+
+	.section-about--play::before
+		height: 150px
+		top: 72px
+		left: -82px
+		cursor: auto
+
+	.section-about--play::after
+		// top: 90px
+		// left: -16px
+		cursor: auto
+
+	.section-about .marg-left
+		margin-left: 0
+		margin-top: 27px
+
+	.section-about--play
+		margin-top: 60px
+
+	.section-about
+		padding-bottom: 45px
+
+	.section-news--images .news-img
+		// height: 250px
+
+	.section-about--images img
+		width: 368px
+
+	.section-news--content h3
+		font-size: 16px
+		line-height: 20px
+
+	.h3-marg
+		margin-bottom: 10px
+
+	.section-news--content p
+		font-size: 14px
+		margin-bottom: 17px
+		line-height: 17.5px
+
+	.btn
+		font-size: 14px
+
+	.btn-2::before
+		top: 13px
+
+	.first-width, .first-width:hover
+		width: 205px
+
+	.second-width, .second-width:hover
+		width: 290px
+
+	.third-width, .third-width:hover
+		width: 114px
+
+	.first-width, .second-width, .third-width
+		margin-right: 15px
+
+	.section-news
+		// min-height: 760px
+
+	.contacts-info--img img
+		width: 50px
+		height: 50px
+
+	.contacts-info p
+		font-size: 16px
+
+	.contacts-info--img
+		margin-right: 5px
+
+	.section-contacts--form label
+		font-size: 14px
+
+	.section-contacts--form
+		margin-left: 27px
+
+	.section-contacts--form textarea
+		height: 106px
+
+	.btn-3
+		width: 186px
+
+	.section-contacts .btn-3
+		margin: 0
+		margin-top: 12px
+
+
+	iframe
+		height: 480px
+
+	.captcha
+		display: block
+		margin-left: 0
+		position: unset
+		margin-top: 12px
+		margin: 0 auto
+
+	.section-contacts--form textarea
+		margin-bottom: 12px
+
+
+	//category
+
+	.btn-right
+		width: 230px
+	.btn-right:hover
+		width: 230px
+
+	.items .section-title
+		margin-top: 5px
+
+	.btn-2--sm
+		padding: 5px 15px 5px 29px
+	.btn-2--sm:hover
+		padding: 5px 22px 5px 22px
+  
+	.item .btn-2::before
+		top: 13px
+		left: 13px
+
+	// edit
+	// .item-img
+	// 	margin-bottom: 15px
+
+	.items .item-figures:last-of-type::before
+		bottom: 0
+
+	// edit
+	// .items .btn-center
+	// 	padding: 6.5px 25px 6.5px 42px
+	// .items .btn-center:hover
+	// 	padding: 6.5px 34px 6.5px 33px
+
+	.items .item-figures:nth-child(even)::after
+		height: 80px
+		width: 80px
+
+	.items .item-figures:nth-child(odd)::after
+		right: -77px
+
+	.items .btn-center
+		width: 171px
+
+	.category-news
+		padding-bottom: 25px
+		.h3-margin
+			margin-bottom: 18px
+			font-size: 13px
+		.news-p
+			margin-bottom: 10px
+			&--lg
+				margin-bottom: 21px
+
+	.section-news .item-bl-news
+		margin-top: 17px
+		margin-bottom: 17px
+
+
+	//product
+
+	.items, .section-product
+		.btn-right
+			margin-top: -4px
+
+	.section-product
+		padding-top: 93px
+		padding-bottom: 45px
+		.items--h2
+			margin-bottom: 35px
+		.pos-mb::after
+			display: none
+		.btn-2
+			// padding: 5px 15px 5px 29px
+			// padding: 6px 27px 6px 39px
+		.btn-2:hover
+			// padding: 6px 33px 6px 33px
+		.section-news--images
+			margin-bottom: 10px
+		.tab
+			margin-top: 20px
+		.btn-center
+			width: 171px
+		.btn-2::before
+			top: 11px
+			left: 10px
+
+	.block-item--bot
+		margin-bottom: 15px
+
+	.block-item--content .pos-mt
+		margin-bottom: 15px
+
+	.block-item--content .pos-mb
+			margin-bottom: 34px
+
+	.block-item ul
+		font-size: 14px
+
+	.block-other
+		.items--h2
+			margin-bottom: 15px
+		.h3-marg
+			margin-top: 15px
+			margin-bottom: 15px
+			font-size: 18px
+			line-height: 24px
+		.btn-2::before
+			top: 7px
+			left: 9px
+
+	.products-news
+		padding-bottom: 20px
+		.item-bl-news
+			margin-bottom: 17px
+
+	.products-news .section-news--content .h3-margin
+		font-size: 13px
+
+	.section-news--content .news-p--sm
+		margin-bottom: 35px
+
+	.section-product .btn-2::before
+		left: 10px
+		top: 8px
+
+	.section-product .btn-center::before
+		left: 11px
+		top: 13px
+
+	.section-product .btn-2--sm::before
+		left: 10px
+		top: 11px
+
+	.products-news
+		// .btn-2
+		// 	padding: 5px 15px 5px 29px
+		.btn-2:hover
+			padding: 5px 21px 5px 23px
+
+	.products-news
+		.btn-2::before
+			left: 10px
+			top: 11px
+
+	.products-news .btn-2:hover
+		padding: 6.5px 34px 6.5px 33px
+
+	//news-all
+
+	.news-all .btn-center
+		width: 242px
+
+	//news-full
+
+	.news-full img:nth-of-type(1)
+		margin-right: 25px
+		max-width: 50%
+
+	.news-full ul
+		&:nth-of-type(1)
+			margin-top: 20px
+
+	.news-full img
+		max-width: 30.3%
+
+	.news-full
+		&::before
+			bottom: 300px
+			left: -30px
+
+
+	//contacts
+
+	.partners
+		h4
+			font-size: 16px
+
+	.partners-maps h4:first-of-type
+		margin-bottom: 15px
+
+	.partners-maps p
+		font-size: 14px
+		line-height: 18px
+
+	.partners-maps .partners-adress
+		width: 288px
+		// top: 55px
+		padding: 15px
+
+	.partners .btn-2::before
+		top: 7px
+		left: 9px
+
+
+	
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.header-block
+		padding-top: 125px
+
+	.menu-btn
+		margin-left: 5px
+
+	.header-wrapper .logo
+		margin-left: 128px
+
+	.header-tel
+		font-size: 13px
+
+	.header-block h1
+		font-size: 22px
+
+	.header-block h2
+		padding-left: 20px
+		padding-right: 20px
+
+	.header-block .container::before, .header-block .container::after
+		display: none
+
+	.section-about--play
+		margin-top: 20px
+
+	.section-about--play .video-play
+		// height: 260px
+
+	.section-about--play::before
+		display: none
+
+
+	.item-news
+		padding-top: 10px
+		margin-bottom: 60px
+
+
+	.section-news--content h3
+		font-size: 20px
+
+	.section-news--content p
+		font-size: 16px
+		margin-bottom: 0
+
+	.section-about--play
+		width: 510px
+		// height: 260px
+
+	.section-news--images .news-img
+		// height: 200px
+
+	.section-news--content h3
+		font-size: 17px
+		letter-spacing: 1px
+		margin-bottom: 10px
+
+	.section-news--content p
+		font-size: 14px
+
+	.first-width, .first-width:hover
+		width: 167px
+
+	.second-width, .second-width:hover
+		width: 240px
+
+	.third-width, .third-width:hover
+		width: 80px
+
+	.first-width, .second-width, .third-width
+		line-height: 18px
+		font-size: 12px
+		margin-right: 5px
+		height: 40px
+
+	.btn-2::before
+		top: 12px
+
+	.btn-1
+		height: 40px
+		line-height: 18px
+	.btn-1:hover
+		line-height: 24px
+
+	.section-news
+		// min-height: 810px
+
+	.contacts-info--img img
+		width: 40px
+		height: 40px
+
+	.contacts-info p
+		font-size: 12px
+
+	iframe
+		height: 380px
+
+	.section-contacts--form
+		margin-left: 0
+
+	.section-contacts--form label
+		font-size: 16px
+
+	.section-contacts .btn-3
+		margin: 0 auto
+		margin-top: 12px
+
+	.up
+		right: 217px
+		bottom: -56px
+
+	.copyright-content
+		font-size: 16px
+
+	.section-news--content
+		.btn-2
+			bottom: -58px
+			left: 158px
+
+	.item-news
+		.section-news--images
+			margin-bottom: 15px
+
+	//category
+
+	.items
+		padding-top: 90px
+
+	.items .items--h2
+		// margin-left: 0
+		// margin: 0 auto
+		margin-bottom: 0
+
+	.items .btn-right
+		margin-bottom: 20px
+
+	.item
+		// .btn-2--sm
+		// 	padding: 7px 27px 7px 38px
+		.btn-2::before
+			top: 13px
+			left: 13px
+
+	.category-news
+		.section-news--images-sm
+			margin-bottom: 20px
+
+	.items .item-figures:nth-child(even)::after, .items .item-figures:nth-child(odd)::after
+		display: none
+
+	.items .item-figures:last-of-type::before
+		bottom: 35px
+
+	.items .item
+		margin-bottom: 20px
+		padding-bottom: 60px
+
+	// .items .btn-center
+	// 	padding: 7px 17px 7px 39px
+
+	.category-news
+		padding-bottom: 25px
+		.item-bl-news
+			margin-bottom: 10px
+			padding-bottom: 30px
+			margin-top: 0
+		.btn-right
+			margin-bottom: 20px
+
+	.item-bl-news
+		.btn-2
+			padding: 6.5px 25px 6.5px 42px
+			bottom: -30px
+			left: 167px
+		.h3-margin
+			font-size: 18px
+		.btn-2::before
+			top: 13px
+			left: 13px
+
+	.item-figures
+		.btn-2--sm
+			bottom: -55px
+
+
+	//product
+
+	.tab-item
+		display: block!important
+
+	.block-item
+		.btn-2
+			padding: 9px 15px 9px 29px
+		.btn-2:hover
+			padding: 9px 21px 9px 23px
+		.btn-center
+			padding: 5px 15px 5px 29px
+		.btn-center:hover
+			padding: 5px 21px 5px 23px
+		.tab-item
+			margin-bottom: 0
+	
+	.section-product .btn-center
+		width: 150px
+
+	.owl-mobile-xl
+		.owl-dots
+			width: 200px
+			text-align: center
+			margin-bottom: 10px
+			button.owl-dot
+				border: 1px solid #373737
+				margin-right: 5px
+				&.active
+					background-color: #f5a623
+					border: 1px solid #fff
+
+	.section-product .items--h2
+		margin-bottom: 25px
+
+	.section-product .btn-right
+		margin-bottom: 20px
+
+	.block-item--content .h3-marg
+		font-size: 22px
+		line-height: 26px
+
+	.block-item--content
+		p, ul
+			font-size: 16px
+
+	.block-item 
+		.btn-2
+			left: 0
+			bottom: 0
+
+	.other-item
+		.btn-2--sm
+			left: 153px
+
+	.section-product
+		padding-bottom: 15px
+		.pos-mb::after
+			display: block
+			bottom: -102px
+
+	.other-item
+		padding-bottom: 0
+
+	.block-other
+		.h3-marg
+			text-align: center
+		.btn-2--sm
+			display: block
+			width: 200px
+			margin: 0 auto
+			padding: 6px 17px 6px 30px
+		.btn-2--sm:hover
+			padding: 6px 21px 6px 22px
+		.btn-2::before
+			top: 11px
+
+	.products-news .section-news--content .h3-margin
+		font-size: 18px
+
+	.section-product .btn-2::before
+		left: 10px
+		top: 12px
+
+	//news-all
+
+	.news-all
+		.item-bl-news
+			padding-bottom: 60px
+		.item-bl-news:nth-child(3)
+			display: none
+		.item-bl-news:nth-child(4)
+			display: none
+		.btn-2
+			bottom: -35px
+			left: 158px
+		.btn-center
+			bottom: 0
+			left: -10px
+
+	.news-all .item-bl-news:nth-child(3)::before
+		display: none
+
+	//news-full
+
+	.news-full h3
+		font-size: 17px
+
+	.news-full img:nth-of-type(1)
+		margin-bottom: 10px
+
+	.news-full p, .news-full ul
+		font-size: 15px
+
+	.news-full h4
+		font-size: 16px
+
+	.news-full img
+		max-width: 31.3%
+		margin-right: 7px
+
+	//contacts
+
+	.partners-maps .partners-adress
+		width: 240px
+		padding: 10px
+
+	.partners h4
+		font-size: 13px
+
+	.partners-maps h4:first-of-type
+		margin-bottom: 10px
+
+	.partners-maps p
+		font-size: 12px
+		line-height: 16px
+
+	.partners-maps .partners-adress
+		right: 0
+		top: 18px
+
+	.partners
+		.btn
+			font-size: 12px
+			display: block
+			margin-top: 20px
+
+	.partners .btn-2::before
+		top: 11px
+
+	.partners .btn-2:nth-of-type(1)
+		margin-right: 0
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.header-wrapper .logo
+		margin-left: 0
+
+	.header-wrapper .logo img
+		width: 120px
+
+	.header-tel div
+		display: none
+
+	.header
+		padding-top: 10px
+		padding-bottom: 10px
+
+	.header-block
+		// min-height: 570px
+		background-position: center center
+
+	.header-block h1
+		font-size: 24px
+
+	.header-block h2
+		font-size: 14px
+		padding-left: 0
+		padding-right: 0
+		line-height: 20px
+
+	.section-title h2::before
+		background-size: cover
+		width: 24px
+		height: 24px
+
+	.section-title h2
+		font-size: 20px
+		margin-left: 25px
+
+	.section-title h2::before
+		top: 5px
+
+	.section-about
+		padding-top: 20px
+
+	.section-title
+		margin-bottom: 0
+
+
+	.section-about--play
+		width: 100%
+
+	.section-about--play .btn-play
+		left: calc(50% - 25.5px)
+		top: calc(50% - 25.5px)
+		width: 51px
+		height: 51px
+
+	.section-about
+		padding-bottom: 0
+
+	.section-about--play
+		margin-bottom: 30px
+
+	.section-about--play::after
+		left: -10px
+		bottom: -10px
+
+	.item-news .section-news--images
+		margin-top: 15px
+
+	.items
+		padding-top: 70px
+
+	.item-news
+		margin-bottom: 40px
+	.section-news--content .btn-2
+		bottom: -35px
+		left: calc(50% - 130px)
+
+	.item-figures
+		.btn-2--sm
+			left: calc(47.5% - 118px)
+
+
+	.section-news--content h3
+		font-size: 20px
+
+	.section-news--content p
+		font-size: 16px
+
+	.section-news
+		padding-top: 15px
+
+	.btn-2-lft, .btn-2-lft:hover
+		padding: 6.5px 25px 6.5px 42px
+
+	.btn-2::before
+		top: 13px
+
+	.section-news--content p
+		margin-bottom: 25px
+
+	.btn
+		font-size: 18px
+
+	.btn-1
+		line-height: 15px
+
+	.btn-1:hover
+		line-height: 21px
+
+	.btn-read
+		float: none
+
+	.category-news
+		.btn-read
+			width: 246px
+
+	.first-width, .first-width:hover
+		width: 194px
+
+	.second-width, .second-width:hover
+		width: 283px
+
+	.third-width, .third-width:hover
+		width: 94px
+
+	.first-width, .second-width, .third-width
+		font-size: 15px
+		display: block
+		margin: 0 auto
+		margin-top: 15px
+
+	.section-title h2
+		margin-left: 30px
+
+	.section-contacts--wrapper
+		display: block
+
+	.contacts-info--img img
+		width: 50px
+		height: 50px
+
+	.contacts-info p
+		font-size: 20px
+		top: 14px
+
+	.section-contacts--wrapper
+		margin-bottom: 20px
+
+	.section-contacts--form label
+		font-size: 17px
+
+	.section-contacts--form .input
+		height: 33px
+
+	.section-contacts--form textarea
+		height: 125px
+
+	.btn-3
+		width: 239px
+
+	.up
+		position: unset
+		display: block
+		margin: 0 auto
+		width: 145px
+		margin-top: 15px
+
+	.section-contacts
+		padding-bottom: 30px
+
+	.copyright-content
+		font-size: 17px
+
+	.copyright
+		padding-top: 16px
+		padding-bottom: 16px
+
+	.menu
+		width: 100%
+		margin-left: -580px
+
+	.menu_active
+		margin-left: 0
+
+	.btn-2-lft
+		display: block
+		width: 260px
+		margin: 0 auto
+
+
+	//category
+
+	.items .items--h2
+		font-size: 18px
+		margin-left: 0
+		margin: 0 auto
+		margin-bottom: 20px
+
+	.category-news
+		.section-news--content .btn-2
+			left: calc(50% - 117px)
+		.item-figures .btn-2--sm
+			left: calc(50% - 129px)
+
+
+	.items
+		.section-title
+			margin-bottom: 15px
+		.section-title h2::before
+			display: none
+		.btn-right
+			float: none
+			margin: 0 auto
+			width: 254px
+			font-size: 15px
+			margin-bottom: 20px
+		.item
+			margin-bottom: 20px
+			padding-bottom: 40px
+		.btn-center
+			width: 200px
+			margin-left: 0
+			margin: 0 auto
+			// padding: 7px 17px 7px 39px
+			margin-bottom: 30px
+
+	.item
+		.item-img
+			margin-bottom: 20px
+		.h3-marg
+			line-height: 26px
+		.btn-2--sm::before
+			top: 13px
+
+
+	.category-news .section-news--images-sm
+		margin-top: 20px
+
+	.items .item-figures:last-of-type::before
+		display: none
+
+	.category-news
+		padding-top: 20px
+		.section-news--h2::before
+			top: 3px
+		.section-news--h2
+			margin-bottom: 0
+			margin-left: 25px
+
+	.item-bl-news 
+		.h3-margin
+			font-size: 19px
+			line-height: 26px
+		.news-p
+			font-size: 17px
+			margin-bottom: 30px
+
+	.category-news .item-bl-news
+		margin-bottom: 5px
+
+
+	.item-bl-news 
+		.btn-2::before
+			top: 12px
+
+	.owl-dots
+		margin-top: 15px
+		padding-bottom: 15px
+
+	.btn-center::before
+		top: 14px
+
+	//product
+
+	.section-product
+		padding-top: 73px
+		padding-bottom: 0
+		// .block-item .btn-2
+		// 	padding: 6px 9px 9px 29px
+		.block-item .btn-center
+			width: 180px
+			// padding: 4px 9px 7px 29px
+		.owl-dots
+			margin-top: 0
+			margin-bottom: 0
+		.btn-right
+			float: none
+			margin: 0 auto
+			width: 254px
+			font-size: 15px
+			margin-bottom: 20px
+
+	.section-product .btn-2::before
+		top: 14px
+
+	.section-product .btn-center::before
+		top: 11px
+
+	.products-news .section-news--content .h3-margin
+		font-size: 19px
+
+	.block-item--content .h3-marg
+		font-size: 20px
+
+	.block-other .h3-marg
+		font-size: 20px
+
+	.block-other .btn-2--sm
+		width: 239px
+
+	.block-other .btn-2--sm::before
+		top: 12px
+
+	.block-item
+		.btn-2
+			bottom: 0
+			left: 0
+
+	.products-news, .other-item
+		.btn-2
+			left: calc(53% - 129px)
+
+	.section-product .section-news--images
+		margin-top: 15px
+
+	.products-news .item-bl-news .btn-2::before
+		top: 14px
+
+
+	//news-all
+
+	.news-all
+		padding-top: 70px
+		.section-title
+			margin-bottom: 20px
+		.btn-right
+			margin-bottom: 0
+		.btn-2
+			left: calc(49.5% - 117px)
+
+	.news-all .btn-center
+		width: 285px
+		left: 0
+
+
+	//news-full
+
+	.news-full img
+		width: 100%
+
+	.news-full img:nth-of-type(1)
+		max-width: 100%
+
+	.news-full h3
+		line-height: 24px
+
+	.news-full img
+		max-width: 100%
+		margin-bottom: 20px
+
+	.news-full h3
+		margin-bottom: 15px
+
+	.news-full ul:nth-of-type(2)
+		margin-bottom: 20px
+
+	.news-full
+		&::before
+			display: none
+
+
+
+
+	// .section-about
+	// 	height: 530px
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+	.up
+		right: -56px
+
+// ≤1470px
++media-breakpoint-up(xd)
+
+	.up
+		right: -140px
+

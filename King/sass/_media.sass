@@ -1,0 +1,365 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.block
+		height: auto
+		margin-bottom: 15px
+
+	.btn_game, .btn_demo
+		padding: 12px 20px
+
+	.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+		padding-right: 7.5px
+		padding-left: 7.5px
+
+	.container
+		padding-right: 7.5px
+		padding-left: 7.5px
+
+	.tab
+		.btn_center
+			margin-top: 20px
+
+	.section_bottom-line
+		width: 60%
+
+	.bonus-item
+		width: 33%
+
+	.bonus-display, .bonus_slide
+		width: 100%
+
+	.bonus_slide ol
+		font-size: 14px
+		line-height: 18px
+
+	.bonus-item_top
+		background-position: 50%
+
+	.slick-dots
+		bottom: -30px
+
+	.slider-review .slide
+		padding: 25px
+
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.menu a
+		width: 80px
+		margin-top: -3px
+		padding: 12px 5px
+
+	.btn__sm
+		padding: 10px
+
+	.tabs li
+		width: 110px
+
+	.block img
+		width: 100%
+
+	.section_bottom-line
+		width: 75%
+
+	.bonus-item_wrap
+		flex-direction: column
+		align-items: center
+
+	.bonus-item
+		width: 80%
+		margin-bottom: 20px
+	
+	.bonus_slide ol
+		font-size: 16px
+		line-height: 22px
+
+	.footer-partner__item
+		flex-grow: unset
+
+	.footer-partner__list--bottom
+		justify-content: center
+
+	.logo
+		left: calc(62% - 39.5px)
+
+	.main-screen 
+		margin-top: 59px
+
+	.section__pd
+		margin-top: 90px
+
+	.form_img
+		display: none
+
+	.form
+		width: auto
+
+	.form_content
+		width: 100%
+
+	.form
+		min-width: 500px
+
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.logo
+		left: 15px
+
+	.header .btn-wrap
+		display: none
+
+	nav
+		position: absolute
+		width: 25%
+		top: 82px
+		justify-content: center
+		z-index: 99
+		height: auto
+		background-color: #3F3FC5
+		right: -100%
+		transition: .3s 
+
+	// body
+	// 	overflow: hidden
+
+	body.active
+		overflow-x: hidden
+
+	.menu
+		flex-direction: column
+
+	nav.active
+		display: flex
+		// height: 100%
+		z-index: 999999
+		right: 0
+		transition: .3s 
+		.btn-wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 100%
+			padding: 20px
+			a
+				margin-right: 0
+				height: auto
+				margin-bottom: 10px
+
+	.header .btn-wrap .btn:first-child
+		margin-right: 0
+
+	.menu a::before, .menu li:last-child a::after
+		display: none
+
+	.header
+		padding: 15px 0
+		.container
+			justify-content: flex-end
+
+	.menu a, .menu
+		width: 100%
+
+	.panel
+		flex-direction: column
+		align-items: center
+
+	.tabs
+		margin-bottom: 20px
+
+	h3
+		text-align: center
+
+	.panel-search_title
+		display: none
+
+	.section_line
+		flex-direction: column
+		align-items: center
+
+	.section_line-wrap
+		margin-top: 20px
+
+	.section_bottom-line
+		width: 100%
+
+	.info_item
+		margin-right: 30px
+
+	html
+		overflow-x: hidden
+
+	.slider-review .slide .line
+		margin: 16px 0
+		width: 100%	
+
+	.header .container
+		justify-content: space-between
+		position: unset
+
+	.logo
+		position: relative
+		left: 0
+
+	.main-screen 
+		margin-top: 79px
+
+	.section__pd
+		margin-top: 100px
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.container
+		padding-right: 15px
+		padding-left: 15px
+
+	.breadcrumbs
+		margin: 0px 0  30px
+
+	// .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+	// 	padding-right: 15px
+	// 	padding-left: 15px
+
+	.deposit-wrap
+		flex-direction: column
+
+	.btn_mult
+		width: 210px
+		height: 74px
+		background-size: 100%
+
+	.pay img
+		margin-right: 9px
+
+	.main-screen_bg
+		background-image: url(../img/bg-320.png) !important
+		background-size: 100% 100%
+
+	.main-screen
+		padding-bottom: 50px
+		height: auto
+
+	.tabs li
+		width: 75px
+
+	.section-white
+		padding: 40px 0
+
+	h2
+		font-size: 32px
+		line-height: 40px
+
+	.panel
+		margin-top: 25px
+		border-bottom: none
+
+	.section_line
+		align-items: flex-start
+
+	.section_line-wrap
+		align-items: center
+
+	.players
+		margin: 0 15px 0 30px	
+
+	.info
+		overflow: auto
+
+	.info_item
+		min-width: 155px
+
+	.bonus-item
+		width: 100%
+
+	.steps_item div
+		padding: 5px
+
+	.bonus-item_bot
+		padding: 10px
+
+	.steps
+		width: 100%
+
+	.steps_item div:last-child
+		padding: 15px 3px
+
+	.bonus_slide p, .bonus_slide ol
+		font-size: 14px
+		line-height: 20px
+
+	.next, .prev
+		top: -35px
+
+	.slick-dots
+		bottom: -20px
+
+	.text-wrap
+		padding-right: 0
+
+	.block:hover .block_hover
+		padding: 20px 10px 10px
+
+	.btn_demo, .btn_game
+		padding: 5px 10px
+
+	nav.active .btn-wrap
+		padding: 5px
+
+	nav
+		top: 80px
+		width: 50%
+
+	.header
+		// overflow: hidden
+
+	.slider-review .slide
+		min-height: 200px
+		height: auto
+
+	.section-review
+		height: auto
+		min-height: 100%
+		padding-bottom: 110px
+
+	.mCSB_inside>.mCSB_container
+		margin-right: 15px
+
+	.form_content, .form_img
+		padding: 25px 15px
+
+	.form
+		min-width: 290px
+
+	.bonus_slide.active
+		padding: 10px
+
+	.menu a div
+		justify-content: center
+		min-width: 150px	
+
+	.section-tab
+		padding-bottom: 70px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

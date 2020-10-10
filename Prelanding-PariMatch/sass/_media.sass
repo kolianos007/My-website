@@ -1,0 +1,226 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width: 1800px) 
+	
+	.star
+		display: flex 
+		justify-content: center
+		align-items: flex-end
+		img
+			width: 750px
+			margin-left: -180px
+
+	.installation
+		margin-bottom: 100px
+
+@media only screen and (max-width: 1400px) 
+	
+	.star img
+		margin-left: -100px
+		width: 600px
+
+	.star
+		margin-right: 0
+
+	.installation-title
+		margin-left: -155px
+
+	.gif
+		margin-left: 100px
+		margin-right: 40px
+
+	.installation-process::after
+		right: -50px
+
+
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.installation-title
+		margin-top: 20px
+		margin-left: -70px
+		text-align: center
+		font-size: 40px
+		line-height: 40px
+
+	.installation-title span
+		font-size: 60px
+		line-height: 64px
+
+	.installation-title span:last-child
+		text-align: center
+
+	.star
+		position: absolute
+		opacity: .8
+		right: 0
+		img
+			width: 550px
+
+	.installation
+		margin-right: 75px
+
+	
+
+
+
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.installation-title
+		margin-top: 20px
+		text-align: center
+		line-height: 40px
+		margin-left: -120px
+		display: flex
+		flex-direction: column
+
+	.installation-title span
+		font-size: 40px
+		line-height: 46px
+
+	.logo img
+		width: 180px
+
+	.star img
+		width: 554px
+
+	.service a:first-child, .payment div, .payment a:first-of-type
+		margin-right: 24px
+
+	.installation
+		width: auto
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.installation
+		margin-right: 0
+
+	.installation-process::after
+		right: 0
+
+	.installation-process
+		flex-direction: column-reverse
+
+	.installation-title
+		width: auto
+		margin-left: 0
+		display: block
+		margin-top: 50px
+
+	.gif
+		margin-left: 0
+		margin-right: 0
+		display: flex
+		justify-content: center
+		margin-top: 60px
+		margin-bottom: 50px
+
+	.logo img
+		width: 160px
+
+	.main-top
+		align-items: center
+
+	.installation-process::after
+		bottom: -50px
+
+	.installation-process::before
+		top: 440px
+
+	.star img
+		width: 400px
+		margin-left: 0
+
+	.star
+		top: 250px
+		opacity: .7
+
+	.main-bot
+		flex-direction: column
+
+	.service, .social
+		margin-bottom: 20px
+
+	.payment div span
+		margin-left: -1px
+		line-height: 15px
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.main
+		padding: 10px
+
+	.logo img
+		width: 100px
+
+	.btn_registr
+		width: 124px
+		font-size: 20px
+		height: 40px
+		line-height: 35px
+
+	.btn_registr::before, .btn_registr::after
+		height: 20px
+
+	.tab span:last-child
+		width: 240px
+
+	.installation-process_title
+		font-size: 40px
+		text-align: center
+
+	.installation-process::after, .installation-process::before
+		background-size: 70%
+		background-repeat: no-repeat
+
+	.gif
+		margin-top: 20px
+		margin-bottom: 20px
+
+	.installation-process::before
+		top: 490px
+
+	.btn_install::after, .btn_install::before, .btn_install
+		width: 200px	
+
+	.btn_install::after, .btn_install::before
+		height: 20px
+
+	.btn_install
+		font-size: 30px
+		line-height: 36px
+		height: 40px
+
+	.tab
+		justify-content: center
+
+	.wrap-process
+		margin-bottom: 40px
+
+	.star
+		top: 220px
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

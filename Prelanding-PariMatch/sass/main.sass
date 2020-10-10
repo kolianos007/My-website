@@ -1,0 +1,281 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a, a:hover
+	color: $accent
+	text-decoration: none
+
+.main
+	padding: 38px 48px 29px 60px
+	background-color: #000
+	&-top
+		display: flex
+		justify-content: space-between
+	&-center
+		display: flex
+		justify-content: space-around
+
+
+.logo
+	img
+		width: 220px
+
+
+.btn
+	&-wrap
+		display: block
+		position: relative
+	&_registr
+		width: 215px
+		height: 59px
+		display: block
+		color: $accent
+		text-transform: uppercase
+		text-align: center
+		font-size: 28px
+		position: relative
+		line-height: 54px
+		z-index: 9
+		&::before
+			content: ''
+			height: 29.5px
+			width: 100%
+			display: block
+			position: absolute
+			box-sizing: border-box
+			border: 1px solid $accent
+			border-bottom: 1px solid transparent
+			transform: skewX(-14deg)
+			z-index: -1
+		&::after
+			content: ''
+			height: 29.5px
+			width: 100%
+			display: block
+			position: absolute
+			box-sizing: border-box
+			border: 1px solid $accent
+			border-top: 1px solid transparent
+			transform: skewX(-14deg)
+			bottom: 1px
+			z-index: -1
+		&::before, &::after
+			background: #000
+			transition: 0.3s
+		&:hover
+			color: #000
+			&::before, &::after
+				background: $accent
+				transition: 0.3s
+	&_install
+		width: 313px
+		height: 79px
+		font-size: 56px
+		line-height: 70px
+		text-transform: uppercase
+		color: #000
+		display: block
+		text-align: center
+		z-index: 9
+		margin-top: 58px
+		span
+			z-index: 99
+			position: relative
+		&::before
+			content: ''
+			height: 39.5px
+			display: block
+			position: absolute
+			box-sizing: border-box
+			transform: skewX(-14deg)
+		&::after
+			content: ''
+			height: 39.5px
+			display: block
+			position: absolute
+			box-sizing: border-box
+			transform: skewX(-14deg)
+			bottom: 1px
+		&::before, &::after
+			background-color: $accent
+			transition: 0.3s
+			width: 313px
+		&:hover
+			color: #000
+
+
+
+
+.star
+	margin-right: 60px
+	margin-left: -60px
+	img
+		width: 845px
+	
+
+.installation	
+	position: relative
+	width: 919px
+	margin-right: 48px
+	.btn-wrap
+		display: flex
+		justify-content: center
+	&-title
+		font-size: 44px
+		line-height: 53px
+		text-transform: uppercase
+		width: 780px
+		margin-left: 92px
+		color: $text
+		span
+			font-size: 124px
+			line-height: 114px
+			&:last-child
+				color: $accent
+				display: block
+				text-align: right
+				padding-right: 15px
+	&-process
+		position: relative
+		display: flex
+		padding-top: 100px
+		&_title
+			font-size: 56px
+			line-height: 56px
+			text-transform: uppercase
+			margin-bottom: 34px
+		&::before, &::after
+			content: ''
+			width: 318px
+			height: 316px
+			position: absolute
+			display: block
+		&::before
+			background-image: url(../img/element.png)
+			left: 0
+			top: 0
+		&::after
+			background-image: url(../img/element.png)
+			right: 0
+			bottom: -60px
+			transform: rotate(180deg)
+
+.gif
+	margin-left: 124px
+	margin-right: 80px
+	&-mob
+		img
+			width: 186px
+
+ul, li
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+.tab
+	display: flex
+	align-items: center
+	cursor: pointer
+	margin-bottom: 25px
+	font-size: 18px
+	line-height: 18px
+	font-family: $secondary-font
+	span:last-child
+		width: 335px
+	&.active
+		.step
+			background-image: url(../img/bord-yel.png)
+			color: #000
+
+.step
+	width: 53px
+	height: 48px
+	color: $accent
+	text-align: center
+	font-size: 28px
+	display: block
+	position: relative
+	line-height: 50px
+	z-index: 9
+	background-image: url(../img/bord.png)
+	margin-right: 17.5px
+
+.main-bot
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: -68px
+	z-index: 999
+	position: relative
+
+.social
+	a:first-child
+		margin-right: 24px
+
+.service
+	a:first-child
+		margin-right: 70px
+
+.social, .service, .payment
+	align-items: center
+
+.payment
+	display: flex
+	div
+		border: 1px solid #fff
+		border-radius: 50%
+		margin-right: 59px
+		width: 39px
+		height: 39px
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 16px
+		font-family: $secondary-font
+		span
+			margin-left: -3px
+	a:first-of-type
+		margin-right: 64px
+		
+
+
+
+
+@import "media" // Always at the end

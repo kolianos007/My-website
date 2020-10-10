@@ -1,0 +1,928 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.flex
+	display: flex
+	&_wrap
+		display: flex
+		flex-wrap: wrap
+	&_column
+		display: flex
+		flex-direction: column
+	&_row
+		display: flex
+		flex-direction: row
+.justify
+	&_center
+		display: flex
+		justify-content: center
+	&_between
+		display: flex
+		justify-content: space-between
+	&_around
+		display: flex
+		justify-content: space-around
+	&_end
+		display: flex
+		justify-content: flex-end
+.align
+	&_center
+		display: flex
+		align-items: center
+
+ul, li
+	margin: 0
+	padding: 0
+
+a, a:hover
+	color: $text
+	text-decoration: none
+
+img
+	max-width: 100%
+
+.btn
+	cursor: pointer
+	text-align: center
+	transition: 0.3s
+	&_1
+		letter-spacing: 0.71px
+		font-size: 20px
+		text-transform: uppercase
+		border: 2px solid $green
+		line-height: 32px
+		padding: 10px 24px
+		&:hover
+			color: #fff
+			background-color: $green
+	&_2
+		font-size: 16px
+		letter-spacing: 0.57px
+		border: 1px solid $text
+		padding: 6px 54px
+		&:hover
+			color: #fff
+			background-color: $text
+	&_3
+		font-weight: 200
+		font-size: 16px
+		letter-spacing: 0.57px
+		border: 1px solid $text
+		padding: 3px 26px
+		text-transform: lowercase
+		&:hover
+			color: #fff
+			background-color: $text
+	&_5
+		display: block
+		width: 100%
+		font-size: 16px
+		text-align: center
+		font-weight: 200
+		color: $text
+		padding: 3px 0
+		border: 1px solid $text
+		&:hover
+			color: #fff
+			background-color: $text
+	&_6
+		font-size: 20px
+		letter-spacing: 0.71px
+		text-align: center
+		display: block
+		width: 100%
+		color: $text
+		background-color: #fff
+		text-transform: uppercase
+		font-weight: bold
+		padding: 12px 10px
+		line-height: normal
+		border: 1px solid $text
+		&:hover
+			color: #fff
+			background-color: $text
+	&_7
+		font-size: 16px
+		font-weight: 200
+		letter-spacing: 0.57px
+		border: 1px solid $text 
+		padding: 6px
+		width: 100%
+		text-align: center
+		&:hover
+			color: #fff
+			background-color: $text
+	&_4
+		&:hover
+			color: #fff
+			background-color: $text
+
+
+
+.logo
+	min-width: 66px
+	height: 67px
+	img
+  	max-width: 100%
+
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	padding-top: 20px
+	padding-bottom: 14px
+	background-color: #fff
+	z-index: 999
+	&_title
+		font-size: 17px
+		font-weight: bold
+		letter-spacing: 0.6px
+		color: #353535
+		text-transform: uppercase
+
+.owl_mobile
+	width: 100%
+.navbar
+	width: 857px
+	ul
+		letter-spacing: 0.5px
+		list-style-type: none
+	li:last-child
+		a::after
+			display: none
+	a
+		display: flex
+		align-items: center
+	a::after
+		content: ''
+		display: block
+		width: 4px
+		height: 4px
+		background-color: $text
+		border-radius: 50%	
+		margin-left: 10px
+		margin-right: 10px
+	a
+		color: $text
+		&:hover
+			color: $grey
+			text-decoration: none
+		&.active
+			color: $red
+
+.submenu
+	display: none
+
+.mobile_menu
+	display: none
+
+.contacts
+	.phone	
+		font-weight: 200
+		letter-spacing: 0.6px
+		font-size: 17px
+		span
+			font-weight: bold
+	.social
+		a svg:hover
+			path.black
+				fill: $text
+			circle.black
+				stroke: $text
+	.soc
+		margin-left: 7px
+
+.owl-1
+	margin-top: 101px
+	.slide
+		width: 100%
+		height: 717px
+		background-size: cover
+		background-position: center center
+		&_wrap
+			position: relative
+			height: 717px
+		&_block
+			position: absolute
+			width: 457px
+			height: 123px
+			background-color: rgba(255, 255, 255, 0.22)
+			padding: 20px 36px
+			text-transform: uppercase
+			bottom: 36px
+			right: 0
+			div:nth-child(1)
+				color: rgb(246, 246, 246)
+				font-size: 52px
+				line-height: 52px
+			div:nth-child(2), div:nth-child(3)
+				font-size: 28px
+				font-weight: bold
+				display: inline-block
+				line-height: 30px
+				&:nth-child(2)
+					color: #010101
+					margin-right: 11px
+				&:nth-child(3)
+					color: #4f0202
+
+.owl-carousel
+	position: relative
+	.owl-nav
+		position: absolute
+		top: calc(50% - 34px)
+		left: 0
+		right: 0
+		width: 100%
+		display: flex
+		justify-content: space-between
+	.owl-nav .owl-prev, .owl-nav .owl-next
+		width: 68px
+		height: 68px
+		opacity: 0.35
+		background-color: $text!important
+		outline: none
+		&:hover
+			opacity: .7
+		span
+			color: #fff
+			// opacity: 0.35
+			font-size: 78px
+			line-height: 44px
+.owl-1 .owl-nav
+	width: 1140px
+	left: calc(50% - 570px)
+	// .owl-nav .owl-prev
+	// 	margin-left: 142px
+	// .owl-nav .owl-next
+	// 	margin-right: 142px
+// .owl-2
+// 	.owl-nav .owl-prev, .owl-nav .owl-next
+// 		margin-left: 0
+// 		margin-right: 0
+
+// .owl-3 .owl-item
+// 	opacity: .6
+// 	&.active
+// 		opacity: 1
+
+h2
+	font-size: 24px
+	letter-spacing: 0.85px
+	text-transform: uppercase
+	margin-bottom: 0
+	&::before
+		content: url(../img/heading-pic.svg)
+		width: 56px
+		height: 17px
+		margin-right: 11px
+
+
+// .section .owl-carousel .owl-dot:nth-child(n+7)
+// 	display: none
+// 	&.active
+// 		display: block
+.section
+	&_comparison
+		margin-top: 40px
+		h2
+			margin-bottom: 42px
+	&_moto
+		padding-top: 44px
+		h2
+			margin-bottom: 42px
+	&_model
+		margin-top: 66px
+		.line
+			margin-bottom: 44px
+	&_article
+		margin-top: 81px
+		h2
+			margin-bottom: 42px
+	&_communication
+		margin-top: 40px
+	.owl-carousel .owl-dot
+		opacity: 0.3
+		outline: none
+		float: left
+		background-size: cover
+		background-position: center center
+		height: 110px!important
+		width: 165px!important
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+		&.active
+			opacity: 1
+	.owl-carousel .owl-dots
+		margin-bottom: 171px
+		margin-top: 36px
+.over-hid
+	overflow: hidden
+
+.price
+	font-size: 24px
+	font-weight: 200
+	letter-spacing: 0.85px
+	span
+		text-transform: uppercase
+		font-weight: bold
+	&_right
+		margin-top: 63px
+		.price
+			margin-right: 30px
+
+.comparison-model
+	color: $blue
+	font-size: 20px
+	letter-spacing: 0.7px
+	text-decoration: underline
+	span::before
+		content: url(../img/comparison.svg)
+		width: 27px
+		height: 27px
+		margin-right: 16px
+
+.model
+	width: 359px
+	&_img
+		width: 359px
+		height: 239px
+		img
+			max-width: 100%
+	&_title
+		font-size: 24px
+		letter-spacing: 1.46px
+		font-weight: bold
+		margin: 20px 0
+		line-height: normal
+	&_info
+		font-size: 14px
+		letter-spacing: 0.85px
+		line-height: normal
+	.price
+		padding-bottom: 10px
+		padding-top: 10px
+	.btn
+		display: inline-block
+
+.article
+	&_img-big
+		width: 554px
+		height: 369px
+		img
+			max-width: 100%
+	&_title
+		margin-top: 22px
+		margin-bottom: 11px
+		font-size: 18px
+		font-weight: bold
+		letter-spacing: 0.85px
+		line-height: normal
+		text-transform: uppercase
+	&_info
+		font-size: 14px
+		letter-spacing: 0.66px
+		margin-bottom: 20px
+		line-height: normal
+		height: 70px
+		overflow: hidden
+	&_sm-img
+		width: 262px
+		height: 175px
+		img
+			max-width: 100%
+	&_sm
+		opacity: .6
+		display: block
+		transition: 0.3s
+		.article_title
+			margin-top: 0
+			margin-bottom: 5px
+		&-info
+			height: 83px
+			margin-bottom: 18px
+
+
+form
+	&.form_message
+		padding-top: 40px
+		.agree
+			margin-bottom: 11px
+			font-size: 8px
+			font-weight: 200
+			letter-spacing: 0.19px
+			line-height: normal
+	input
+		border: 1px solid $text
+		width: 100%
+		padding: 6px 15px
+		margin-bottom: 11px
+	label
+		font-size: 18px
+		line-height: 21px
+		letter-spacing: 0.24px
+		margin-bottom: 11px
+	textarea
+		resize: none
+		margin-bottom: 11px
+		width: 100%
+		height: 206px
+	input[type="button"]
+		width: auto
+		float: right
+		padding: 6px 58px
+		background-color: #fff
+
+.footer
+	margin-top: 28px
+	padding-top: 34px
+	padding-bottom: 39px
+	border-top: 1px solid $text
+	&_title
+		width: 337px
+		font-size: 18px
+		letter-spacing: 0
+		font-weight: bold
+		line-height: normal
+	&_copyright
+		width: 181px
+		font-size: 18px
+		line-height: normal
+		text-align: center
+		font-weight: 200
+		margin-left: -196px
+	&_work
+		width: 142px
+		font-size: 18px
+		line-height: normal
+		text-align: right
+		letter-spacing: 0
+		a
+			color: $blue
+			text-decoration: underline
+
+
+//catalog
+	
+.section_bg
+	background-size: cover
+	background-position: center center
+	margin-top: 101px
+	&__catalog
+		width: 100%
+		height: 400px
+
+.section_spec
+	margin-top: 70px
+	h2
+		margin-bottom: 25px
+	.owl_mobile_spec
+		flex-wrap: wrap
+	.model
+		margin-bottom: 25px
+
+.pagination
+	ul
+		list-style-type: none
+	li
+		width: 38px
+		height: 38px
+		border: 1px solid #3d3d3d
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0 13px
+		cursor: pointer
+		&.active
+			background-color: #3d3d3d
+			a
+				color: #fff
+				font-weight: bold
+		&:hover
+			background-color: #3d3d3d
+			a
+				color: #fff
+				font-weight: bold
+	a
+		font-size: 18px
+		font-weight: 200
+		color: #000
+
+//comparison
+
+
+.section_bg__compar
+	height: 368px
+
+.model_description
+	height: 637px
+	margin-top: 10px
+	margin-bottom: 25px
+	div
+		font-size: 18px
+		letter-spacing: 0.85px
+		line-height: normal
+		margin-bottom: 20px
+	span
+		font-weight: bold
+
+//dillers
+
+.jq-selectbox__select
+	width: 456px
+	background: #fff
+	border-radius: 0
+	border: 1px solid $text
+	padding: 3px 45px 0 10px
+	height: 40px
+	&:hover
+		background: #fff
+
+.jq-selectbox__trigger
+	width: 67px
+	background: $text
+
+.jq-selectbox__trigger-arrow
+	border: none
+	top: -2px
+	right: 45px
+	&::after
+		content: url(../img/path.svg)
+		color: #fff
+		font-family: fontawesome
+		font-size: 36px
+
+.jq-selectbox__select
+	text-shadow: none
+
+.jq-selectbox__select-text
+	font-size: 18px
+	line-height: 32px
+	letter-spacing: 0.24px
+	width: 100%!important
+	font-family: $default-font
+
+.jq-selectbox li.selected, .jq-selectbox li:hover
+	background-color: #353535
+
+.section_dillers
+	margin-top: 35px
+	.line
+		margin-bottom: 30px
+
+.section_dillers-adress
+	margin-top: 30px
+
+.item
+	margin-top: 20px
+	&_sm
+		padding-top: 57px
+	&_city
+		font-size: 24px
+		letter-spacing: 1.13px
+		font-weight: bold
+		margin-bottom: 17px
+		text-transform: uppercase
+	&_title
+		font-size: 18px
+		font-weight: bold
+		line-height: 20px
+		letter-spacing: 0.85px
+	&_cont
+		font-size: 18px
+		letter-spacing: 0.96px
+		line-height: 20px
+		margin-top: 20px
+		margin-bottom: 20px
+
+//support
+
+.section_supp
+	margin-bottom: 35px
+
+.section_docum	
+	.selection
+		.select_mod
+			font-size: 18px
+			line-height: 21px
+			letter-spacing: 0.24px
+			margin-top: 20px
+			margin-bottom: 11px
+	.btn_6
+		margin-top: 34px
+
+.instruction
+	opacity: .5
+	&_img
+		height: 274px
+
+.section_article__one
+	.article_info
+		height: 205px
+		margin-bottom: 18px
+	.article_title
+		margin-top: 0
+
+.instruction_img
+	display: flex
+	justify-content: center
+	align-items: center
+
+.section_docum .jq-selectbox__select
+	width: 457px
+
+.section_docum__model
+	.instruction
+		opacity: 1
+
+.instruction_title
+	margin-top: 68px
+	margin-bottom: 25px
+	font-weight: bold
+	font-size: 18px
+	letter-spacing: 0.85px
+	text-transform: uppercase
+
+.inctruction_content
+	font-size: 14px
+	letter-spacing: 0.66px
+	line-height: 18px
+
+//product
+
+.section_moto__product
+	padding-top: 127px
+
+.line_product
+	margin-top: 63px
+	margin-bottom: 66px
+	.price_right
+		margin-top: 0
+
+// .color
+// 	transform: skewX(-27deg)
+// 	overflow: hidden
+// 	margin-left: -10px
+// 	padding-bottom: 20px
+// 	height: 105px
+// 	width: 100px
+// 	&:first-child
+// 		margin-left: 0
+// 		width: 100px
+// 	&:hover
+// 		margin-top: -10px
+// 		transform: skewX(-27deg)
+// 		margin-left: 0px
+// 		width: 90px
+// 		&:first-child
+// 			margin-left: 0px
+// 			width: 100px
+// 		img
+// 			height: 85px
+// 			width: 68px
+// 			transform: skewX(23deg)
+// 	img
+// 		transform: skewX(27deg
+.color
+	margin-left: -15px
+	transform: skew(-26deg)
+	overflow: hidden
+	width: 66px
+	height: 82px
+	margin-right: 5px
+	cursor: pointer
+	&:first-child
+		margin-left: 5px
+	// margin-bottom: 8px
+	// margin-right: 15px
+	&.active
+		transform: skew(-31deg)
+		width: 66px
+		height: 82px
+		margin-top: -8px
+		margin-right: 0
+		img
+			transform: skew(26deg)
+			min-height: 100%
+	img
+		width: 66px
+		height: 66px
+		transform: skew(26deg)
+	&:hover
+		transform: skew(-31deg)
+		width: 66px
+		height: 82px
+		margin-top: -8px
+		img
+			transform: skew(26deg)
+			min-height: 100%
+
+.colors_title
+	font-size: 24px
+	font-weight: bold
+	letter-spacing: 0.85px
+	text-transform: uppercase
+	margin-bottom: 24px
+
+.color_model
+	margin-top: 42px
+
+.section_clr
+	margin-bottom: 56px
+
+.detail
+	color: $text
+	letter-spacing: 0.85px
+	&_img
+		height: 202px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 40px
+		&__big
+			height: 256px
+			img
+			max-height: 100%
+	&_title
+		font-size: 24px
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 22px
+	&_info
+		font-size: 18px
+		margin-bottom: 40px
+		ul
+			list-style-type: none
+		li
+			display: flex
+			margin-bottom: 15px
+			line-height: 22px
+		li::before
+			content: ''
+			display: block
+			min-width: 4px
+			height: 4px
+			background-color: $text
+			border-radius: 50%
+			margin: 12px 15px
+
+.blockqoute
+	position: relative
+	&_text
+		padding: 20px 70px 20px 90px
+		font-size: 24px
+		font-weight: 200
+		letter-spacing: 1.13px
+		line-height: normal
+	.quot
+		position: absolute
+		&_right
+			right: 0
+			bottom: 0
+
+.specifications h2
+	margin-bottom: 30px
+	margin-top: 15px
+
+.blockqoutes
+	position: relative
+	&_text
+		padding: 5px 15px
+		font-size: 20px
+		letter-spacing: 0.94px
+		line-height: normal
+		margin-bottom: 25px
+	.quot
+		position: absolute
+		&_right
+			right: 0
+			bottom: 0
+
+.answer
+	h2
+		margin-bottom: 42px
+	&_title
+		font-size: 20px
+		font-weight: bold
+		letter-spacing: 0.94px
+		margin-bottom: 20px
+
+.section_spec_product
+	.owl_mobile_spec
+		width: 100%
+
+
+
+.owl-3
+	margin-top: 20px
+	.owl-item
+		position: relative
+		cursor: pointer
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(255,255,255,.5)
+		&.selected
+			&::before
+				background-color: transparent
+
+
+
+.color_model
+	display: none
+	&.active
+		width: 100%	
+		display: flex
+		justify-content: center
+		align-items: center	
+
+.header
+	background: #FFFFFF
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.19)
+
+.model_img 	img:hover
+	transform: scale(1.1)
+	transition: 0.3s
+
+.model_img
+	display: flex
+	justify-content: center
+	align-items: center
+
+.article_sm:hover
+	opacity: 1
+
+.dropdown:hover
+	transition: 0.3s
+	position: relative
+	.submenu 
+		background: rgba(255,255,255,0.85)
+		box-shadow: 0 2px 8px 0 rgba(0,0,0,0.19)
+		display: block
+		position: absolute
+		top: 46px
+		width: 190px
+		padding: 5px 15px 5px
+		left: -14px
+		a:hover
+			text-decoration: underline
+		a::after
+			display: none
+
+.header .navbar.active
+	border-top: 1px solid #818181
+
+.hdn
+	position: absolute
+	width: 110px
+	height: 80px
+	left: -15px
+
+.dropdown
+	cursor: pointer
+
+
+@import "media" // Always at the end

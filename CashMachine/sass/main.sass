@@ -1,0 +1,1047 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "app/libs/font-awesome/css/font-awesome.min"
+@import "app/libs/owl.carousel/dist/assets/owl.carousel.min"
+@import "app/libs/Magnific-Popup/magnific-popup"
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a, a:hover
+	text-decoration: none
+	color: #fff
+
+.btn
+	color: #fff
+	font-size: 16px
+	line-height: 16px
+	font-family: "Gilroy-SemiBold", sans-serif
+	&_go
+		border: 1px solid #00C3E5
+		padding: 11px 18px
+		border-radius: 2px
+	&_bl
+		background-color: #00A9D2
+		text-transform: uppercase
+		padding: 26px 39px
+		border-radius: 3px
+		letter-spacing: 1.5px
+		position: relative
+	&_fcb
+		border: 1px solid #fff
+		border-radius: 5px
+
+h1
+	font-size: 63px
+	font-family: "Gilroy-SemiBold", sans-serif
+	color: #fff
+	line-height: 74px
+	margin-top: 30px
+	margin-bottom: 75px
+
+h2
+	font-size: 50px
+	font-family: "Gilroy-Bold", sans-serif
+	text-align: center
+	color: #182852
+
+h6
+	text-transform: uppercase
+	font-size: 16px
+	font-family: "Gilroy-Regular", sans-serif
+	color: #fff
+	letter-spacing: 2.4px
+
+
+.header
+	// min-height: 762px
+	// height: 762px
+	overflow: hidden
+	&_bg
+		min-height: 762px
+		height: 762px
+		background-size: cover
+		background-position: center center
+		border-bottom-radius: 10%
+		background-color: $accent
+		border-bottom-left-radius: 40%
+		border-bottom-right-radius: 40%
+		width: 150%
+		margin-left: -25%
+	&_top
+		padding-top: 28px
+		font-family: "Gilroy-SemiBold", sans-serif
+		color: #fff
+	&_logo
+		font-size: 24px
+		text-transform: uppercase
+		letter-spacing: 2px
+		line-height: 24px
+	.dbl-clr
+		a, div
+			color: #fff
+			span
+				color: $accent-light
+	&_navbar
+		font-size: 16px
+		line-height: 30px
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+		li
+			display: inline-block
+			margin: 10px 26px
+			&:first-of-type
+				margin-left: 0
+			&:last-of-type
+				margin-right: 0
+		a
+			color: #fff
+	&_lang
+		font-size: 16px
+		line-height: 30px
+		a
+			color: #A4A8B2
+			margin-top: 10px
+			display: block
+		.fa
+			margin-left: 7px
+			padding-top: 5px
+	&_callback
+		margin-left: 24px
+		line-height: 21px
+	&_phone
+		position: relative
+		.ico_ph, .phone
+			display: inline-block
+		.ico_ph
+			position: relative
+			top: -5px
+			margin-right: 5px
+		.phone
+			font-size: 24px
+			letter-spacing: 1px
+	.callback
+		font-size: 16px
+		margin-left: 27px
+		a
+			color: #22bdde
+			font-family: "Gilroy-Regular", sans-serif
+	&_btn
+		float: right
+	&_bottom
+		padding-top: 85px
+		position: relative
+		.dbl-clr
+			display: inline-block
+			a, span, div
+				font-family: "Gilroy-Bold", sans-serif
+	&_circle
+		border-radius: 50%
+		border: 2px solid rgba(255,255,255,0.1)	
+		width: 720px
+		height: 720px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		top: 65px
+		right: -250px
+		span
+			font-size: 48px
+			font-family: "Gilroy-Light", sans-serif
+			color: #fff
+		&__anim
+			animation: rot 10s linear infinite  alternate
+		.slower
+			animation: rot_2 10s linear infinite alternate 
+			/* transition: 0.3s*/
+		& div
+			border-radius: 50%
+			border: 2px solid rgba(255,255,255,0.1)
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-items: center
+			/*gtht*/
+			position: absolute	
+			&:nth-child(1)
+				width: 440px
+				height: 440px
+				position: absolute
+			&:nth-child(2)
+				width: 256px
+				height: 256px
+			&:nth-child(3)
+				width: 200px
+				height: 200px
+				border: 1px solid rgba(255,255,255,0.55)
+				border-left: 4px solid #23c2e3
+				border-top: 4px solid #23c2e3
+			&:nth-child(4)
+				width: 150px
+				height: 150px
+				border: 1px solid rgba(255,255,255,0.55)
+				border-right: 4px solid #23c2e3
+				border-bottom: 4px solid #23c2e3
+
+
+@keyframes rot
+	0%
+		transform: rotate(-45deg)
+	50%
+		transform: rotate(315deg)
+		box-shadow: 0 0 50px rgba(51,153,204, .7)
+	100%
+		transform: rotate(-45deg)
+
+@keyframes rot_2
+	0%
+		transform: rotate(45deg)
+		box-shadow: 0 0 50px rgba(51,153,204, .7)
+	50%
+		transform: rotate(-315deg)
+	100%
+		transform: rotate(45deg)
+		box-shadow: 0 0 50px rgba(51,153,204, .7)
+
+.section, .footer
+	.dbl-clr
+		a, div
+			color: #fff
+			span
+				color: $accent-light
+
+.bl_dark
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+	margin-top: -100px
+	margin-bottom: 80px
+	.item
+		width: 29%
+.item
+	z-index: 2
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	&_content
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		font-size: 16px
+		font-family: "Gilroy-SemiBold", sans-serif
+		text-align: center
+	&_dark
+		width: 150px
+		height: 150px
+		background-color: #032350 
+		border-radius: 50%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		box-shadow: 0 0 166px rgba(51,153,204, .7)
+		margin-bottom: 40px
+		position: relative
+		&::after
+			content: ''
+			width: 170px
+			height: 170px
+			position: absolute
+			border-style: solid
+			border-color: #00A9D2
+			border-width: 1px
+			border-top-color: transparent
+			border-bottom-color: transparent
+			border-radius: 50%
+			animation: anim 4.5s linear infinite alternate
+			transform: rotate(-45deg)
+		&__lg
+			width: 200px
+			height: 200px
+			&::after
+				content: ''
+				width: 220px
+				height: 220px
+				position: absolute
+				border-style: solid
+				border-color: #00A9D2
+				border-width: 1px
+				border-top-color: transparent
+				border-bottom-color: transparent
+				border-radius: 50%
+				animation: anim_lg 4.5s linear infinite alternate
+				transform: rotate(135deg)
+
+@keyframes anim
+	0%
+		transform: rotate(-45deg)
+	25%
+		transform: rotate(0deg)
+	50%
+		transform: rotate(45deg)
+	75%
+		transform: rotate(90deg)
+	100%
+		transform: rotate(135deg)
+
+@keyframes anim_lg
+	0%
+		transform: rotate(45deg)
+	25%
+		transform: rotate(0deg)
+	50%
+		transform: rotate(-45deg)
+	75%
+		transform: rotate(-90deg)
+	100%
+		transform: rotate(-135deg)
+
+.section
+	&_img
+		width: 100%
+		margin-top: 7px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		&::after
+			content: ''
+			width: 1px
+			height: 4px
+			display: block
+			transform: rotate(128deg)
+			box-shadow: 164px -58px 284px 132px rgba(51,153,204,.8)
+			position: absolute
+			z-index: -1
+		img
+			width: 100%
+
+	&_dark
+		background-color: $accent
+	&_two
+		h2
+			color: #fff
+		&__bg
+			// min-height: 634px
+			// height: 634px
+			background-size: cover
+			background-position: center center
+			padding-top: 85px
+			padding-bottom: 90px
+	&_three
+		&__bg
+			// min-height: 830px
+			// height: 830px
+			background-size: cover
+			background-position: center center
+			padding-top: 80px
+			padding-bottom: 90px
+	&_four
+		background-color: #111
+		h2
+			color: #fff
+		&__bg
+			// min-height: 2304px
+			// height: 2304px
+			background-size: cover
+			background-position: center center
+			padding-top: 100px
+	&_five
+		padding-top: 70px
+		padding-bottom: 135px
+		.dbl-clr > div
+			color: #182852
+	&_six
+		&__bg
+			// min-height: 916px
+			// height: 916px
+			padding-top: 80px
+			padding-bottom: 90px
+			background-size: cover
+			background-position: center center
+			box-shadow: inset 50px 0px 160px 0px rgba(51,153,204, .3), inset -50px 0px 160px 0px rgba(51,153,204, .3)
+		h2
+			color: #fff
+		.btn_bl
+			display: inline-block
+			left: calc(50% - 215px)
+			margin-top: 40px
+
+
+
+
+
+.bl_light
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	margin-top: 40px
+	.item
+		width: 37%
+		margin-bottom: 50px
+		&_content
+			line-height: 25px
+		&_light
+			width: 135px
+			height: 135px
+			border: 2px solid rgba( 29, 168, 207, .2 )
+			border-radius: 50%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-bottom: 20px
+
+.bl_other
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+	.item
+		width: 24%
+		margin-top: 40px
+		&_img
+			margin-bottom: 50px
+			position: relative
+			&::after
+				content: url(../img/ico-flash_sm.png)
+				position: absolute
+				bottom: -20px
+				right: calc(50% - 49px)
+
+
+
+		&_content
+			color: #fff
+
+.bl_start, .owl-mobile
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+	margin-top: 60px
+	.item
+		width: 18.5%
+		position: relative
+		&:first-child
+			.item_img
+				&::before
+					display: none
+		&:nth-child(odd)
+			.item_img
+				position: relative
+				&::before
+					content: ''
+					width: 150px
+					height: 5px
+					background-color: #D3D8E1
+					transform: rotate(135deg)
+					position: absolute
+					bottom: -30px
+					left: -105px
+		&:nth-child(odd)
+			.item_img
+				position: relative
+				&::after
+					content: ''
+					width: 150px
+					height: 5px
+					background-color: #D3D8E1
+					transform: rotate(45deg)
+					position: absolute
+					bottom: -30px
+					right: -105px
+		&:last-child
+			.item_img
+				&::after
+					display: none		
+		&:nth-child(even)
+			margin-top: 220px
+		&_img
+			width: 180px
+			height: 180px
+			border-radius: 50%
+			border: 5px solid #D3D8E1
+			justify-content: center
+			align-items: center
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			margin-bottom: 22px
+		&_content
+			font-size: 18px
+			line-height: 24px
+
+.techn
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-items: center
+	margin-bottom: 20px
+	&:nth-child(even)
+		flex-direction: row-reverse
+	&:nth-child(odd)
+		h3
+			margin-left: 80px
+	&:first-child
+		margin-top: 70px
+	h3
+		text-transform: uppercase
+		font-size: 36px
+		font-family: "Gilroy-Light", sans-serif
+		line-height: 44px
+.fa-sign-in
+	display: none
+
+.wrapper
+	border: 1px solid rgba(35, 194, 227, .3)
+	border-radius: 10px
+	padding: 20px
+	margin: 130px 45px 115px 45px
+	position: relative
+	z-index: 1
+	border-top: none
+	&::after
+		content: ''
+		width: 248px
+		height: 1px
+		background-color: rgba(35, 194, 227, .3)
+		position: absolute
+		top: 0px
+		left: 6px
+	&::before
+		content: ''
+		width: 248px
+		height: 1px
+		background-color: rgba(35, 194, 227, .3)
+		position: absolute
+		top: 0px
+		right: 6px
+	&_in
+		border: 1px solid rgb(35, 194, 227)
+		border-radius: 10px
+		position: relative
+		padding: 115px 115px 60px 115px
+		z-index: 1
+		border-top: none
+		&::after
+			content: ''
+			width: 225px
+			height: 1px
+			background-color: rgb(35, 194, 227)	
+			position: absolute
+			top: 0
+			left: 7px
+		&::before
+			content: ''
+			width: 225px
+			height: 1px
+			background-color: rgb(35, 194, 227)	
+			position: absolute
+			top: 0
+			right: 7px
+	&_content
+		font-size: 22px
+		font-family: "Gilroy-Light", sans-serif
+		color: #fff
+		text-align: center
+	&_perc
+		position: absolute
+		font-family: "Gilroy-Thin", sans-serif
+		font-size: 206px
+		color: #fff
+		top: calc(0% - 170px)
+		left: calc(50% - 235px)
+		z-index: 3
+		background-color: inherit
+		border: 1px solid inherit
+
+.bl_people
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-top: 40px
+	.pos-centr
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		flex-direction: row
+		margin: 0 15px
+		.item
+			margin: 0 15px
+	.item
+		width: 270px
+		box-shadow: 0px 14px 32px 4px rgba( 24, 40, 82, .1)
+		padding-top: 40px
+		margin-bottom: 30px
+		padding-bottom: 40px
+		align-items: initial
+		border-radius: 10px
+		border: 1px solid inherit
+		&_name
+			font-size: 24px
+			color: #182852
+			font-family: "Gilroy-Bold", sans-serif
+		&_contact
+			display: -webkit-inline-flex
+			display: -moz-inline-flex
+			display: -ms-inline-flex
+			display: -o-inline-flex
+			display: inline-flex
+			.fa
+				color: #00AAD2
+				margin-right: 15px
+			span
+				font-size: 14px
+				font-family: "Gilroy-Regular", sans-serif
+				line-height: 16px
+		&_img
+			width: 175px
+			height: 175px
+			border: 1px solid transparent
+			border-radius: 50%
+			justify-content: center
+			align-items: center
+			overflow: hidden
+			margin: 0 auto
+		&_info
+			margin-top: 30px
+			padding-left: 25px
+			padding-right: 25px
+
+.reg
+	font-size: 20px
+	color: #fff
+	font-family: "Gilroy-SemiBold", sans-serif
+	text-align: center
+
+.bl_tariff
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-top: 50px
+	margin-bottom: 60px
+	.item
+		width: 270px
+		background-color: #0B154D
+		border: 1px solid #005F8F
+		border-radius: 10px
+		padding-top: 35px
+		padding-left: 50px
+		padding-right: 50px
+		padding-bottom: 35px
+		position: relative
+		&::after
+			content: url(../img/ico-flash_big.png)
+			position: absolute
+			bottom: -16px
+		&::before
+			content: url(../img/ico-flash_big.png)
+			position: absolute
+			top: -10px
+		/* &::after*/
+		/* 	content: ''*/
+		/* 	width: 110px*/
+		/* 	height: 0.5px*/
+		/* 	background-color: rgba(255, 255, 255, .8)*/
+		/* 	animation: shadow 1s infinite alternate*/
+		&:last-child
+			.item_content
+				margin-bottom: 55px
+		&_name, &_price
+			font-size: 24px
+			font-family: "Gilroy-Bold", sans-serif
+			color: #fff
+		&_img
+			margin-top: 20px
+			margin-bottom: 20px
+		&_content
+			font-size: 16px
+			line-height: 24px
+			color: #fff
+			font-family: "Gilroy-Light", sans-serif
+			margin-bottom: 30px
+
+@keyframes shadow 
+	from
+		box-shadow: 0 0 1px 2px #00A2CC
+	to
+		box-shadow: 0 0 1.5px 3px #00A2CC
+
+
+.footer
+	background-color: #032352
+	// min-height: 220px
+	// height: 220px
+	padding-top: 50px
+	padding-bottom: 50px
+	.copyright
+		font-size: 12px
+		font-family: "Gilroy-SemiBold", sans-serif
+		color: #A5A9B6
+	.dbl-clr
+		font-size: 22px
+		letter-spacing: 1px
+		margin-top: 3px
+		font-family: "Gilroy-SemiBold", sans-serif
+	&_navbar
+		font-family: "Gilroy-SemiBold", sans-serif
+		font-size: 16px
+		li
+			margin: 0
+			margin-right: 30px
+			&:first-child
+				margin-left: 50px
+
+.contacts
+	margin-top: 45px
+	.fa
+		margin-right: 15px
+	.btn_fcb
+		margin-top: -5px
+
+.address
+	margin-top: -5px
+	margin-left: 72px
+	&_content
+		font-size: 14px
+		font-family: "Gilroy-SemiBold", sans-serif
+		color: #fff
+	&_img
+		float: left
+		margin-top: 2px
+		margin-right: 15px
+	&_content
+		line-height: 20px
+
+
+.owl-nav
+	position: relative
+	// float: right
+	// right: 0
+	// width: 133px
+	// height: 64px
+	// text-align: center
+.owl-prev, .owl-next
+	width: 20px
+	outline: none!important
+	&:hover
+		background-color: #fff!important
+	span
+		font-size: 0
+.owl-prev
+	background-image: url(../img/ico-arrow-left.png)!important
+	background-repeat: no-repeat!important
+	background-position: 50% 50%!important
+	position: absolute
+	left: 0
+	top: calc(50% - 186px)
+.owl-next
+	background-image: url(../img/ico-arrow-left.png)!important
+	transform: rotate(180deg)
+	background-repeat: no-repeat!important
+	background-position: 50% 50%!important
+	position: absolute
+	right: 0
+	top: calc(50% - 186px)
+
+
+
+//mobile-mnu
+.toggle-mnu 
+	display: block
+	width: 24px
+	height: 14px
+
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+.mobile-mnu
+	background-color: inherit
+	position: relative
+	cursor: pointer
+	padding: 5px 5px
+	margin-top: 4px
+	float: right
+
+.mm-menu_offcanvas
+	z-index: 4
+
+.mm-listitem .mm-btn_next
+	display: none
+
+.mm-panel_has-navbar .mm-navbar
+	display: none
+
+.mm-menu
+	margin-right: -500px
+
+.mm-menu_opened
+	margin-right: 0
+
+
+.pos-centr
+	.item_img
+		img
+			width: 100%
+
+
+
+.form_reg
+	width: 691px
+	background-color: #fff
+	margin: 0 auto
+	border-radius: 10px
+	letter-spacing: 1px
+	position: relative
+
+
+.form_reg
+	padding: 35px
+	position: relative
+	.form_head
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-start
+		border-bottom: 1px solid #DCDEE5
+		padding-bottom: 10px
+		margin-bottom: 30px
+	h4
+		font-size: 22px
+		font-family: "Gilroy-SemiBold", sans-serif
+		margin-bottom: 0
+	.btn_step
+		float: none
+		color: #111
+		font-size: 15px
+		font-family: "Gilroy-SemiBold", sans-serif
+		line-height: 24px
+		padding: 6px 15px 6px 15px
+		text-transform: uppercase
+		border: 1px solid #00C3E5
+		border-radius: 5px
+		margin-left: 20px
+	input
+		width: 300px
+		font-size: 15px
+		font-family: "Gilroy-Regular", sans-serif
+		padding: 15px
+		border-radius: 5px
+		border-color: #DCDEE5
+		margin-right: 15px
+		margin-bottom: 15px
+		&:nth-child(odd)
+			margin-right: 0
+		&:nth-child(n+5)
+			margin-bottom: 0
+		&::placeholder
+			color: #111
+		&[type="submit"]
+			background-color: #00C3E5
+			color: #fff
+			font-size: 16px
+			font-family: "Gilroy-SemiBold", sans-serif
+			display: block
+			margin: 0 auto
+			margin-top: 15px
+			width: 220px
+			padding: 14px 15px
+	.go_in
+		position: absolute
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		bottom: -70px
+		left: calc(50% - 106px)
+		align-items: center
+		align-content: center
+		& > div
+			font-size: 14px
+			font-family: "Gilroy-SemiBold", sans-serif
+			color: #fff
+			margin-right: 10px
+		.btn_go
+			padding: 7px 13px
+			border-color: #fff
+
+.form_ret
+	font-size: 15px
+	font-family: "Gilroy-Regular", sans-serif
+
+.form_content
+	margin-bottom: 25px
+
+.form_open
+	.go_in
+		left: calc(50% - 115px)
+	input
+		margin-bottom: 25px
+	input[type="submit"]
+		width: 105px
+		margin: 0
+		margin-right: 20px
+	.go_to-reg
+		position: relative
+		left: 0
+		bottom: 0
+		justify-content: flex-start
+		& > a
+			color: #111
+			text-decoration: underline
+
+.form_restor
+	input[type="submit"]
+		width: 150px
+		display: inline-block
+
+.hidden
+	display: none
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Always at the end

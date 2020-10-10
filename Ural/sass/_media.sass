@@ -1,0 +1,651 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.logo
+		margin-right: 10px
+
+	.navbar
+		width: 696px
+
+	.navbar a
+		font-size: 12px
+
+	.model
+		width: 311px
+
+	.model_img
+		width: auto
+		height: 206px
+
+	.article_sm-img
+		width: auto
+		height: auto
+
+	.article_sm .article_title
+		font-size: 14px
+		letter-spacing: 0
+
+	.owl-1 .owl-nav
+		width: 930px
+		left: calc(50% - 465px)
+
+	.section_spec .model
+		width: 310px
+
+	.jq-selectbox__select
+		width: 356px
+
+	.item_city
+		font-size: 20px
+
+	.item_sm
+		padding-top: 50px
+
+	.section_dillers
+		h2
+			display: flex
+			line-height: 28px
+		h2::before
+			position: relative
+			top: 2px
+
+	.section_map
+		iframe
+			width: 930px
+
+	h2
+		font-size: 20px
+
+	.section_docum .btn_6
+		margin-top: 43px
+
+	.section_docum
+		.jq-selectbox__select
+			width: 370px
+
+	.section_article__one .article_info
+		height: 139px
+		margin-bottom: 26px
+
+	.section_docum .btn_6
+		margin-top: 41px
+
+	.colors_pallete
+		flex-wrap: wrap
+		justify-content: center
+
+	.colors_title
+		font-size: 22px
+		text-align: center
+
+	.color_model
+		margin-top: 0
+
+	.blockqoute_text
+		font-size: 22px
+
+	.dropdown:hover .submenu
+		top: 43px
+
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.dropdown:hover .submenu
+		position: inherit
+		width: auto
+		padding: 0
+		box-shadow: none
+		display: flex
+
+	.detail_info
+		margin-bottom: 20px
+
+	.detail_title
+		font-size: 20px
+
+	.blockqoute_text
+		font-size: 20px
+		padding: 20px 30px 20px 40px
+
+	.line_product
+		.price_right
+			flex-direction: column
+
+	.section_article__one .article_title
+		margin-bottom: 5px
+
+	.section_article__one .article_info
+		height: 120px
+		margin-bottom: 19px
+
+	.section_docum
+		.jq-selectbox__select
+			width: 315px
+
+	.section_map
+		iframe
+			width: 690px
+			height: 400px
+
+	.model_img
+		width: auto
+		height: 160px
+	
+
+	.mobile_menu
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		overflow: hidden
+		transition: 0.9s
+		width: 32px
+		height: 24px
+		span
+			height: 4px
+			width: 32px
+			background-color: $text
+			margin: 2px auto
+		&.active
+			width: 32px
+			height: 24px
+			span:nth-child(1)
+				transform: rotate(45deg)
+			span:nth-child(3)
+				transform: rotate(-45deg)
+				margin-top: -14px
+			span:nth-child(2)
+				margin-right: -1000px
+
+	.header .navbar
+		position: fixed
+		margin-top: 0
+		background-color: #fff
+		top: 101px
+		width: 100%
+		height: 100%
+		right: -100%
+		transition: 0.3s
+		z-index: 20
+		color: $text
+		overflow: auto
+		text-align: center
+		max-height: calc(100% - 101px)
+		&.active
+			right: 0
+		ul
+			margin: 0
+			padding: 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			li:last-child
+				a::after
+					display: block
+			a
+				text-transform: uppercase
+				margin: 0
+				font-size: 18px
+				margin: 10px 0
+				&::before
+					content: ''
+					display: block
+					width: 4px
+					height: 4px
+					background-color: $text
+					border-radius: 50%	
+					margin-left: 10px
+					margin-right: 10px
+		.submenu
+			a
+				color: $grey
+				text-transform: none
+				&:hover
+					color: $text
+					text-decoration: underline
+			a::after, a::before
+				display: none
+			li:last-child
+				a::after
+					display: none
+
+	// .over-hid
+	// 	overflow: hidden
+	// .stat
+	// 	position: static
+
+
+	.contacts .soc
+		line-height: 11px
+
+	.contacts .social 
+		margin-left: 20px
+
+	.contacts
+		display: flex
+		flex-direction: row
+		align-items: center
+
+	// .owl-carousel .owl-nav .owl-prev
+	// 	margin-left: 57px
+
+	// .owl-carousel .owl-nav .owl-next
+	// 	margin-right: 57px
+
+
+	.owl-1 .owl-nav
+		width: 690px
+		left: calc(50% - 345px)
+
+	.article_sm .article_title, .article_sm-info
+		font-size: 12px
+
+	.article_sm-info
+		height: 63px
+
+	.footer 
+		padding-top: 20px
+		padding-bottom: 20px
+		&_content
+			align-items: center
+		&_title
+			font-size: 13px
+			width: 223px
+		&_copyright
+			width: 181px
+			font-size: 14px
+			margin-left: 0
+		&_work
+			font-size: 14px
+
+	.slider_wrap__title
+		font-size: 17px
+		font-weight: bold
+		letter-spacing: 0.6px
+		color: #353535
+		text-transform: uppercase
+		padding-top: 20px
+		text-align: center
+
+	.section_spec .model
+		width: 230px
+
+	.section_bg__catalog
+		height: 300px
+
+	.selection_full
+		display: flex
+		justify-content: space-between
+		margin-top: 32px
+
+// .section_docum .jq-selectbox__select
+// 	width: 315px
+
+
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.line_product
+		flex-direction: column
+		.price
+			text-align: right
+		.price_right, .price, .btn_1
+			width: 100%
+		.btn_1
+			margin-bottom: 20px
+	
+	.colors_title
+		text-align: left
+
+	.colors_pallete
+		justify-content: flex-start
+
+	
+	.section_docum .jq-selectbox__select
+		width: 243px
+
+	.section_docum .btn_6
+		margin-top: 24px
+
+	.section_article__one .article_big-img
+		margin-bottom: 20px
+
+	.section_article__one .article_title
+		margin-bottom: 15px
+	
+	.section_map
+		iframe
+			width: 510px
+			height: 400px
+
+	.section_dillers .line
+		flex-direction: column
+		h2
+			margin-bottom: 15px
+
+	.pagination
+		display: none
+
+	.section_bg__catalog
+		height: 200px
+
+	// .owl-1 .owl-nav
+	// 	width: 540px
+	// 	left: calc(50% - 270px)
+
+	.owl-1 .owl-nav
+		display: none
+
+	.owl-1 .slide, .owl-1 .slide_wrap
+		height: 535px
+
+	.slider_wrap__title
+		font-size: 16px
+		line-height: normal
+		padding-top: 10px
+
+	.owl-1 .slide_block
+		width: 330px
+		height: 100px
+		right: calc(50% - 165px)
+		padding: 16px 29px
+
+	.owl-1 .slide_block div:nth-child(2), .owl-1 .slide_block div:nth-child(3)
+		font-size: 20px
+
+	.owl-1 .slide_block div:nth-child(1)
+		font-size: 37.8px
+		line-height: 41px
+
+	.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev
+		width: 24px
+		height: 24px
+
+	.owl-carousel .owl-nav .owl-next span, .owl-carousel .owl-nav .owl-prev span
+		font-weight: bold
+		font-size: 31px
+		line-height: 19px
+
+	.model, .section_spec .model, .section_comparison .model
+		width: 100%
+		&_img
+			display: flex
+			justify-content: center
+			align-items: center
+			width: auto
+			height: 266px
+			img
+				max-width: 400px
+
+	.owl_mobile .owl-nav, .owl_mobile_spec .owl-nav
+		top: 24%
+
+	.owl_mobile_compar .owl-nav
+		top: 10%
+
+	.section_article
+		margin-top: 34px
+
+	.section_moto
+		padding-top: 21px
+		h2
+			margin-bottom: 20px
+
+	.section_model
+		margin-top: 30px
+	.section_model .line
+		margin-bottom: 30px
+	.model_title
+		margin: 17px 0
+
+	.model .btn
+		display: block
+		margin-bottom: 20px
+
+	.comparison-model
+		justify-content: center
+
+	.section_article h2
+		margin-bottom: 23px
+
+	.btn_3
+		display: block
+		padding: 7px 26px
+
+	.section_communication
+		margin-top: 31px
+
+	form.form_message
+		padding-top: 22px
+
+	.btn_7
+		margin-bottom: 20px
+		margin-top: 10px
+
+	.colors_pallete
+		margin-left: 10px
+
+	.color:first-child
+		margin-left: 0
+
+// ≥576px
++media-breakpoint-down(ssm)
+
+	.answer_title	
+		font-size: 18px
+		line-height: 22px
+
+	.blockqoutes_text
+		font-size: 15px
+
+	.blockqoute .quot, .blockqoutes .quot
+		width: 30px
+		height: 30px
+
+	.blockqoute_text
+		margin-bottom: 20px
+
+	.detail_info li
+		margin-bottom: 5px
+
+	.section_clr
+		margin-bottom: 35px
+
+	.detail_title
+		font-size: 18px
+		margin-bottom: 15px
+
+	.line_product
+		margin-top: 13px
+
+	.detail_info
+		font-size: 15px
+		letter-spacing: 0.71px
+
+	.detail_img
+		height: 117px
+		margin-bottom: 10px
+
+	.detail_img__big
+		height: 174px
+		display: flex
+		justify-content: center
+		align-items: center
+
+	.detail_info
+		line-height: 19px
+
+	.selection_full
+		flex-direction: column
+
+	.header .navbar ul a
+		font-weight: bold
+		outline: none
+
+	.header .navbar .submenu a
+		font-weight: normal
+
+	.section_docum .jq-selectbox__select
+		width: 330px
+
+	// .header .navbar .submenu a:hover
+	// 	font-weight: bold
+
+	.header .navbar
+		max-height: calc(100% - 73px)
+		top: 73px
+
+	.section_bg
+		margin-top: 73px
+
+	.contacts .social
+		margin-left: 70px
+
+	.logo
+		min-width: 52px
+		width: 52px
+		height: 53px
+
+	.header
+		padding-top: 10px
+		padding-bottom: 10px
+		height: 73px
+
+	.owl-1
+		margin-top: 73px
+
+	.slider_wrap__title
+		font-size: 15px
+		letter-spacing: 0.57px
+
+	.section_moto h2
+		font-size: 18px
+		letter-spacing: 0.64px
+		display: flex
+		line-height: normal
+
+	// h2::before
+	// 	margin-top: 5px
+
+	.price_right
+		margin-top: 10px
+		display: flex
+		flex-direction: column
+		.btn_1
+			display: block
+			width: 100%
+
+	.price_right .price
+		justify-content: flex-end
+		display: flex
+		width: 100%
+		margin-right: 0
+		margin-bottom: 8px
+		span
+			margin-left: 5px
+
+	.price
+		font-size: 18px
+		letter-spacing: 0.54px
+
+	.btn_1
+		padding: 3px 24px
+		font-size: 18px
+
+	.model_img, .section_comparison .model_img, .section_spec .model_img
+		height: 219px
+
+	h2
+		font-size: 18px
+		line-height: normal
+
+	h2::before
+		position: relative
+		top: 5px
+
+	form.form_message .agree
+		font-size: 12px
+		letter-spacing: 0.29px
+
+	form input[type="button"]
+		width: 100%
+
+	.footer_content
+		flex-direction: column
+		align-items: flex-start
+
+	.footer_title, .footer_copyright, .footer_work
+		width: auto
+		font-size: 18px
+		letter-spacing: 0
+
+	.footer_title
+		margin-bottom: 14px
+
+	.footer_copyright
+		margin-bottom: 21px
+
+	h2
+		display: flex
+		line-height: normal
+
+	.model_description div
+		font-size: 16px
+
+	.section_dillers h2::before
+		top: 5px
+
+	.jq-selectbox__select
+		width: 330px
+
+	.section_map
+		iframe
+			width: 320px
+			height: 320px
+
+	.item_sm
+		padding-top: 10px
+
+// ≥360px
++media-breakpoint-down(xs)
+
+	.blockqoute_text
+		font-size: 17px
+
+	.section_docum .jq-selectbox__select
+		width: 290px
+
+
+	.section_map
+		iframe
+			width: 290px
+			height: 290px
+
+	.jq-selectbox__select
+		width: 290px
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

@@ -1,0 +1,938 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+@media screen and (max-width: 1600px)
+  .header-line--second
+    &.menu-opened
+      .header-nav
+        max-width: 700px
+
+
++media-breakpoint-down(xxl)
+
+  .header-line--second
+    &.menu-opened
+      .header-nav
+        max-width: 895px
+
+  .header-line--second.scrolled
+    .row
+      padding: 0 10px 0 69px
+
+  // .header
+  //   &-nav
+  //     ul
+  //       li
+  //         a
+  //           font-size: 15px
+  // .menu-btn
+  //   .bars
+  //     > div
+  //       width: 40px
+  // .btn
+  //   font-size: 16px
+  // .header-line--second
+  //   height: 90px
+  //   &.menu-opened
+  //     height: 125px
+  //     .header-nav
+  //       max-width: 560px
+
+  // .rooms
+  //   &-item
+  //     &--title
+  //       max-width: 80%
+  //       h3
+  //         font-size: 15px
+  //         letter-spacing: 1px
+  // .mini-post
+  //   h2
+  //     font-size: 36px
+  //     letter-spacing: 3px
+  //   h3
+  //     font-size: 19px
+  //     letter-spacing: 2px
+
+  // .section-news--1
+  //   .bread-crumbs a
+  //     font-size: 17px
+
+  .header-line--second
+    height: 90px
+    &.menu-opened
+      height: 125px
+
+
+
+
++media-breakpoint-down(xl)
+
+  .header
+    &-nav
+      ul
+        li
+          a
+            font-size: 15px
+  .menu-btn
+    .bars
+      > div
+        width: 40px
+  .btn
+    font-size: 16px
+  .header-line--second
+    height: 90px
+    &.menu-opened
+      height: 125px
+      .header-nav
+        max-width: 560px
+
+  .rooms
+    &-item
+      &--title
+        max-width: 80%
+        h3
+          font-size: 15px
+          letter-spacing: 1px
+  .mini-post
+    h2
+      font-size: 36px
+      letter-spacing: 3px
+    h3
+      font-size: 19px
+      letter-spacing: 2px
+
+  .section-spec
+    .btn-wrapper
+      display: block
+      margin-left: 0
+      margin-top: 10px
+  .bread-crumbs
+    margin-left: 0
+
+  .section-restauran
+    .bl-double
+      &:nth-child(even)
+        .bl-img
+          padding-right: 65px
+
+      &:nth-child(odd)
+        .bl-img
+          padding-left: 65px
+
+  .bl-full .owl-full .owl-next.owl-prev, .bl-full .owl-full .owl-prev.owl-prev
+    left: 60px
+
+  .owl-full .owl-next.owl-next, .owl-full .owl-prev.owl-next
+    right: 60px
+
+  .bl-news
+    margin-left: 0
+    margin-right: 0
+    .button-wrapper .btn-wrapper
+      margin-right: 75px
+    .bl-text
+      padding: 23px 48px 23px 48px
+
+  .bl-state, .bl-state--img
+    margin-left: 0
+    margin-right: 0
+
+  .section-gallery
+    .item-img
+      margin-bottom: 30px
+
+  .section-catalog
+    .bl-double
+      &:nth-child(odd)
+        .bl-img
+          padding-right: 65px
+
+      &:nth-child(even)
+        .bl-img
+          padding-left: 65px
+    .mini-post h2
+      font-size: 33px
+      line-height: 38px
+
+  .wrapper-img
+    width: 398px
+    height: 396px
+    left: 15px
+    padding: 25px
+  .ico-close
+    right: 5px
+    top: 0
+  .wrapper-img div
+    font-size: 19px
+
+  .header-line--second.scrolled .logo
+    margin-left: -8px
+
+  .section-spec .bl-info
+    display: inline-block
+
+
+
+      
+
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+
+  .header
+    .container
+      max-width: 100%
+
+  .page-title
+    h2
+      font-size: 40px
+  .header-line--second
+    height: 70px
+    // overflow: auto
+    &.scrolled
+      padding-right: 0
+    &.menu-opened
+      position: fixed
+      height: 100%
+      width: 100%
+
+      .container
+        position: relative
+        padding-top: 80px
+      .row
+        padding: 0
+      .menu-btn
+        position: absolute
+        left: 0
+        top: 10px
+      .logo
+        position: absolute
+        top: 10px
+        margin: 0 auto
+        left: 0
+        right: 0
+      .header-nav
+        max-width: none
+        width: 100%
+        ul
+          padding-left: 0
+          li
+            width: 50%
+  .banner
+    padding-top: 40px
+    &-text
+      left: 45px
+
+  .section
+    &-text
+      padding: 40px 0 30px
+
+  .rooms-item
+    &--title
+      h3
+        font-size: 14px
+        letter-spacing: 0
+    &--btns
+      padding: 0
+  .owl-rooms
+    .owl-nav
+      button
+        height: 70px
+        width: 40px
+        top: calc(50% - 35px)
+        &.owl-prev
+          left: -20px
+        &.owl-next
+          right: -20px
+
+  .footer
+    .row
+      .col
+        display: none
+  .pluses-item
+    margin-left: 0
+
+  .bl-white
+    padding-bottom: 0
+
+  .owl-full .owl-dots
+    bottom: 20px
+
+  .bl-full .bl-img--zoom::before
+    bottom: 3px
+
+  .price-item
+    &--title
+      h4
+        font-size: 35px
+    &--list
+      margin-top: 10px
+      ul
+        padding-left: 0
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 0
+        justify-content: center
+        li
+          padding: 7px 0
+          font-size: 16px
+          &:not(:last-child)
+            margin-right: 10px
+    &--mini
+      font-size: 18px
+      &__list
+        border-top: 1px solid $primary
+        margin-top: 10px
+
+  .section-news
+    .bl-double:nth-child(2n+1) .bl-img
+      padding-left: 0
+
+  .bl-news .button-wrapper .btn-wrapper
+    margin-right: 45px
+
+  .bl-news .bl-text
+    padding: 8px 30px
+
+  .contacts-info
+    margin-left: 30px
+  .form-sms
+    padding: 30px
+
+  .section-catalog .mini-post h2
+    font-size: 28px
+    line-height: 35px
+    letter-spacing: 1px
+  .section-catalog
+    .bl-double
+      padding-top: 10px
+      padding-bottom: 10px
+    .bl-part
+      height: auto
+    .btn-wrapper
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+
+  .section-cartochka .bl-state .btn
+    margin-left: -15px
+  .section-cartochka .bl-state .point-m
+    margin-bottom: 15px
+
+  .wrapper-img
+    width: 330px
+    height: 329px
+    padding-top: 40px
+
+  .wrapper-img div, .wrapper-img li
+    font-size: 15px
+
+  .header-line--second.menu-opened .logo
+    left: 65px
+
+  .header-line--second.menu-opened
+    height: 60%
+    padding-left: 70px
+
+  .header-line--second.scrolled .logo
+    left: 0
+
+
+
+
+
+
+// ≥992px
++media-breakpoint-down(md)
+  .header-line--second
+    height: 45px
+    // .row
+    //   padding: 0 20px
+    &.menu-opened
+      .menu-btn .bars>div:not(:last-child)
+        margin-bottom: 10px
+      .logo
+        display: block
+    &.scrolled
+      .logo
+        width: 37px
+      .row
+        padding: 0 15px
+  .banner
+    &-text
+      h1
+        font-size: 45px
+        letter-spacing: 5px
+  .btn
+    font-size: 14px
+    padding: 0 20px
+    line-height: 34px
+  .menu-btn
+    font-size: 14px
+    .bars
+      >div
+        width: 30px
+        height: 3px
+        &:not(:last-child)
+          margin-bottom: 5px
+
+
+  .mini-post
+    h2
+      font-size: 25px
+      line-height: 35px
+      letter-spacing: 1px
+      margin-bottom: 10px
+    h3
+      font-size: 15px
+      letter-spacing: 0px
+      margin-bottom: 15px
+    p
+      font-size: 15px
+    &-content
+      text-align: center
+    &--wrapper
+      padding-top:  40px
+      padding-bottom: 40px
+  .events
+    &-item
+      &--content
+        padding-bottom: 45px
+        .btn
+          bottom: 10px
+      &--img
+        height: 100%
+        display: flex
+        align-items: center
+
+  .section
+    &-events
+      padding-top: 40px
+      padding-bottom: 40px
+
+  .bread-crumbs
+    a
+      font-size: 17px
+  .page-title h2
+    font-size: 35px
+
+  .pluses-item
+    flex-direction: column
+    text-align: center
+    margin-right: 0
+    .pluses
+      &-img
+        height: 90px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 0
+        margin-bottom: 15px
+  .section-location
+    .loc-phone, .loc-mail
+      padding-left: 20px
+
+  .bl-double
+    padding-top: 0
+    padding-bottom: 0
+    &:last-child
+      padding-bottom: 45px
+    .owl-item
+      width: 100%
+    .mini-post--big
+      flex-direction: column
+    .bl-part
+      width: 100%
+      max-width: 100%
+      height: auto
+
+  .bl-double:nth-child(2n) .bl-img, .bl-double:nth-child(2n+1) .bl-img
+    padding-right: 0
+    padding-left: 0
+
+  .bl-double:nth-child(2n+1)
+    .mini-post--big
+      flex-direction: column-reverse
+
+  .bl-full .owl-full .owl-next.owl-prev, .bl-full .owl-full .owl-prev.owl-prev
+    left: 30px
+
+  .owl-full .owl-next.owl-next, .owl-full .owl-prev.owl-next
+    right: 30px
+
+  .bl-news
+    .block-img
+      width: 100%
+      img
+        width: 100%
+
+  .bl-news .button-wrapper .btn-wrapper
+    margin-right: 310px
+
+  .section-news--1
+    .bread-crumbs a
+      font-size: 15px
+    .mini-post--wrapper
+      padding-top: 0
+      padding-bottom: 0
+
+  .section-breakfest
+    .mini-post--wrapper
+      padding-top: 0
+      padding-bottom: 0
+
+  .form-sms, .contacts-info
+    margin: auto
+
+
+  .section-catalog, .section-restauran
+    .bl-double
+      &:nth-child(odd)
+        .bl-img
+          padding-right: 0
+          padding-left: 0
+
+      &:nth-child(even)
+        .bl-img
+          padding-right: 0
+          padding-left: 0
+
+  .section-cartochka .bl-state h2
+    font-size: 35px
+    line-height: 40px
+    letter-spacing: 0
+  .section-cartochka .bl-state .point-m
+    margin-top: 10px
+  .section-cartochka .bl-state .btn
+    margin-left: -4px
+  .section-cartochka .bl-state .point-title
+    font-size: 13px
+
+
+  .wrapper-img
+    width: 512px
+    height: 510px
+    left: 103px
+    padding: 60px
+    div, li
+      font-size: 22px
+
+  .ico-close
+    right: 15px
+    top: 8px
+
+  .section-spec
+    &:nth-child(odd)
+      .mini-post--big
+        .row
+          display: -webkit-flex
+          display: -moz-flex
+          display: -ms-flex
+          display: -o-flex
+          display: flex
+          flex-direction: column-reverse
+
+  .home  .section-light .mini-post--big .row
+    flex-direction: column-reverse
+
+  .row-reverse 
+    flex-direction: column-reverse!important
+
+  .btn-thank
+    left: calc(50% - 62px)
+
+
+
+
+
+// ≥768px
++media-breakpoint-down(sm)
+  section
+    overflow: hidden
+  .banner
+    &-text
+      bottom: 40px
+      // left: 5px
+  .header
+    &-line
+      &--first
+        .flag
+          margin-right: 0
+          margin-left: 20px
+    .flag
+      margin-left: 20px
+    .tel
+      font-size: 16px
+    .logo
+      display: none
+  .banner-text
+    h1
+      font-size: 30px
+
+  .map
+    max-height: 300px
+
+  .footer
+    padding-bottom: 100px
+    h3
+      font-size: 18px
+    h2
+      font-size: 30px
+    ul
+      li
+        width: 50%
+        padding-right: 15px
+    p
+      font-size: 15px
+  .page-title h2
+    font-size: 28px
+    margin-bottom: 0
+    text-align: center
+  .section-location
+    h2
+      text-align: center
+      margin-bottom: 30px
+      margin-top: 30px
+    .flex
+      flex-direction: column
+      justify-content: center
+    .loc-item
+      margin-bottom: 10px
+      text-align: center
+      width: 100%
+      padding-left: 0
+  .section-st h2
+    margin-top: 30px
+    font-size: 30px
+    margin-bottom: 30px
+
+  .bl-double .bl-part
+    height: auto
+
+  .bl-full .bl-img--zoom::before
+    width: 30px
+    height: 30px
+    line-height: 35px
+    bottom: 12px
+
+  .bl-full
+    padding-bottom: 0
+    padding-top: 20px
+    .owl-dots
+      display: none
+
+  .bl-full .bl-img--zoom::before
+    left: calc(50% - 15px)
+
+  .section-meetings h2
+    font-size: 35px
+    margin-top: 30px
+
+  .bl-news .button-wrapper .btn-wrapper
+    margin-right: 120px
+
+  .section-news
+    .bl-double:last-child
+      padding-bottom: 0
+    h2
+      margin-bottom: 0
+    .bread-crumbs
+      margin-bottom: 15px
+
+  .bl-news .button-wrapper .btn-wrapper
+    margin-right: 0
+
+  .section-gallery
+    .item-img
+      &--zoom
+        a
+          &::before
+            display: none
+
+  .section-contacts .bl-state
+    padding: 30px
+
+  .contacts-info
+    margin-left: 30px
+
+  .point-m
+    width: 50%
+    display: inline-block
+    .icon, .point-title
+      display: inline-block
+
+  .section-cartochka .bl-state .point-title
+    font-size: 12px
+
+  .form-spec
+    width: 310px
+  form
+    padding: 20px
+  .form-spec h2
+    font-size: 30px
+    line-height: 36px
+  form .form-title
+    font-size: 16px
+  .form-spec input, .form-spec textarea
+    width: 250px
+    margin-bottom: 15px
+  .form-spec textarea
+    height: 70px
+  .form-sms
+    width: 310px
+  form input, form textarea
+    width: 250px
+  form textarea
+    height: 70px
+  .btn-thank
+    left: calc(50% - 62px)
+
+  .wrapper-img
+    width: 510px
+    height: 508px
+    left: 15px
+
+  .header-line--second .row
+    padding: 0 20px
+
+  .header-line--second.menu-opened
+    padding-left: 70px
+
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+  .header
+    &-line
+      &--second
+        &.menu-opened
+          .header-nav
+            padding-left: 20px
+            ul
+              li
+                width: 100%
+          .menu-btn
+            left: 20px
+    .name
+      font-size: 14px
+    .flag
+      width: 20px
+      margin-left: 5px
+      img
+        max-width: 100%
+    .tel
+      font-size: 12px
+      img
+        max-width: 15px
+        margin-right: 5px
+  .banner-text
+    bottom: 25px
+    h1
+      font-size: 20px
+    h2
+      font-size: 12px
+      letter-spacing: 2px
+  .btn
+    font-size: 13px
+    padding: 0 15px
+  .rooms
+    &-item
+      &--title
+        position: relative
+        max-width: 100%
+        h3
+          font-size: 12px
+      &--btns
+        position: relative
+        bottom: 0
+        .btn
+          width: 50%
+          border: 1px solid #fff
+          text-align: center
+
+  .bread-crumbs li::after
+    margin-left: 10px
+
+  .bread-crumbs li
+    margin-right: 10px
+
+  .bl-full
+    padding-top: 0
+    padding-bottom: 0
+
+  .bl-white
+    padding-left: 10px
+    padding-right: 10px
+
+  .bl-data
+    margin-bottom: 10px
+
+  .section-meetings h2
+    line-height: 40px
+
+  .price-item
+    &--title
+      h4
+        font-size: 30px
+      &::before
+        left: auto
+        right: 0
+    &--list
+      ul
+        li
+          font-size: 14px
+
+  .bl-news
+    .button-wrapper
+      flex-direction: column
+    .mini-post--big .btn
+      margin-top: 0
+    .like
+      margin-top: 10px
+      margin-right: 10px
+      margin-left: 0
+
+  .bl-pagination .current, .bl-pagination .page-numbers
+    width: 20px
+    height: 20px
+    line-height: 20px
+    font-size: 12px
+
+  .section-news
+    padding-bottom: 0
+
+  .bl-pagination
+    padding-bottom: 20px
+
+  .bl-state--img
+    .bl-publ
+      display: none
+
+  .bl-state .h2
+    margin-top: 20px
+    font-size: 25px
+    line-height: 30px
+    margin-left: 15px
+    margin-right: 15px
+
+  .bl-state
+    p
+      margin-left: 10px
+      margin-right: 10px
+      font-size: 18px
+    .likes
+      margin-left: 10px
+    .data-write
+      float: left
+      margin-left: 10px
+
+  .section-gallery
+    .item-img
+      margin-bottom: 15px
+
+  .section-contacts .bl-state
+    padding: 15px
+    padding-top: 0
+
+  .section-contacts
+    form input, form textarea
+      width: 100%
+    form .form-title
+      font-size: 18px
+    .contacts-info a
+      font-size: 18px
+
+  .section-catalog, .section-restauran
+    .bl-double .bl-text
+      padding: 15px
+
+  .section-cartochka .bl-state
+    padding: 10px
+    .point-m
+      width: 100%
+      display: inline-block
+      text-align: center
+  .section-cartochka .bl-state h2
+    font-size: 24px
+    line-height: 30px
+  .section-cartochka .bl-state .size
+    justify-content: center
+    margin-top: 10px
+  .section-cartochka .bl-state .btn
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    width: auto
+    justify-content: center
+  .section-cartochka .bl-state .point-title
+    font-size: 17px
+  .section-cartochka .bl-state h2
+    text-align: center
+  .section-cartochka .bl-state .info
+    margin-top: 10px
+    margin-bottom: 10px
+  .section-cartochka
+    .bl-state p
+      margin-left: 0
+      margin-right: 0
+
+  .wrapper-img
+    width: auto
+    height: auto
+    padding: 20px
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    margin-left: 15px
+    margin-right: 15px
+
+  .wrapper-img div, .wrapper-img li
+    font-size: 15px
+
+  .wrapper-img li
+    margin: 10px 0
+
+  .ico-close
+    right: 5px
+    top: 3px
+
+  .section-cartochka .bl-state .btn
+    margin-bottom: 20px
+
+  .header-line--second.menu-opened
+    height: 100%
+
+  .banner-text
+    left: 20px
+
+
+
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

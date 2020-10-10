@@ -1,0 +1,325 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.container
+		width: 960px
+		max-width: 960px
+
+	.game-box, .game-box__img-holder, .game-box__img-holder img
+		width: 232px
+		height: auto
+
+	.games-list__item
+		height: auto
+
+	.game-box__title
+		margin: 5px 10px
+
+	.jackpot
+		background-size: contain
+
+	.jackpot__holder 
+		padding: 122px 0 0 261px
+
+	.jackpot__title
+		font-size: 19px
+		top: 210px
+		left: 189px
+
+	.jackpot
+		height: 380px
+
+	// .event-stream-list
+	// 	width: 962px
+	// 	margin: 0 auto
+	// 	max-width: 992px
+
+	// .slick-initialized .slick-slide
+	// 	padding-left: 40px
+
+	.layout__games-list-filter:after, .layout__games-list-filter:before
+		display: none
+
+	// .event-stream-list
+	// 	width: 100%
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.container
+		width: 720px
+		max-width: 720px
+
+	.head-control-panel__dynamic, .head-control-panel__lang, .head-control-panel__divider
+		display: none
+
+	.layout__pull-left
+		width: 100%
+		display: flex
+		justify-content: center
+		margin-top: 6px
+		margin-left: 60px
+
+	.head-control-panel__float-menu
+		margin-top: 6px
+
+	.grids__item.grids__item_type_container.container
+		width: 100%
+
+	.menu-filter
+		overflow: auto
+
+	.menu-filter__item
+		padding-top: 30px
+
+	.layout__games-list-filter, 
+		margin-top: -86px
+
+	.menu-filter:before
+		top: 82px
+
+	.wrap-h2 h2
+		font-size: 28px
+		width: 100%
+
+	.slide_content .container
+		flex-direction: column
+
+	.wrap-h2
+		width: 70%
+		margin: 0 auto
+
+	.wrap-h2 h2
+		text-align: center
+		text-indent: 0
+		padding-bottom: 15px
+
+	.main-slider__btn-holder
+		width: 100%
+		justify-content: center
+		display: flex
+		padding-top: 0
+		transform: scale(0.8)
+
+	h1
+		font-size: 24px
+		line-height: 28px
+
+	.custom-info h2
+		font-size: 18px
+		line-height: 22px
+
+	.games-list__item
+		width: 33.3%
+
+	.jackpot__total
+		font-size: 40px
+
+	.jackpot__currency
+		font-size: 20px
+		margin-right: 8px
+
+	.jackpot__holder
+		padding: 88px 0 0 197px
+
+	.jackpot__title 
+		font-size: 15px
+		top: 145px
+		left: 105px
+
+	.jackpot
+		height: 280px
+
+	.menu-simple__item:not(:first-child)
+		margin-left: 12px
+
+	.menu-simple__link
+		font-size: 12px
+		margin-bottom: 10px
+
+	// .event-stream-list
+	// 	width: 100%
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.container
+		width: 540px
+		max-width: 540px
+
+	.games-list__item
+		width: 50%
+
+	.game-box, .game-box__img-holder, .game-box__img-holder img
+		width: 100%
+
+	.jackpot__holder
+		padding: 69px 0 0 154px
+
+	.jackpot__currency
+		font-size: 16px
+
+	.jackpot__total
+		font-size: 28px
+
+	.jackpot__title
+		font-size: 11px
+		top: 97px
+		left: 49px
+
+	.jackpot
+		height: 205px
+
+	.main-slider .slide_content
+		padding-bottom: 78px
+
+	.slick-dots
+		bottom: 162px
+
+	.layout__games-list-filter
+		margin-top: -189px
+
+	.menu-filter__item
+		padding-top: 35px
+
+	.games-list__container
+		.mob-mrg
+			margin-top: -70px
+
+	.main-slider .slide_img img
+		height: 165px
+		object-fit: cover
+
+	.main-slider .slide_img
+		padding-bottom: 0
+		height: 165px
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	.container
+		width: 100%
+		max-width: 100%
+
+	.jackpot
+		background: none
+
+	.jackpot
+		height: auto
+		margin: 30px 0
+
+	.jackpot__holder
+		padding: 0
+		display: flex
+		justify-content: center
+		align-items: flex-end
+
+	.jackpot__title
+		top: 8px
+		left: 0
+		transform: none
+
+	.jackpot__currency
+		font-size: 27px
+
+	.head-control-tabs__link
+		padding: 0 10px
+
+	.layout__pull-left
+		margin: 0
+		justify-content: flex-start
+		margin-top: 5px
+
+	.wrap-h2 h2
+		font-size: 18px
+
+	.wrap-h2
+		z-index: 9
+
+	.main-slider .slide_content
+		padding-bottom: 70px
+
+	.main-slider__btn-holder
+		z-index: 99
+		transform: scale(0.7)
+
+	.slick-dots
+		bottom: 190px
+		z-index: 99
+
+	.layout__games-list-filter
+		margin-top: -222px
+
+	.main-slider .slide_img img
+		height: 155px
+		object-fit: cover
+
+	.main-slider .slide_img
+		padding-bottom: 0
+		height: 155px
+
+	.custom-info
+		padding: 0
+
+	h1
+		font-size: 22px
+		line-height: 24px
+
+	.custom-info h2
+		font-size: 16px
+		line-height: 20px
+
+	h3
+		font-size: 15px
+		line-height: 17px
+
+	.custom-info p
+		margin: 0 0 15px
+		font-size: 14px
+		line-height: 16px
+
+@media (max-width: 480px)
+
+	.games-list__item
+		width: 100%
+
+	.game-box__align-content
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: 100%
+
+	.event-stream-list .slick-initialized .slick-slide
+		display: flex
+		justify-content: center
+
+	.wrap-h2
+		width: 90%
+
+	.side-menu.active .side-menu__aside
+		width: 100%
+
+	.event-stream-list__item
+		justify-content: center!important
+		display: flex!important
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

@@ -1,0 +1,1031 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "app/libs/jQuery.mmenu/dist/jquery.mmenu.all"
+@import "app/libs/owl.carousel/dist/assets/owl.carousel.min"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: 500
+a
+	color: #fff
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: #fff
+
+.btn
+	font-size: 20px
+	letter-spacing: 0.7px
+	line-height: 26px
+	&-right
+		float: right
+	&-1
+		text-transform: uppercase
+		font-weight: 500
+		background-image: linear-gradient(277deg, #fae017, #e03012)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		height: 50px
+		font-family: "ProximaNovaBold", sans-serif
+		border-radius: 25px
+		display: block
+		text-align: center
+		width: 330px
+		padding: 10px 10px
+		margin: 0 auto
+		border-style: solid
+		border-width: 3px
+		border-image-source: linear-gradient(277deg, #fae017, #e03012)
+		border-image-slice: 1
+		&:hover
+			border: none
+			border-bottom-style: solid
+			border-bottom-width: 3px
+			border-image-source: linear-gradient(277deg, #fae017, #e03012)
+			border-image-slice: 1
+			width: 330px
+			line-height: 32px
+			// background-image: none
+			// background-color: #373737
+
+	&-2
+		position: absolute
+		font-family: "ProximaNovaSemibold", sans-serif
+		font-style: normal
+		font-weight: 500
+		color: #373737
+		// width: 277px
+		// height: 49px
+		border-radius: 24.5px
+		background-color: rgba(255, 255, 255, 0.7);
+		border: solid 2px #444444
+		// display: block
+		// padding-top: 10px
+		// padding-left: 30px
+		padding: 11.5px 25px 11.5px 42px
+		bottom: 0
+		&::before
+			content: ''
+			width: 13px
+			height: 13px
+			background-color: #f5a623
+			position: absolute
+			display: inline-block
+			border-radius: 50%
+			left: 16px
+			top: 18px
+		&:hover
+			background-color: #f5a623
+			color: #373737
+			padding-left: 20px
+			padding: 11.5px 33px 11.5px 34px
+			transition: .3s
+	&-3
+		font-family: "ProximaNovaSemibold", sans-serif
+		color: #373737
+		width: 266px
+		height: 49px
+		border-radius: 24.5px
+		background-color: rgba(255, 255, 255, 0.7)
+		border: 2px solid #f5a623
+		display: inline-block
+		text-align: center
+
+
+
+.first-width, .second-width, .third-width
+	display: inline-block
+	text-align: center
+	margin-top: 8px
+	margin-right: 30px
+
+// .action
+// 	background-color: #f5a623
+// 	border: solid 2px #f5a623
+// 	color: #373737
+// 	padding-left: 20px
+
+
+
+.first-width, 
+.first-width:hover
+	width: 292px
+
+.second-width,
+.second-width:hover
+	width: 390px
+
+.third-width,
+.third-width:hover
+	width: 164px
+
+.btn-read, .btn-read:hover
+	width: 292px
+
+
+.menu
+	&-btn
+		margin-left: 18px
+		div
+			height: 4px
+			width: 32px
+			background-color: #fff
+			&:not(:last-child)
+				margin-bottom: 9px
+
+.menu
+	position: fixed
+	left: 0
+	top: 0
+	background-color: #fff
+	height: 100vh
+	padding-top: 28px
+	width: 400px
+	padding-left: 10px
+	margin-left: -400px
+	transition: 0.3s
+	z-index: 101
+	&_active
+		margin-left: 0
+	> ul
+		padding-left: 30px!important
+	a
+		color: #373737
+		font-family: "ProximaNovaBold", sans-serif
+		font-size: 18px
+		line-height: 22px
+		letter-spacing: 0.6px
+	li
+		margin-bottom: 20px
+	.child
+		margin-top: 20px
+	.active
+		position: relative
+
+.close
+	display: none
+
+
+
+.menu>ul
+	margin: 0
+	padding: 0
+	margin-right: 20px
+	max-height: calc(100% - 98px)
+	overflow: auto
+	width: 100%
+
+.menu>ul>li
+	list-style-type: none
+
+.logo-menu
+	padding-bottom: 50px
+	display: inline-block
+	margin-left: 28px
+
+.submenu
+	li
+		margin-top: 20px
+
+.ico-close
+	display: inline-block
+	width: 26px
+	height: 26px
+	// margin-left: 236px
+	float: right
+	margin-right: 26px
+	margin-top: 10px
+	cursor: pointer
+
+
+// .close
+// 	display: none
+
+.menu-item-has-children
+	position: relative
+	ul
+		display: none
+	&::before
+		content: '+'
+		font-size: 16px
+		border: 1px solid #e1920e
+		border-radius: 50%
+		position: absolute
+		left: -25px
+		top: 5px
+		text-align: center
+		height: 15px
+		width: 15px
+		line-height: 11px
+	&.active
+		&::before
+			content: '-'
+			font-size: 26px
+		>a
+			color: #e1920e
+		li
+			list-style-type: disc
+			a
+				color: #373737
+				font-family: "ProximaNovaLight", sans-serif
+			
+
+
+
+
+
+
+
+
+
+.slide-down
+	margin-top: 35px
+	font-family: "ProximaNovaLight", sans-serif
+	text-transform: lowercase
+	color: #c8c8c8
+	font-size: 20px
+	line-height: 34px
+	span
+		margin-bottom: 9px
+		display: block
+		transition: .3s
+.play
+	margin-bottom: 45px
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	padding-top: 25px
+	padding-bottom: 25px
+	z-index: 99
+	background-color: transparent
+	transition: 0.3s
+	&-scrolled
+		background: rgba(13, 29, 81, 73)
+		padding-top: 10px
+		padding-bottom: 10px
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.logo
+			margin-left: 222px
+	&-tel
+		margin-left: 20px
+		font-family: "ProximaNovaLight", sans-serif
+		font-size: 24px
+		font-weight: 300
+		letter-spacing: 0.9px
+		line-height: 26px
+		div
+			display: inline-block
+		strong
+			font-family: "ProximaNovaSemibold", sans-serif
+	&-block
+		padding-top: 334px
+		background-image: url(../img/bg-1-scr.jpg)
+		background-size: cover
+		width: 100%
+		padding-bottom: 42px
+		// min-height: 1012px
+		// height: 100vh
+		display: flex
+		align-items: center
+		.container
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: -134px
+				left: -94px
+				width: 143px
+				height: 143px
+				background-image: url(../img/line-copy-line-copy-2-line-copy-3-line-copy-4-line-copy-5-line-copy-6-line-copy-7-rectangle-3-mask.svg)
+				background-repeat: no-repeat
+			&::after
+				content: ''
+				position: absolute
+				width: 82px
+				right: -24px
+				bottom: 306px
+				height: 82px
+				background-image: url(../img/group-5.svg)
+
+		h1
+			color: #fff
+			font-size: 48px
+			letter-spacing: 1.7px
+			text-transform: uppercase
+			line-height: normal
+			font-family: "ProximaNovaExtrabold", sans-serif
+			margin-bottom: 26px
+		h2
+			color: #c8c8c8
+			font-size: 24px
+			line-height: 34px
+			letter-spacing: 0.9px
+			text-transform: uppercase
+			font-weight: 300
+			padding-left: 100px
+			padding-right: 100px
+			font-family: "ProximaNovaLight", sans-serif
+			margin-bottom: 24px
+		a
+			display: block
+
+.section
+	&-about
+		padding-top: 40px
+		padding-bottom: 65px
+		p
+			font-family: "ProximaNovaLight", sans-serif
+			font-size: 20px
+			color: #373737
+			font-weight: 300
+			line-height: normal
+			letter-spacing: normal
+			margin-bottom: 35px
+			strong
+				font-family: "ProximaNovaBold", sans-serif
+		.marg-top
+			margin-top: 33px
+		.marg-left
+			margin-left: 68px
+			margin-top: 61px
+		&--images
+			margin-left: 97px
+			margin-top: -73px
+		// &--images
+		// 	display: block
+		// 	position: relative
+		// 	height: 404px
+		// 	&::after
+		// 		content: ''
+		// 		position: absolute
+		// 		height: 141px
+		// 		width: 142px
+		// 		background-image: url(../img/line-copy-line-copy-2-line-copy-3-line-copy-4-line-copy-5-line-copy-6-line-copy-7-rectangle-3-mask.svg)
+		// 		right: -83px
+		// 		top: -70px
+		// 		z-index: -1
+		// 	.about-img
+		// 		float: right
+		// 		min-width: 325px
+		// 		min-height: 404px
+		// 		border: 6px solid #f5a623
+		// 		background-color: #d8d8d8
+		&--play
+			margin-top: 52px
+			display: block
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				height: 236px
+				width: 64px
+				background-image: url(../img/combined-shape.svg)
+				left: -112px
+				top: 133px
+				cursor: auto
+			&::after
+				content: ''
+				position: absolute
+				height: 141px
+				width: 142px
+				background-image: url(../img/line-copy-line-copy-2-line-copy-3-line-copy-4-line-copy-5-line-copy-6-line-copy-7-rectangle-3-mask.svg)
+				left: -20px
+				bottom: -20px
+				cursor: auto
+				z-index: -1
+			.video-play
+				border: 6px solid #f5a623
+				width: 100%
+				z-index: 5
+			.btn-play
+				position: absolute
+				left: calc(50% - 50px)
+				top: calc(50% - 50px)
+				z-index: 10
+		&--h2
+			text-align: center
+	&-title
+		position: relative
+		margin-bottom: 50px
+		h2
+			font-family: "ProximaNovaBold", sans-serif
+			font-size: 36px
+			font-weight: 500
+			line-height: normal
+			letter-spacing: normal
+			text-transform: uppercase
+			margin-left: 50px
+			border-bottom-style: solid
+			border-bottom-width: 3px
+			border-image-source: linear-gradient(277deg, #fae017, #e03012)
+			border-image-slice: 1
+			display: inline
+			&::before
+				content: ''
+				position: absolute
+				width: 40px
+				left: 0
+				top: 10px
+				height: 40px
+				background-image: url(../img/group-2.svg)
+
+	&-news
+		background-image: url(../img/bg-3-scr.jpg)
+		background-size: cover
+		width: 100%
+		// min-height: 1049px
+		// height: 100vh
+		padding-top: 34px
+		padding-bottom: 42px
+		.item-bl-news
+			margin-bottom: 47px
+		&--content
+			&-left
+				margin-left: -30px
+				margin-top: 5px
+			h3
+				font-family: "ProximaNovaBold", sans-serif
+				font-size: 24px
+				color: #fff
+				font-weight: bold
+				line-height: normal
+				text-transform: uppercase
+				letter-spacing: normal
+				font-style: normal
+				line-height: 30px
+			p
+				font-family: "ProximaNovaLight", sans-serif
+				font-size: 20px
+				color: #fff
+				letter-spacing: normal
+				line-height: 24px
+				margin-bottom: 87px
+			.news-p
+				letter-spacing: 0.6px
+				font-weight: 300
+				margin-bottom: 20px
+				&--lg
+					margin-bottom: 56px
+			.h3-margin
+				margin-bottom: 44px
+		&--title
+			margin-bottom: 55px
+		&--h2
+			color: #fff
+			text-align: center
+		&--images
+			display: block
+			position: relative
+			img
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 100%
+			&-sm
+				// width: 391px
+				// height: 390px
+				img
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 100%
+					// height: 390px
+			.news-img
+				// height: 367px
+				// min-width: 100%
+				border: solid 4px #f5a623
+				background-color: #fff
+				display: block
+
+	&-contacts
+		padding-top: 35px
+		padding-bottom: 60px
+		&--title
+			margin-bottom: 43px
+		&--wrapper
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 69px
+		&--form
+			margin-left: 67px
+			br
+				display: none
+			label
+				font-family: "ProximaNovaSemibold", sans-serif
+				font-size: 20px
+				font-weight: 500
+				font-style: normal
+				color: #373737
+				display: block
+			.input
+				width: 100%
+				height: 50px
+				background-color: #fff
+				border: 1px solid #373737
+				margin-bottom: 12px
+				font-size: 16px
+				padding-left: 15px
+			textarea
+				height: 186px
+				width: 100%
+				font-size: 16px
+				padding-left: 15px
+			.wpcf7-not-valid
+				border: solid 2px #ef3a3a
+			input[aria-invalid="false"], textarea[aria-invalid="false"]
+				border: 2px solid #3ad45e
+		.btn-3
+			margin-top: 28px
+			cursor: pointer
+
+.item-news
+	margin-bottom: 40px
+
+h3
+	font-family: "ProximaNovaBold", sans-serif
+	font-size: 24px
+	color: #fff
+	font-weight: bold
+	line-height: normal
+	text-transform: uppercase
+	letter-spacing: normal
+	font-style: normal
+	line-height: 30px
+
+.contacts-maps
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		height: 236px
+		width: 64px
+		background-image: url(../img/combined-shape.svg)
+		left: -112px
+		bottom: 3px
+	&::after
+		content: ''
+		position: absolute
+		height: 141px
+		width: 142px
+		background-image: url(../img/line-copy-line-copy-2-line-copy-3-line-copy-4-line-copy-5-line-copy-6-line-copy-7-rectangle-3-mask.svg)
+		right: -30px
+		top: -25px
+		z-index: -1
+
+.contacts-info
+	font-size: 24px
+	font-style: normal
+	color: #373737
+	line-height: 26px
+	letter-spacing: 0.9px
+	&--img
+		display: inline-block
+		margin-right: 25px
+	p
+		display: inline-block
+		position: relative
+		top: 16px
+		font-family: "ProximaNovaLight", sans-serif
+		font-size: 24px
+	strong
+		font-family: "ProximaNovaSemibold", sans-serif
+		font-weight: 500
+
+
+
+.captcha
+	min-width: 201px
+	min-height: 52px
+	background-color: #373737
+	display: block
+	margin-left: 285px
+	position: absolute
+	bottom: 3px
+
+.h3-marg
+	margin-bottom: 38px		
+
+.up
+	position: absolute
+	right: -140px
+	bottom: 4px
+	color: #373737
+	display: inline-block
+	font-family: "ProximaNovaRegular", sans-serif
+	line-height: 18px
+	font-size: 18px
+	&:hover
+		text-decoration: none
+		color: #373737
+	&-img
+		display: inline-block
+	p
+		display: inline-block
+		position: relative
+		top: 13px
+		left: 8px
+
+.copyright
+	padding-top: 30px
+	padding-bottom: 30px
+	background-color: rgba(13, 29, 81, 0.73)
+	&-content
+		font-family: "ProximaNovaSemibold", sans-serif
+		font-size: 20px
+		text-align: center
+		font-weight: 600
+		color: #fff
+
+.owl-dots
+	position: relative
+	margin: 0 auto
+	width: 30px
+	outline: none
+
+.owl-carousel button.owl-dot
+	width: 10px
+	height: 10px
+	background-color: transparent
+	border-radius: 50%
+	border: 1px solid #fff
+	position: relative
+	outline: none
+	&:first-child
+		margin-right: 10px
+	&.active
+		background-color: #f5a623
+		border: 1px solid #fff
+
+
+//category
+
+.items
+	padding-top: 113px
+	.btn-center
+		margin: 0 auto
+		width: 214px
+		display: block
+		margin-bottom: 40px
+		position: relative
+	&--h2
+		text-align: center
+		margin-bottom: 55px
+	&-color
+		h3, p
+			color: #373737
+	.item
+		margin-bottom: 52px
+		position: relative
+		&-figures:nth-child(even)
+			&::after
+				content: ''
+				position: absolute
+				height: 141px
+				width: 142px
+				background-image: url(../img/line-copy-line-copy-2-line-copy-3-line-copy-4-line-copy-5-line-copy-6-line-copy-7-rectangle-3-mask.svg)
+				right: -75px
+				bottom: 0
+				z-index: -1
+		&-figures:nth-child(odd)
+			&::after
+				content: ''
+				position: absolute
+				width: 82px
+				right: -40px
+				bottom: 0
+				height: 82px
+				background-image: url(../img/group-5.svg)
+		&-figures:last-of-type
+			margin-bottom: 21px
+			&::before
+				content: ''
+				position: absolute
+				height: 236px
+				width: 64px
+				background-image: url(../img/combined-shape.svg)
+				left: -112px
+				bottom: 125px
+
+.section-news--images-sm
+	width: 391px
+	margin-bottom: 0
+
+
+//product
+
+.section-product
+	padding-top: 113px	
+	padding-bottom: 65px
+	.btn-center
+		display: block
+		width: 214px
+		margin: 0 auto
+		padding: 9.5px 25px 9.5px 42px
+		margin-top: 30px
+	.pos-mb
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			width: 123px
+			right: 5px
+			bottom: -104px
+			height: 80px
+			background-image: url(../img/group-5x3.png)
+			background-repeat: no-repeat
+
+.products-news
+	.section-news--content .h3-margin
+		font-size: 23px
+
+
+.block-item
+	.btn-2::before
+		top: 18px
+	.btn-center:hover
+		padding: 9.5px 25px 9.5px 36px
+	.btn-center::before
+		top: 16px
+		.btn-center::before:hover
+			display: none
+	&--top
+		margin-bottom: 33px
+	&--bot
+		margin-bottom: 30px
+	&--content
+		position: relative
+		.btn-2
+			position: relative
+		.pos-mb
+			margin-bottom: 113px
+			&--n
+				margin-bottom: 0
+		.pos-mt
+			margin-top: 35px
+			margin-bottom: 25px
+	ul
+		font-family: "ProximaNovaLight", sans-serif
+		font-size: 20px
+		margin-top: 5px
+		margin-bottom: 5px
+
+.block-other
+	padding-top: 25px
+	.row
+		width: auto
+	.other-item
+		padding-bottom: 30px
+	.h3-marg
+		font-size: 24px
+		line-height: 30px	
+		text-transform: uppercase
+		font-family: "ProximaNovaBold", sans-serif
+		font-weight: 500
+		margin-top: 25px
+		margin-bottom: 35px
+		color: #373737
+
+//news-all
+
+.news-all
+	padding-top: 113px
+	background-image: none
+	position: relative
+	.item-bl-news:nth-child(3)
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			height: 236px
+			width: 64px
+			background-image: url(../img/combined-shape.svg)
+			left: -97px
+			bottom: 0
+	p, h3, h2
+		color: #373737
+	.btn-center
+		width: 307px
+		display: block
+		margin: 0 auto
+		position: relative
+	.btn-2::before
+		top: 18px
+	// .btn-2
+	// 	position: relative
+
+.section-news--content
+	.news-p--sm
+		margin-bottom: 100px
+
+//news-full
+
+.news-full
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		bottom: 500px
+		left: 0
+		height: 236px
+		width: 64px
+		background-image: url(../img/combined-shape.svg)
+
+	h3
+		margin-top: 10px
+		margin-bottom: 55px
+	img
+		margin-right: 18px
+		max-width: 33.3%
+		&:nth-of-type(1)
+			border: solid 4px #f5a623
+			background-color: #fff
+			display: block
+			float: left
+			margin-right: 65px
+			max-width: 100%
+
+	p, ul
+		font-family: "ProximaNovaLight"
+		font-size: 20px
+		letter-spacing: 0.6px
+		color: #373737
+		font-weight: 300
+		line-height: 26px
+	ul
+		margin-top: 25px
+		&:nth-of-type(1)
+			margin-top: 40px
+		li
+			margin-bottom: 17px
+		&:nth-of-type(2)
+			margin-top: 15px
+			margin-bottom: 40px
+
+h4
+	font-family: "ProximaNovaBold", sans-serif
+	font-size: 20px
+	letter-spacing: 0.6px
+	color: #373737
+
+
+
+//contacts
+
+
+.contacts
+		padding-top: 115px
+		&-maps:first-of-type
+				&::before
+					display: none
+
+.partners
+	.contacts
+		padding-top: 115px
+		&-maps
+			&::before
+				content: ''
+				position: absolute
+				height: 236px
+				width: 64px
+				background-image: url(../img/combined-shape.svg)
+				left: -112px
+				bottom: 6px
+
+.contacts
+	.up
+		display: none
+	.section-contacts .btn-3
+		display: block
+		margin: 0 auto
+		margin-top: 10px
+.partners
+	position: relative
+	padding-top: 45px
+	.btn-2
+		position: relative
+	.btn-2:nth-of-type(1)
+		margin-right: 34px
+	&-maps
+		margin-top: 45px
+		position: relative
+		.partners-adress
+			width: 487px
+			// height: 366px
+			box-sizing: content-box
+			padding: 31px
+			border: solid 1px #979797
+			border-radius: 15px
+			box-shadow: 12px 11px 18px 0 rgba(0, 0, 0, 0.5)
+			position: absolute
+			top: 43px
+			right: 50px
+			background-color: #fff
+			z-inex: 3
+			&::before
+				content: ''
+				width: 0
+				height: 0
+				border-top: 15px solid transparent
+				border-right: 20px solid white
+				border-bottom: 15px solid transparent
+				position: absolute
+				left: -20px
+				top: calc(50% - 10px)
+				z-index: 2
+			&::after
+				content: ''
+				width: 0
+				height: 0
+				border-top: 16px solid #0000
+				border-right: 21px solid #979797
+				border-bottom: 16px solid transparent
+				position: absolute
+				left: -21px
+				top: -webkit-calc(50% - 11px)
+				top: calc(50% - 11px)
+				z-index: 1
+		h4
+			letter-spacing: 0
+		h4:first-of-type
+			margin-bottom: 30px
+		p
+			font-family: "ProximaNovaRegular", sans-serif
+			font-size: 20px
+			line-height: 26px
+
+
+
+
+
+
+.tab
+	margin-top: 17px
+		
+
+
+
+
+
+
+
+.overlay
+	position: fixed
+	background-color: rgba(0,0,0,.6)
+	width: 100%
+	height: 100%
+	z-index: 100
+	top: 0
+	right: 0
+	display: none
+	transition: 0.3s
+	&_active
+
+
+
+
+	
+
+		
+
+@import "media" // Always at the end

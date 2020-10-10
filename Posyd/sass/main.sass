@@ -1,0 +1,718 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a, a:hover
+	color: $text
+	text-decoration: none
+
+.h1
+	font-size: 55px
+	font-weight: bold
+	line-height: 70px
+	position: relative
+	&_description
+		position: relative
+		font-size: 24px
+		font-weight: normal
+		padding-left: 95px
+		line-height: normal
+		&::before
+			content: ''
+			width: 75px
+			height: 3px
+			background-color: $accent
+			position: absolute
+			left: 0
+			top: 50%
+	span
+		position: relative
+		z-index: 1
+		&::after
+			content: ''
+			width: 215px
+			height: 15px
+			background-color: $accent
+			display: block
+			position: absolute
+			bottom: 5px
+			left: 0
+			z-index: -1
+
+.h2
+	font-size: 36px
+	font-weight: bold
+	position: relative
+	line-height: 80px
+	margin-bottom: 35px
+	&::before
+		content: ''
+		width: 75px
+		height: 5px
+		background-color: $accent
+		position: absolute
+		bottom: 0
+		left: 0
+
+.h3	
+	font-size: 24px
+	font-weight: bold
+	line-height: 24px
+	text-align: center
+	&_description
+		color: $text-light
+		font-size: 14px
+		line-height: 18px
+		text-align: center
+
+.btn
+	font-size: 18px
+	font-weight: 600
+	box-shadow: 0px 3px 0px 0px rgba(124, 181, 7, 1)
+	border-radius: 30px
+	text-align: center
+	transition: .3s
+	background-color: $accent
+	color: #fff
+	display: inline-block
+	&:hover
+		background-color: $hover
+		color: #fff
+	&_sm
+		padding: 10px 35px
+	&-wrap
+		margin-top: 20px
+		display: flex
+		justify-content: center
+
+
+
+.header
+	height: 100vh
+	background-size: cover
+	background-position: center center
+	overflow: hidden
+	&_interactive
+		position: absolute
+		right: -140px
+		top: -30px
+		z-index: 1
+		&::before
+			content: ''
+			width: 500px
+			height: 500px
+			border-radius: 50%
+			border: 50px solid $accent
+			position: absolute
+			z-index: -1
+			top: 100px
+			left: 90px
+		img
+			max-width: 80%
+	&_top
+		border-bottom: 1px solid #EFEFEE
+		&-wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
+	&_bot
+		height: calc(100vh - 92px)
+		display: flex
+		align-items: center
+		> .container
+			position: relative
+		&-wrap
+			margin-bottom: 20px
+	&_content
+		max-width: 750px
+.nav
+	ul, li
+		list-style-type: none
+		margin: 0
+		padding: 0
+	ul
+		display: flex
+		font-size: 18px
+		font-weight: 600
+		text-transform: uppercase
+	li
+		display: flex
+		// &:first-child a
+		// 	padding-left: 0
+	a
+		padding: 0 16px
+		height: 92px
+		box-sizing: border-box
+		display: flex
+		align-items: center
+		border-bottom: 2px solid transparent
+		transition: .3s
+		&:hover
+			border-bottom: 2px solid $accent
+
+.nav
+	align-items: center
+	display: flex
+	&_icon
+		width: 40px
+		height: 35px
+		position: relative
+		cursor: pointer
+		span
+			display: block
+			position: absolute
+			height: 5px
+			width: 100%
+			background-color: $text
+			border-radius: 9px
+			opacity: 1
+			left: 0
+			transform: rotate(0deg)
+			transition: .25s ease-in-out
+			&:nth-child(1)
+				top: 0
+			&:nth-child(2), &:nth-child(3)
+				top: 13px
+			&:nth-child(4)
+				top: 26px
+
+.social
+	display: flex
+	a
+		width: 30px
+		height: 30px
+		border: 2px solid $text
+		border-radius: 50%
+		background-color: transparent
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: .3s
+		&:nth-child(2)
+			margin: 0 15px
+			.fab
+				margin-left: -2px
+		&:hover
+			color: $accent
+			border-color: $accent
+
+.phone
+	display: flex
+	flex-direction: column
+	a
+		.fas
+			transition: 0.3s
+		&:hover 
+			.fas
+				color: $accent
+
+.advantages
+	display: flex
+	margin: 65px 0
+
+.advantage
+	width: 165px
+	margin-right: 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&_ico
+		position: relative
+		z-index: 1
+		margin-right: 15px
+		&::before
+			content: ''
+			background-color: $accent
+			width: 20px
+			height: 20px
+			position: absolute
+			left: -5px
+			top: -5px
+			border-radius: 50%
+			z-index: -1
+	&_text
+		font-size: 18px
+		font-weight: 600
+		line-height: 24px
+
+.section
+	padding-top: 80px
+
+.text
+	font-size: 17px
+	line-height: 22px
+
+div.plus_item:nth-child(2) .plus_img img
+	margin-top: 11px
+
+div.plus_item:nth-child(3) .plus_img img
+	margin-top: -11px
+	margin-left: 21px
+
+.plus
+	margin-top: 50px
+	display: flex
+	justify-content: space-between
+	&_item
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 170px
+	&_img
+		position: relative
+		z-index: 1
+		width: 170px
+		height: 170px
+		display: flex
+		align-items: center
+		justify-content: center
+		border: 1px solid #EFEFEE
+		border-radius: 50%
+		margin-bottom: 15px
+		&::after
+			content: ''
+			width: 140px
+			height: 140px
+			border-radius: 50%
+			background-color: $accent
+			position: absolute
+			left: 15px
+			top: 15px
+			z-index: -1
+	&_text
+		width: 140px
+		font-size: 18px
+		line-height: 22px
+		text-align: center
+		font-weight: 600
+
+.form
+	padding: 45px 30px
+	display: flex
+	flex-direction: column
+	align-items: center
+	position: relative
+	z-index: 1
+	background-color: #fff
+	box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.08)
+	// &::after
+	// 	content: ''
+	// 	position: absolute
+	// 	top: -35px
+	// 	right: -35px
+	// 	background-image: url(../img/dots.png)
+	// 	background-repeat: no-repeat
+	// 	background-size: 100% 100%
+	// 	width: 100%
+	// 	height: 100%
+	// 	z-index: -1
+	&_interactive
+		position: absolute
+		right: -35px
+		top: -35px
+		z-index: -1
+	&_h3
+		display: flex
+		flex-direction: column
+		align-items: center
+	.h3	
+		margin-bottom: 10px
+		&_description
+			margin-bottom: 20px
+	&_accept
+		font-size: 12px
+		line-height: 16px
+		color: $text-light
+		text-align: center
+	input[type="text"], input[type="tel"], textarea
+		background-color: #f7f7f7
+		padding: 12px 25px
+		border: none
+		border-radius: 20px
+		margin-bottom: 10px
+		width: 100%
+	input[type="submit"]
+		border: none
+		margin-top: 5px
+		margin-bottom: 10px
+		width: 100%
+		cursor: pointer
+
+.section-about 
+	form
+		margin-top: 35px
+
+.section-price
+	&_wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+.tabs
+	width: 293px
+	&_center
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+
+
+.title
+	font-size: 24px
+	font-weight: 600
+	span
+		color: $accent
+	&_description
+		font-size: 14px
+		color: $text-light
+
+.problem
+	&_item
+		background-color: #fff
+		width: 293px
+		height: 45px
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: 0.3s
+		font-size: 18px
+		font-weight: 600
+		margin-bottom: 20px
+		border-radius: 10px
+		box-shadow: 0px 4px 13px 0px rgba(137, 137, 137, 0.16)
+		cursor: pointer
+		a
+			width: 100%
+			text-align: center
+		&:hover
+			background-color: $accent
+			a
+				color: #fff
+	&_img
+		width: 420px
+		height: 420px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 1px solid $accent
+		background-color: #fff
+		position: relative
+		border-radius: 50%
+		margin-top: 40px
+		margin-bottom: 40px
+		img
+			z-index: 2
+			margin-left: 30px
+			margin-top: 30px
+		&::after
+			content: ''
+			width: 390px
+			height: 390px
+			position: absolute
+			left: 15px
+			top: 15px
+			border: 1px solid $accent
+			border-radius: 50%
+		&::before
+			content: ''
+			width: 360px
+			height: 360px
+			background-color: $accent
+			position: absolute
+			left: 30px
+			top: 30px
+			border-radius: 50%
+
+
+div.problem_item:last-child
+	margin-bottom: 0
+
+.accordion
+	&_header
+		cursor: pointer
+		display: flex
+		justify-content: space-between
+		padding: 10px 25px
+		font-size: 18px
+		font-weight: bold
+		line-height: 28px
+		box-shadow: 0px 6px 27px 0px rgba(137, 137, 137, 0.16)
+		border-radius: 10px
+		margin-bottom: 25px
+		&.active 
+			.fas
+				transform: rotate(180deg)
+		.fas
+			width: 36px
+			height: 36px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #fff
+			background-color: $accent
+			border-radius: 50%
+			transition: .3s
+		div
+			display: flex
+			align-items: center
+	&_content
+		display: none
+		margin-top: 20px
+		font-size: 16px
+		line-height: 24px
+		padding-left: 25px
+		margin-bottom: 20px
+		ul
+			margin-bottom: 20px
+			padding-left: 16px
+
+.section-form
+	background-size: cover
+	background-position: center center
+	padding-top: 0
+	margin-top: 80px
+	position: relative
+	> .container
+		position: relative
+	&_interactive
+		position: absolute
+		bottom: -28px
+		z-index: 1
+		right: 80px
+		&::after
+			content: ''
+			width: 585px
+			height: 585px
+			border: 60px solid $accent
+			position: absolute
+			right: -80px
+			bottom: -100px
+			border-radius: 50%
+			z-index: -1
+	&_wrap
+		> .row
+			height: 595px
+			display: flex
+			align-items: center
+
+.section-contacts
+	background-color: #fff
+	z-index: 2
+	position: relative
+	padding: 40px 0
+	.h2
+		line-height: 36px
+	&_wrap
+		display: flex
+		justify-content: space-between
+
+.contacts
+	&_item
+		.h3
+			text-align: left
+			display: flex
+			align-items: center
+			margin-bottom: 20px
+			margin-top: 10px
+		.graph, .socials, .phones
+			position: relative
+			.fas
+				position: absolute
+				left: -30px
+				font-size: 16px
+				color: $accent
+				top: 5px
+		.contacts_item-info
+			display: flex
+			flex-direction: column
+			font-size: 16px
+			font-weight: 600
+
+.review
+	position: relative
+	&-slider
+		width: 975px
+		position: relative
+		&_item
+			width: 454px
+			padding: 15px
+		&_wrap
+			width: 100%
+			display: flex
+			justify-content: center
+	&_content
+		padding: 25px 52px 25px
+		text-align: center
+		font-size: 16px
+		line-height: 24px
+		position: relative
+		background-color: #fff
+		box-shadow: 0px 6px 27px 0px rgba(137, 137, 137, 0.16)
+		height: 181px
+		display: flex
+		align-items: center
+	&_bot
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: 15px
+		z-index: 2
+		position: relative
+	&_photo
+		width: 90px
+		height: 90px
+		display: flex
+		justify-content: center
+		align-items: center
+		overflow: hidden
+		border-radius: 50%
+		margin-bottom: 10px
+		display: none
+	&_name
+		font-size: 18px
+		font-weight: bold
+		line-height: 26px
+		text-align: center
+	&_rait
+		color: #EFBE50
+		margin-right: 3px
+		text-align: center
+
+.review-slider_item
+	outline: none
+
+.prev, .next
+	width: 40px
+	height: 40px
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: $accent
+	color: #fff
+	border-radius: 50%
+	position: absolute
+	top: calc(85.5px)
+	cursor: pointer
+	&:hover
+		background-color: $hover
+.prev
+	left: -68px
+.next
+	right: -68px
+
+i.fa-star:last-child
+	margin-right: 0
+
+.popup .review_rait .fas
+	color: $text-light
+	font-size: 20px
+	&.active
+		color: #EFBE50
+
+.popup
+	height: 480px
+	width: 850px
+	background-color: #fff
+	border-radius: 10px
+	padding: 45px
+	&_wrap
+		display: flex
+		align-items: center
+	textarea
+		background-color: #F7F7F7
+		height: 150px
+		width: 100%
+		border: none
+		resize: none
+		margin-top: 10px
+	&_bot
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-title
+			font-size: 18px
+			font-weight: 600
+			margin-right: 20px
+
+input, textarea
+	outline: none
+
+.back-bg
+	height: 100vh
+	background-size: cover
+	background-position: center center
+	> .container
+		height: 100vh
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+	&_interactive
+		position: absolute
+		right: 0
+		bottom: 0
+		img
+			height: 400px
+
+.thanks
+	text-align: center
+	&_title
+		font-size: 55px
+		font-weight: bold
+		line-height: 80px
+		&-description
+			font-size: 24px
+			line-height: 60px
+			margin-bottom: 20px
+
+
+
+
+
+.hidden
+	display: none
+
+
+
+// input::title
+// 	max-width: 400px
+// 	min-width: 290px
+
+@import "media" // Always at the end

@@ -1,0 +1,595 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.container
+	max-width: 1010px
+	margin: 0 auto
+	padding: 0
+
+.main
+	height: 100vh
+	overflow: hidden
+
+.header
+	height: 48px
+	background: $accent
+	display: flex
+	&_right
+		width: 69%
+		white-space: nowrap
+		position: relative
+		display: flex
+		&-panel
+			display: flex
+			.ico-search, .ico-threedots
+				padding: 15px 19px
+				font-weight: bold
+				font-size: 13px
+				color: #b9cfe3
+				line-height: 16px	
+				cursor: pointer
+				transition: .3s
+				&:hover
+					color: #fff
+					background-color: #497799
+			.ico-search
+				div
+					width: 17px
+					height: 17px
+					background-image: url(../img/IconsetW.png)
+					background-repeat: no-repeat
+					background-position: -12px -1037px
+					vertical-align: middle
+					opacity: 0.9
+			.ico-threedots
+				span
+					display: block
+					background-color: #d7e5f0
+					width: 4px
+					height: 4px
+					border-radius: 2px
+					margin-left: 3px
+					margin-right: 3px
+					&:nth-child(2), &:nth-child(3)
+						margin-top: 2px
+	&_title
+		display: flex
+		overflow: hidden
+		padding: 15px 19px 15px
+		line-height: 18px
+		font-weight: bold
+		color: #b9cfe3
+		font-size: 13px
+		cursor: pointer
+		text-overflow: ellipsis
+		transition: .3s
+		width: 100%
+		&:hover
+			color: #fff
+			background-color: #497799
+		&-chat
+			display: inline-block
+			color: #fff
+			margin-right: 8px
+			text-overflow: ellipsis
+			max-width: 180px
+			overflow: hidden
+			vertical-align: top
+		&-sub
+			font-weight: normal
+	&_left
+		width: 31%
+		cursor: pointer
+		transition: .3s
+		display: flex
+		align-items: center
+		padding: 17px 20px 15px 22px	
+		&:hover
+			background: #497799
+		img
+			width: 62px
+			height: 14px
+			margin-top: 2px
+	&_hamburger
+		width: 18px
+		height: 14px
+		margin-right: 40px
+		display: flex
+		align-items: center
+		span
+			background-color: #fff
+			display: block
+			height: 2px
+			position: relative
+			width: 100%
+			&::before, &::after
+				content: ''
+				display: block
+				height: 2px
+				width: 100%
+				background-color: #fff
+				position: absolute
+			&::before
+				top: -6px
+			&::after
+				bottom: -6px
+
+.content
+	box-shadow: 0px 1px 0 #dfe5ec
+	border-right: 1px solid #dfe5ec
+	border-bottom: 1px solid #d2dbe3
+	border-left: 1px solid #dfe5ec
+	display: flex
+	height: 100%
+	&_right
+		width: 69%
+		overflow: hidden
+		position: relative
+		margin-bottom: 12px
+	&_left
+		width: 31%
+		border-right: 2px solid #e9ebed	
+		padding-bottom: 10px
+	&_search
+		padding: 12px
+		position: relative
+		input
+			background: url(../img/IconsetW_2x.png)
+			background-size: 42px 1171px
+			font-size: 12px
+			line-height: normal
+			border: 1px solid #f2f2f2
+			border-radius: 2px
+			padding: 8px 26px 8px 30px
+			margin: 0
+			background-color: #f2f2f2
+			background-repeat: no-repeat
+			background-position: -6px -205px
+			width: 100%
+			color: #BDBDBD
+			display: flex
+			align-items: center
+			transition: .3s
+			&:focus
+				border: 1px solid #d9dbde
+				background-color: #fff
+			&::placeholder
+				color: #BDBDBD
+
+.groups
+	width: 100%
+	height: calc(100vh - 115px)
+	position: relative
+	overflow: hidden
+	&_wrap
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		// overflow: scroll
+		// overflow-x: hidden
+		&::-webkit-scrollbar
+			width: 2px
+		&::-webkit-scrollbar-thumb
+			background-color: #aaa
+	&-list
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li
+			position: relative
+			list-style-type: none
+			display: block
+		a
+			padding: 7px 16px
+			overflow: hidden
+			color: #000
+			border-radius: 0
+			position: relative
+			display: block
+			cursor: pointer
+			font-weight: bold
+			&:hover
+				text-decoration: none
+
+.mCSB_inside>.mCSB_container
+	margin-right: 0
+
+.mCSB_scrollTools
+	width: 2px
+	right: 0px
+
+.mCSB_scrollTools .mCSB_dragger
+	height: 8%!important
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar
+	background-color: #ADBFCC
+.mCSB_scrollTools .mCSB_draggerRail
+	background-color: transparent
+
+.content_right 
+	.mCSB_scrollTools, .mCSB_scrollTools .mCSB_draggerRail, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+		width: 8px
+		right: 0px
+		border-radius: 0
+	.mCSB_scrollTools .mCSB_draggerRail
+		background-color: #EDF1F1
+	.mCSB_scrollTools .mCSB_dragger
+		height: 4%!important
+	.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+		background-color: #ADBFCC
+	.content_right .mCSB_scrollTools, .content_right .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .content_right .mCSB_scrollTools .mCSB_draggerRail
+		margin-top: 12px
+		margin-bottom: 12px
+	// .mCustomScrollBox
+	// 	display: flex
+	// 	align-items: flex-end
+
+// .content_right .mCSB_scrollTools .mCSB_dragger
+	// bottom: 0!important
+	// top: unset!important
+
+.mob
+	display: none
+
+.tab
+	&.active
+		a
+			background-color: #6490b1
+			color: #fff
+		span
+			color: #fff!important
+		.tab_time
+			span:nth-child(2)
+				background-color: #fff
+				color: #6490b1!important
+	a
+		display: flex
+	&_photo
+		margin-right: 15px
+		min-width: 48px
+		height: 48px
+		border-radius: 50%
+		overflow: hidden
+		border-radius: 50%
+		max-width: 48px
+		img
+			max-width: 100%
+	&_mess
+		height: 44px
+		overflow: hidden
+		word-wrap: break-word
+		span
+			&:first-child
+				margin-top: 3px
+				margin-bottom: 3px
+				overflow: hidden
+				display: block
+				white-space: nowrap
+				text-overflow: ellipsis
+				color: $text
+				font-weight: bold
+				font-size: 14px
+				line-height: 18px
+				color: #000
+			&:last-child
+				color: grey
+				overflow: hidden
+				white-space: nowrap
+				text-overflow: ellipsis
+				font-weight: normal
+				font-size: 14px
+				display: block
+	&_time
+		text-align: right
+		min-width: 46px
+		margin-left: 10px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		span
+			&:first-child
+				color: #b3b3b3
+				font-size: 11px
+			&:nth-child(2)
+				background-color: #bfbfbf
+				font-size: 11px
+				padding: 5px
+				border-radius: 50%
+				min-width: 21px
+				height: 21px
+				text-align: center
+				margin-top: 4px
+				font-weight: bold
+				color: #fff
+				line-height: 12px
+				white-space: nowrap
+	&-content
+		display: none
+		&.active
+			display: block
+		&_important
+			padding: 7px 10px 7px 20px
+			border-bottom: 1px solid #e9ebed
+			height: 55px
+			// justify-content: space-between
+			display: flex
+			&__left
+				cursor: pointer
+				color: #3a6d99	
+				padding-left: 12px
+				display: flex
+				position: relative
+				text-decoration: none
+				width: 100%	
+				&:hover
+					text-decoration: none
+			&__bord
+				background: #7eaad1
+				width: 2px
+				position: absolute
+				margin-left: -12px
+				height: 42px
+			&__img
+				display: block
+				width: 42px
+				height: 42px
+				position: absolute
+				overflow: hidden
+				img
+					max-width: 100%
+			&__text
+				display: flex
+				flex-direction: column
+				position: relative
+				span
+					&:first-child
+						margin-left: 52px
+						margin-top: 4px
+						font-size: 12px
+						font-weight: bold
+						color: #3a6d99
+						line-height: 16px
+						margin-bottom: 3px
+					&:last-child
+						margin-left: 52px
+						line-height: 16px
+						overflow: hidden
+						white-space: nowrap
+						text-overflow: ellipsis
+						margin-bottom: 1px
+						color: #999
+						font-size: 13px
+		&_post
+			position: relative
+			width: 100%
+			// min-height: 419px
+			// height: 100%
+			// margin-bottom: 20px
+
+.posts
+	&_data
+		text-align: center
+		display: block
+		min-width: 10px
+		padding: 4px 7px
+		line-height: 1.4
+		color: #999
+		margin: 5px 0
+		font-size: 13px
+		line-height: 18px
+	&_wrap
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+	&-item
+		cursor: pointer
+		user-select: text
+		position: relative
+		max-width: 560px
+		padding: 0 15px
+		margin: 0 auto
+		width: 100%
+		margin-bottom: 20px
+		&-wrap
+			display: flex
+			flex-direction: column
+
+.post
+	margin: 8px 10px 8px 16px
+	display: flex
+	&_img
+		margin: 0 15px 0 0
+		min-width: 42px
+		height: 42px
+		border-radius: 50%
+		overflow: hidden
+		cursor: pointer
+		width: 42px
+		max-width: 42px
+		img
+			max-width: 100%
+	&_body
+		display: block
+		overflow: hidden
+	.name
+		font-size: 12px
+		margin: 1px 0 4px
+		display: block
+		color: #3a6d99
+		font-weight: bold
+		cursor: pointer
+	&_time
+		position: relative
+		&-see
+			position: absolute
+			left: -30px
+			top: 0
+			font-size: 11px
+			display: flex
+			align-items: center
+			i
+				display: inline-block
+				width: 16px
+				height: 11px
+				background-image: url(../img/General.png)
+				background-repeat: no-repeat
+				background-position: -12px -850px
+				vertical-align: text-bottom
+				margin-right: 3px
+			span
+				color: #adadad
+				font-weight: bold
+				vertical-align: top
+		&-tick
+			color: #adadad
+			font-size: 11px
+			padding: 0 0 20px 10px
+			cursor: pointer
+			display: block
+			min-width: 70px
+
+
+
+.mess
+	&_img
+		margin-top: 5px
+		width: 100%
+		overflow: hidden
+		display: block
+		border-radius: 2px
+		cursor: pointer
+		// img
+		// 	width: 100%
+	&_text
+		margin-top: 3px
+		word-wrap: break-word
+		line-height: 19px
+		p
+			font-size: 13px
+			color: #000
+			font-weight: normal
+		a
+			color: #3A6D99
+			font-size: 13px
+			&:hover
+				text-decoration: underline
+
+
+.btn-close
+	width: 18px
+	height: 18px
+	margin-right: 6px
+	margin-top: 11px
+	padding-top: 7px
+	display: block
+	cursor: pointer
+	transition: .3s
+	&:hover 
+		i
+			background-color: #44A1E8
+	i
+		display: block
+		background-color: #999
+		width: 18px
+		height: 2px
+		transition: .3s
+		&:first-child
+			transform: rotate(-45deg)
+			transform-origin: 50% 50%
+		&:last-child
+			transform: translate3d(0, -2px, 0) rotate(45deg)
+
+.mob-back
+	display: flex
+	flex-direction: row
+
+.tab_mess
+	width: 100%
+
+// .tab-content_important__text span:last-child
+// 	// max-width: 500px
+// 	width: 10%
+// 	display: block
+// 	text-overflow: ellipsis
+
+.tab-content_important__text
+	max-width: 90%
+
+.btn-close
+	position: relative
+	left: -20px
+
+.mess_text a
+	text-decoration: underline
+.post_body
+	width: 100%
+
+.mess_img
+	img
+		max-width: 100%
+
+.pre
+	margin-bottom: 0
+	+ ul
+		list-style: none
+		padding: 0
+		margin: 0
+		li
+			list-style: none
+			padding: 0
+			margin: 0
+			font-size: 13px
+			color: #000
+			font-weight: 400
+
+.tab_time
+	margin-top: 2px
+
+.mCSB_scrollTools .mCSB_draggerContainer
+	top: 10px
+
+.post_time-see
+	left: -37px
+
+
+@import "media" // Always at the end

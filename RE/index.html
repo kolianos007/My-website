@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>ReelEmperor</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="libs/selectric/selectric.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<header class="header">
+		<a href="javascript:void(0);" class="header_logo">
+			<img src="img/logo.png" alt="ReelEmperor">
+		</a>
+		<div class="header_right">
+			<ul class="header_page">
+				<li class="active"><a href="javascript:void(0);">Главная</a></li>
+				<li><a href="javascript:void(0);">Турниры</a></li>
+			</ul>
+			<div class="header_right-block">
+				<div class="header_right-block__btns">
+					<a href="javascript:void(0);" class="btn btn_gradient btn_registr">Регистрация</a>
+					<a href="javascript:void(0);" class="btn btn_white-transparent btn_log d-none d-lg-flex">Вход <img src="img/left-arrow-sm.png" alt="Вход"></a>
+				</div>
+				<a href="javascript:void(0);" class="header_lang lang--js">
+					<img src="img/global.png" alt="Язык">
+					<span>ru</span>
+					<img src="img/arrow-up.png" class="arr-up" alt="Выбрать язык">
+				</a>
+				<ul class="header_lang-select">
+					<li><a href="javascript:void(0);">en</a></li>
+					<li class="active"><a href="javascript:void(0);">ru</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header_mob d-flex d-lg-none">
+			<a href="javascript:void(0);" class="btn btn_white-transparent btn_log">Вход <img src="img/left-arrow-sm.png" alt="Вход"></a>
+			<div class="hamburger">
+				
+			</div>
+		</div>
+	</header>
+
+	<div class="sidebar">
+		<nav class="menu">
+			<a href="#best-game" class="active">
+				<svg xmlns="http://www.w3.org/2000/svg" width="21.662" height="20.64" viewBox="0 0 21.662 20.64">
+					<path id="star-2" d="M4.377,21.956a.387.387,0,0,1-.382-.453l1.2-6.986L.117,9.57a.388.388,0,0,1,.215-.661L7.347,7.889l3.137-6.356a.387.387,0,0,1,.347-.216h0a.386.386,0,0,1,.347.216l3.137,6.356L21.33,8.909a.388.388,0,0,1,.215.661l-5.076,4.948,1.2,6.986a.388.388,0,0,1-.563.409l-6.274-3.3-6.274,3.3A.391.391,0,0,1,4.377,21.956ZM1.221,9.563,5.88,14.1a.388.388,0,0,1,.111.343l-1.1,6.412,5.759-3.027a.386.386,0,0,1,.361,0L16.77,20.86l-1.1-6.412a.388.388,0,0,1,.111-.343l4.659-4.542L14,8.627a.388.388,0,0,1-.292-.212l-2.88-5.834L7.951,8.416a.388.388,0,0,1-.292.212Z" transform="translate(0 -1.317)"/>
+				</svg>
+				<span>Лучшие игры</span>
+			</a>
+			<a href="#bonuses">
+				<svg id="percent" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="percent">
+					<path id="Path_3" data-name="Path 3" d="M11,22A11,11,0,1,0,0,11,11.012,11.012,0,0,0,11,22ZM11,.981A10.019,10.019,0,1,1,.981,11,10.03,10.03,0,0,1,11,.981Zm0,0"/>
+					<path id="Path_4" data-name="Path 4" d="M91.344,88.972a2.031,2.031,0,1,0-2.031-2.031A2.031,2.031,0,0,0,91.344,88.972Zm0-3.081a1.05,1.05,0,1,1-1.05,1.05A1.05,1.05,0,0,1,91.344,85.891Zm0,0" transform="translate(-83.055 -78.961)"/>
+					<path id="Path_5" data-name="Path 5" d="M164.953,174.9a2.031,2.031,0,1,0,2.031-2.031A2.031,2.031,0,0,0,164.953,174.9Zm3.081,0a1.05,1.05,0,1,1-1.05-1.05A1.05,1.05,0,0,1,168.035,174.9Zm0,0" transform="translate(-153.396 -160.755)"/>
+					<path id="Path_6" data-name="Path 6" d="M100.744,85.656a.49.49,0,0,0,.679-.143l6.933-10.631a.49.49,0,1,0-.822-.536L100.6,84.977A.49.49,0,0,0,100.744,85.656Zm0,0" transform="translate(-93.479 -68.93)"/>
+				</svg>
+				<span>Бонусы</span>
+			</a>
+			<a href="#avtomates">
+				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" class="cherry">
+					<g id="Group_18" data-name="Group 18" transform="translate(-28 -357)">
+						<g id="Group_17" data-name="Group 17">
+							<g id="Ellipse_1" data-name="Ellipse 1" transform="translate(39 366)" fill="none" stroke-width="1">
+								<circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+								<circle cx="5.5" cy="5.5" r="5" fill="none"/>
+							</g>
+							<g id="Ellipse_2" data-name="Ellipse 2" transform="translate(28 368)" fill="none" stroke-width="1">
+								<circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+								<circle cx="5.5" cy="5.5" r="5" fill="none"/>
+							</g>
+							<g id="Group_16" data-name="Group 16" transform="translate(0 -0.259)">
+								<path id="Path_7" data-name="Path 7" d="M274.4,501.574s-.156-7.035,4.2-10.468" transform="translate(-240 -132.991)" fill="none" stroke-width="1"/>
+								<path id="Path_8" data-name="Path 8" d="M283.422,499.649c-1.162-1.732-2.811-2.713-3.7-4.018-2.1-3.093-1.011-4.769-1.011-4.769" transform="translate(-240 -133)" fill="none" stroke-width="1"/>
+							</g>
+						</g>
+						<line id="Line_1" data-name="Line 1" x2="6" transform="translate(35.5 357.5)" fill="none" stroke-width="1"/>
+					</g>
+				</svg>
+
+				<span>Автоматы</span>
+			</a>
+		</nav>
+		<div class="winners">
+
+			<script>
+				let winners = [{name: 'Kara1986', sum: '100$', gameWin: 'Hit in Big'},{name: 'Kara1986', sum: '200$', gameWin: 'Hit in Big'},{name: 'Kara1986', sum: '100$', gameWin: 'Hit in Big'},{name: 'Kara1986', sum: '100$', gameWin: 'Hit in Big'},{name: 'Kara1986', sum: '100$', gameWin: 'Hit in Big'},{name: 'Kara1986', sum: '100$', gameWin: 'Hit in Big'},{name: 'Kara1986', sum: '100$', gameWin: 'Hit in Big'},{name: 'Kara1986', sum: '100$', gameWin: 'Hit in Big'}]
+
+				let visibleWinner = 0
+				let containerWinners = document.querySelector('.winners')
+
+
+				let interval = setInterval(function(){
+					if(visibleWinner >= winners.length) {
+						clearInterval(interval)
+					}
+					let template = `
+					<div class="winners_item">
+					<span class="winners_name"><span class="name">${winners[visibleWinner].name}</span>  выиграл <span class="sum"> ${winners[visibleWinner].sum}</span></span>
+					<a href="javascript:void(0);">
+					<span>В <span class="clr gameWin">${winners[visibleWinner].gameWin}</span></span>
+					<img src="img/left-arrow-sm-grey.png" alt="Перейти к игре">
+					</a>
+					</div>
+					`
+					visibleWinner++
+
+					containerWinners.insertAdjacentHTML('afterBegin', template)
+				}, 10000)
+
+			</script>
+<!-- 			<div class="winners_item">
+				<span class="winners_name"><span class="name">Kara1986 </span>  выиграл <span class="sum"> 100$</span></span>
+				<a href="javascript:void(0);">
+					<span>В <span class="clr gameWin">Hit in Big</span></span>
+					<img src="img/left-arrow-sm-grey.png" alt="Перейти к игре">
+				</a>
+			</div>
+			<div class="winners_item">
+				<span class="winners_name"><span class="name">Kara1986 </span>  выиграл <span class="sum"> 100$</span></span>
+				<a href="javascript:void(0);">
+					<span>В <span class="clr gameWin">Hit in Big</span></span>
+					<img src="img/left-arrow-sm-grey.png" alt="Перейти к игре">
+				</a>
+			</div>
+			<div class="winners_item">
+				<span class="winners_name"><span class="name">Kara1986 </span>  выиграл <span class="sum"> 100$</span></span>
+				<a href="javascript:void(0);">
+					<span>В <span class="clr gameWin">Hit in Big</span></span>
+					<img src="img/left-arrow-sm-grey.png" alt="Перейти к игре">
+				</a>
+			</div>
+			<div class="winners_item">
+				<span class="winners_name"><span class="name">Kara1986 </span>  выиграл <span class="sum"> 100$</span></span>
+				<a href="javascript:void(0);">
+					<span>В <span class="clr gameWin">Hit in Big</span></span>
+					<img src="img/left-arrow-sm-grey.png" alt="Перейти к игре">
+				</a>
+			</div> -->
+		</div>
+	</div>
+
+	<section class="main">
+
+		<div class="main_text">
+			<p>ReelEmperor Online Casino is owned and operated by Netgame Entertainment N.V., a limited liability company incorporated under the laws of Curacao, bearing company number 127096 and having its registered address at E-Commerce Park Vredenberg, Curacao, Netherlands Antilles <span class="hid">eelEmperor Online Casino is owned and operated by Netgame Entertainment N.V., a limited liability company incorporated under the laws of Curacao, bearing company number 127096 and having its registered address at E-Commerce Park Vredenberg, Curacao, Netherlands Antilles eelEmperor Online Casino is owned and operated by Netgame Entertainment N.V., a limited liability company incorporated under the laws of Curacao, bearing company number 127096 and having its registered address at E-Commerce Park Vredenberg, Curacao, Netherlands Antilles eelEmperor Online Casino is owned and operated by Netgame Entertainment N.V., a limited liability company incorporated under the laws of Curacao, bearing company number 127096 and having its registered address at E-Commerce Park Vredenberg, Curacao, Netherlands Antilles eelEmperor Online Casino is owned and operated by Netgame Entertainment N.V., a limited liability company incorporated under the laws of Curacao, bearing company number 127096 and having its registered address at E-Commerce Park Vredenberg, Curacao, Netherlands Antilles</span> <a class="text-drop--js" href="javascript:void(0)"><span>Читать больше</span> <img src="img/arrow-down-white.png" alt="Читать больше"></a></p>
+		</div>
+
+		<section class="banner">
+			<div class="banner_content">
+				<h1 class="h1">Приветственный <br> пакет</h1>
+				<div class="h1_description">Получите до 400 EUR и 250 фри- <br>
+					спинов за ваши первые 3 депозита. <br>
+				Поехали!</div>
+				<a href="javascript:void(0);" class="btn btn_pink-transparent">Получить бонус <img src="img/left-arrow-2.png" alt="Получить бонус"></a>
+			</div>
+		</section>
+
+		<section id="best-game" class="section-blue-light">
+			<div class="best-game">
+				<div class="best-game_title">
+					<div class="title">
+						<h2 class="h2">Лучшие игры</h2>
+						<div class="h2_description">Подборка лучших игр по мнению ReelEmperor</div>
+					</div>
+					<div class="best-game-arrow">
+						<div class="prev"></div>
+						<div class="next"></div>
+					</div>
+				</div>
+				<div class="best-game-wrap">
+					<div class="best-game-arrow-scroll1">
+
+					</div>
+					<div class="best-game-slider game-slider--js">
+						<div class="game game-slide">
+							<div class="game_img">
+								<img src="img/lazy.png" data-lazy="img/game-1.jpg" alt="Игра">
+							</div>
+							<div class="game_hover">
+								<div class="game_overlay"></div>
+								<div class="game_title-wrap">
+									<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+									<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+								</div>
+								<a href="javascript:void(0);" class="game_play">
+									<img src="img/play.svg" alt="play">
+									<div class="overlay"></div>
+								</a>
+								<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+							</div>
+						</div>
+
+						<div class="game game-slide">
+							<div class="game_img">
+								<img src="img/lazy.png" data-lazy="img/game-1.jpg" alt="Игра">
+							</div>
+							<div class="game_hover">
+								<div class="game_overlay"></div>
+								<div class="game_title-wrap">
+									<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+									<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+								</div>
+								<a href="javascript:void(0);" class="game_play">
+									<img src="img/play.svg" alt="play">
+									<div class="overlay"></div>
+								</a>
+								<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+							</div>
+						</div>
+
+						<div class="game game-slide">
+							<div class="game_img">
+								<img src="img/lazy.png" data-lazy="img/game-1.jpg" alt="Игра">
+							</div>
+							<div class="game_hover">
+								<div class="game_overlay"></div>
+								<div class="game_title-wrap">
+									<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+									<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+								</div>
+								<a href="javascript:void(0);" class="game_play">
+									<img src="img/play.svg" alt="play">
+									<div class="overlay"></div>
+								</a>
+								<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+							</div>
+						</div>
+
+						<div class="game game-slide">
+							<div class="game_img">
+								<img src="img/lazy.png" data-lazy="img/game-1.jpg" alt="Игра">
+							</div>
+							<div class="game_hover">
+								<div class="game_overlay"></div>
+								<div class="game_title-wrap">
+									<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+									<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+								</div>
+								<a href="javascript:void(0);" class="game_play">
+									<img src="img/play.svg" alt="play">
+									<div class="overlay"></div>
+								</a>
+								<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+							</div>
+						</div>
+
+						<div class="game game-slide">
+							<div class="game_img">
+								<img src="img/lazy.png" data-lazy="img/game-1.jpg" alt="Игра">
+							</div>
+							<div class="game_hover">
+								<div class="game_overlay"></div>
+								<div class="game_title-wrap">
+									<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+									<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+								</div>
+								<a href="javascript:void(0);" class="game_play">
+									<img src="img/play.svg" alt="play">
+									<div class="overlay"></div>
+								</a>
+								<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+							</div>
+						</div>
+
+						<div class="game game-slide">
+							<div class="game_img">
+								<img src="img/lazy.png" data-lazy="img/game-1.jpg" alt="Игра">
+							</div>
+							<div class="game_hover">
+								<div class="game_overlay"></div>
+								<div class="game_title-wrap">
+									<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+									<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+								</div>
+								<a href="javascript:void(0);" class="game_play">
+									<img src="img/play.svg" alt="play">
+									<div class="overlay"></div>
+								</a>
+								<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+							</div>
+						</div>
+
+
+						<div class="game game-slide">
+							<div class="game_img">
+								<img src="img/lazy.png" data-lazy="img/game-1.jpg" alt="Игра">
+							</div>
+							<div class="game_hover">
+								<div class="game_overlay"></div>
+								<div class="game_title-wrap">
+									<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+									<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+								</div>
+								<a href="javascript:void(0);" class="game_play">
+									<img src="img/play.svg" alt="play">
+									<div class="overlay"></div>
+								</a>
+								<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+							</div>
+						</div>
+
+
+						<div class="game game-slide">
+							<div class="game_img">
+								<img src="img/lazy.png" data-lazy="img/game-1.jpg" alt="Игра">
+							</div>
+							<div class="game_hover">
+								<div class="game_overlay"></div>
+								<div class="game_title-wrap">
+									<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+									<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+								</div>
+								<a href="javascript:void(0);" class="game_play">
+									<img src="img/play.svg" alt="play">
+									<div class="overlay"></div>
+								</a>
+								<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="btn-wrap-providers">
+					<a href="#providers" class="btn-scroll-providers btn btn_pink-transparent">Все провайдеры <img src="img/left-arrow-down.png" alt="Все провайдеры"></a>
+				</div>
+			</div>
+
+			<div id="bonuses" class="bonus">
+				<div class="title">
+					<h2 class="h2">Бонусы</h2>
+					<div class="h2_description">Одни из лучших бонусов в мире онлайн-казино - специально для Вас</div>
+				</div>
+				<div class="bonus-block">
+					<div class="bonus_left">
+						<div class="bonus_title">1st deposit 100% + up to 50 FS Hit in Vegas</div>
+						<div class="bonus_description">100%</div>
+						<div class="bonus_deposit">
+							<div class="bonus_deposit-left">
+								<span>Мин депозит <span>$ 20</span></span>
+								<span>Макс бонус <span>$ 200</span></span>
+							</div>
+							<div class="bonus_deposit-right">
+								<span class="clmn">Вейджер <span>35</span></span>
+							</div>
+						</div>
+						<div class="btn-wrap-rules">
+							<a href="javascript:void(0);" class="btn btn_text">Правила бонуса <img src="img/arr-sm-violet.png" alt="Правила бонус"></a>
+						</div>
+						<div class="btn-wrap-activate">
+							<a href="javascript:void(0);" class="btn btn_pink-transparent">Активировать бонус <img src="img/left-arrow-2.png" alt="Активировать бонус"></a>
+						</div>
+					</div>
+					<div class="bonus_right">
+						<img src="img/bonus.png" alt="Bonus">
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="avtomates" class="section-avtomats">
+			<div class="title">
+				<h2 class="h2">Автоматы</h2>
+			</div>
+			<div class="avtomats-category">
+				<div class="tabs">
+					<a href="javascript:void(0);" class="tab active" data-index="0">Все</a>
+					<a href="javascript:void(0);" class="tab" data-index="1">Новые</a>
+					<a href="javascript:void(0);" class="tab" data-index="2">Горячие</a>
+					<a href="javascript:void(0);" class="tab" data-index="3">Холодные</a>
+				</div>
+				<div id="providers" class="avtomats-category_right">
+					<select class="select-providers">
+						<option value="Все провайдеры">Все провайдеры</option>
+						<option value="Все провайдеры">NetEnt</option>
+						<option value="Все провайдеры">Elk Studios</option>
+						<option value="Все провайдеры">Quickspin</option>
+						<option value="Все провайдеры">Thunderkick</option>
+						<option value="Все провайдеры">Evolution</option>
+						<option value="Все провайдеры">Netgame</option>
+						<option value="Все провайдеры">Push Gaming</option>
+						<option value="Все провайдеры">Yggdrasil</option>
+						<option value="Все провайдеры">Spinomenal</option>
+						<option value="Все провайдеры">Blueprint Gaming</option>
+						<option value="Все провайдеры">Nolimit City</option>
+						<option value="Все провайдеры">QA</option>
+						<option value="Все провайдеры">Lighting Box</option>
+						<option value="Все провайдеры">Habanero</option>
+						<option value="Все провайдеры">Kalamba</option>
+					</select>
+					<div class="wrap-input">
+						<input type="search" placeholder="Поиск игры">
+					</div>
+				</div>
+			</div>
+			<div class="tab-wrap">
+				<div class="best-game-slider best-avtomat all--js active" data-index="0">
+
+					<script>
+						let game = [{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},{img: 'img/game-1.jpg', name: 'Magic Tree', descr: 'Netgame'},]
+
+						let visibleGame = 20
+						let containerGame = document.querySelector('.all--js')
+
+
+						for(let i = 0; i < visibleGame; i++) {
+							let template = `
+								<div class="game">
+									<div class="game_img">
+										<img class="b-lazy" src="img/lazy.png" data-src="${game[i].img}" alt="${game[i].name}">
+									</div>
+									<div class="game_hover">
+										<div class="game_overlay"></div>
+										<div class="game_title-wrap">
+											<a href="javascript:void(0);" class="game_title">${game[i].name}</a>
+											<a href="javascript:void(0);" class="game_descr">${game[i].descr}</a>									
+										</div>
+										<a href="javascript:void(0);" class="game_play">
+											<img src="img/play.svg" alt="play">
+											<div class="overlay"></div>
+										</a>
+										<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+									</div>
+								</div>
+							`
+
+							containerGame.insertAdjacentHTML('afterBegin', template)
+						}
+
+					</script>
+<!-- 
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div> -->
+					<div class="btn-wrap-more">
+						<a href="javascript:void(0);" class="btn btn_pink-transparent btn-more--js">Больше игр</a>
+					</div>
+
+					<script>
+						var superBtn = document.querySelector('.btn-more--js')
+
+						superBtn.addEventListener('click', function(){
+							var bLazy = new Blazy()
+							if(visibleGame < game.length) {
+								visibleGame += 10
+								for(var i = visibleGame - 10; i < visibleGame; i++) {
+									var templateGame = `
+										<div class="game">
+											<div class="game_img">
+												<img class="b-lazy" src="img/lazy.png" data-src="${game[i].img}" alt="${game[i].name}">
+											</div>
+											<div class="game_hover">
+												<div class="game_overlay"></div>
+												<div class="game_title-wrap">
+													<a href="javascript:void(0);" class="game_title">${game[i].name}</a>
+													<a href="javascript:void(0);" class="game_descr">${game[i].descr}</a>									
+												</div>
+												<a href="javascript:void(0);" class="game_play">
+													<img src="img/play.svg" alt="play">
+													<div class="overlay"></div>
+												</a>
+												<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+											</div>
+										</div>
+									`
+									containerGame.insertAdjacentHTML('beforeEnd', templateGame)
+								}
+							}
+						})
+					</script>
+
+				</div>
+
+
+				<div class="best-game-slider best-avtomat" data-index="1">
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="best-game-slider best-avtomat" data-index="2">
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="best-game-slider best-avtomat" data-index="3">
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+					<div class="game">
+						<div class="game_img">
+							<img class="b-lazy" src="img/lazy.png" data-src="img/game-1.jpg" alt="Игра">
+						</div>
+						<div class="game_hover">
+							<div class="game_overlay"></div>
+							<div class="game_title-wrap">
+								<a href="javascript:void(0);" class="game_title">Magic Tree</a>
+								<a href="javascript:void(0);" class="game_descr">Netgame</a>									
+							</div>
+							<a href="javascript:void(0);" class="game_play">
+								<img src="img/play.svg" alt="play">
+								<div class="overlay"></div>
+							</a>
+							<a href="javascript:void(0);" class="game_demo btn_demo">Демо</a>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+<!-- 			<div class="btn-wrap-more">
+				<a href="javascript:void(0);" class="btn btn_pink-transparent">Больше игр</a>
+			</div> -->
+		</section>
+
+	</section>
+
+
+	<footer class="footer">
+		<div class="footer_top">
+			<div class="footer_menu">
+				<nav class="footer_menu-column">
+					<a href="javascript:void(0);">Автоматы</a>
+					<a href="javascript:void(0);">Популярные</a>
+					<a href="javascript:void(0);">Карты</a>
+					<a href="javascript:void(0);">Джекпоты</a>
+					<a href="javascript:void(0);">Новые</a>
+					<a href="javascript:void(0);">Видеопокер</a>
+					<a href="javascript:void(0);">Главная</a>
+				</nav>
+				<nav class="footer_menu-column">
+					<a href="javascript:void(0);">Метод оплаты</a>
+					<a href="javascript:void(0);">Поддержка</a>
+					<a href="javascript:void(0);">Пользовательское соглашение</a>
+					<a href="javascript:void(0);">Политика конфиденциальности</a>
+					<a href="javascript:void(0);">AML Policy</a>
+					<a href="javascript:void(0);">Бонусная политика</a>
+				</nav>
+			</div>
+			<div class="footer_text">
+				<img src="img/footer-flag.png" alt="">
+				<p>ReelEmperor Online Casino is owned and operated by Netgame Entertainment N.V., a limited liability company incorporated under the laws of Curacao, bearing company number 127096 and having its registered address at E-Commerce Park Vredenberg, Curacao, Netherlands Antilles. Correspondence address: Hoogstraat 18 The Green House, Curacao. It is licensed and regulated in virtue of licence №8048/JAZ2012-011 issued by the Gaming Commission of Curacao. Egaming Licensing and Supervision are  provided by Antillephone N.V. Payments are processed by add Cypriot company Privaline Holdings LTD, registered at the following address: Vasili Michailidi 9, 3026, Limassol, Cyprus, as per agreement between Privaline Holdings LTD and Netgame Entertainment N.V. By accepting, continuing to use, or navigating throughout this site you accept that we will utilise certain browser cookies to improve the experience which you receive with us. ReelEmperor Online Casinodo not use any cookies which interfere with your privacy, but only ones which will improve your experience while using our site, please refer to our FAQs for further information on our use of cookies and how you prevent their use you should wish.</p>
+			</div>
+		</div>
+		<div class="btn-wrap-up">
+			<a href="javascript:void(0);" id="scroll-up" class="btn btn_pink-transparent">К началу страницы <img src="img/up-arrow-2.png" alt="К началу страницы"></a>
+		</div>
+		<div class="footer_help help">
+			<div class="help_left">
+				<a href="javascript:void(0);" class="help_support">
+					<img src="img/support.png" alt="">
+					<span>Поддержка</span>
+				</a>
+				<a href="javascript:void(0);" class="help_mail">
+					<img src="img/email1.png" alt="">
+					<span>support@reelemperor.com</span>
+				</a>
+				<a href="javascript:void(0);" class="header_lang lang--js">
+					<img src="img/global.png" alt="Язык">
+					<span>ru</span>
+					<img src="img/arrow-up.png" class="arr-up" alt="Выбрать язык">
+				</a>
+				<ul class="header_lang-select">
+					<li><a href="javascript:void(0);">en</a></li>
+					<li class="active"><a href="javascript:void(0);">ru</a></li>
+				</ul>
+			</div>
+			<div class="help_right">
+				<img src="img/18.png" alt="">
+				<img src="img/gamcare-logo.png" alt="">
+			</div>
+		</div>
+		<div class="footer_partners">
+			<div class="footer_title">Платежные системы</div>
+			<div class="pay">
+				<img src="img/mc1.svg" alt="MasterCard">
+				<img src="img/visa.svg" alt="Visa">
+				<img src="img/ecoPayz.svg" alt="ecoPays">
+				<img src="img/zimpler.svg" alt="Zimpler">
+				<img src="img/skrill.svg" alt="Skrill">
+				<img src="img/neteller.svg" alt="Neteller">
+				<img src="img/klarna.svg" alt="Klarna">
+				<img src="img/bitcoin.svg" alt="Bitcoin">
+			</div>
+			<div class="footer_title">Игровые провайдеры</div>
+			<div class="providers">
+				<img src="img/thubderkick.png" alt="thubderkick">
+				<img src="img/habanero.png" alt="habanero">
+				<img src="img/evolution_gambling.png" alt="evolution_gambling">
+				<img src="img/pushgaming.png" alt="pushgaming">
+				<img src="img/nolimit.png" alt="nolimit">
+				<img src="img/quickspin.png" alt="quickspin">
+				<img src="img/netgame.png" alt="netgame">
+				<img src="img/netent.png" alt="netent">
+				<img src="img/lighthingbox.png" alt="lighthingbox">
+				<img src="img/spinomendl.png" alt="spinomendl">
+				<img src="img/ezugi.png" alt="ezugi">
+			</div>
+		</div>
+		<div class="footer_drop">
+			<div class="footer_drop-title foot-drop--js">Онлайн казино ReelEmperor <img src="img/arrow-down-white.png" alt=""></div>
+			<div class="footer_drop-text">
+				<p>Современная сфера азартных игр очень разнообразна и многофункциональна, поэтому предлагает гемблерам качественные онлайн казино. Рил Эмперор давно заработало признание игроков, отличаясь игровыми возможностями, функциональными характеристиками, позволяя игрокам получать достойные выигрыши и наслаждаться интересными играми. ReelEmperor - лучшее онлайн казино на реальные деньги, что подходит русскоязычным игрокам. Данное казино работает уже достаточно длительное время, поэтому способно предложить проверенные и честные игры, бонусы и платежи. Этому способствует имеющаяся у интернет казино лицензия, подтверждающая правомерность и легальность его деятельности.</p>
+
+				<h2>Казино онлайн бесплатно - демо-слоты Рил Эмперор</h2>
+
+				<p>ReelEmperor - это игровое казино, работающее не только на платной основе, но и совершенно бесплатно. Каждый клиент должен знать, как <a href="javascript:void(0);">играть в игровые автоматы бесплатно</a> в онлайн казино без вложений и получать при этом максимальное удовольствие. Бесплатная игра в Рил Эмперор активируется при помощи кнопки ДЕМО, что доступна в каждой игре. Бесплатный игровой процесс такой же полноценный и разнообразный, как и оплачиваемый. Отличается он лишь тем, что первый предусматривает использование виртуальных кредитов для ставок и выигрышей, а второй - реальные деньги. С бесплатной игры рекомендуется начинать свою игровую деятельность абсолютно всем новичкам. Это позволяет без лишних трат ознакомиться с принципами выбранного развлечения, попробовать все игровые функции в нем и выработать собственную игровую стратегию. Естественно, что в демо-режиме заработок не предусмотрен, зато и вложений никаких не требуется.</p>
+
+				<p>Лучшие виды игр казино, что доступны бесплатно:</p>
+
+				<ul>
+					<li><a href="javascript:void(0);">Лучшие игровые автоматы</a> - наиболее популярные развлечения, произведенные знаменитыми провайдерами NetEnt, Novomatic, Quickspin, Thunderkick, ELK, NetGame.</li>
+
+					<li><a href="javascript:void(0);">Рулетки</a> - настольные игры, где необходимо предугадывать выигрышные ставки, используя вращающееся колесо и шарик, катающийся по нему.</li>
+
+					<li>Видеопокер - карточное развлечение, в котором следует формировать комбинации из определенных номиналов и мастей карт для выигрыша.</li>
+
+					<li>Карты - игры по типу блэкджек и баккара.</li>
+				</ul>
+
+				<p>Бесплатно в казино не открывается лишь категория live-игр, потому что она характеризуется наличием реальных дилеров, руководящих игровым процессом, и требующим фиксирование настоящих ставок для него. Естественно, что играть в казино онлайн бесплатно без регистрации может каждый, но только не тот, кто жаждет побед и реальных вознаграждений.</p>
+
+				<h2>Казино онлайн Рил - бонус за регистрацию каждому игроку</h2>
+
+				<p>Важным дополнением любого казино, и Рил Эмперор не является исключением, считаются его бонусные предложения. Подробная информация об их разновидностях, методах получения и отыгрышах размещена в специальном разделе БОНУСЫ на сайте. Но все же имеет смысл каждому игроку ознакомиться с тем, как, к примеру, быстро получить в онлайн казино бездепозитный бонус за регистрацию. Первое, что должен сделать игрок, это зарегистрироваться в казино, после чего ему будут доступны бонусы и информация о них. Одним из бонусов, на который гемблер может рассчитывать сразу же после регистрации, называется бездепозитный. Для его получения необходимо:</p>
+
+				<ul>
+					<li>зарегистрироваться в ReelEmperor (нажать кнопку регистрация и заполнить предложенную анкету);</li>
+
+					<li>подтвердить создание игрового аккаунта и согласиться с бонусом;</li>
+
+					<li>получить бонусные средства на свой счет и использовать их для совершения ставок.</li>
+				</ul>
+
+				<p>Следует помнить, что сразу после получения бездепозитного бонуса стоит повременить с выводом денег на карту, потому что сделать это можно будет только после того, как выполнятся условия вейджера. Вейджер - это коэффициент, что задает казино для отыгрыша пользователем бонусных денег. Пока игрок не сделает определенное количество ставок на сумму полученного бонуса, вывод денег с игрового баланса ему недоступен.</p>
+
+				<p>Помимо бездепозита в казино есть и другие выгодные бонусные предложения, такие как бонусы в дни недели. Для каждого из них характерны свои условия и правила отыгрыша. Наиболее часто используемыми считаются бонусы в пятницу, понедельник и среду.</p>
+
+				<p>Friday bonus предполагает:</p>
+				<ul>
+					<li>бонусную сумму, равную 50% от депозита;</li>
+
+					<li>действует постоянно;</li>
+
+					<li>используется промокод Friday 50%.</li>
+				</ul>
+				<p>Monday bonus:</p>
+				<ul>
+					<li>25% от суммы пополнения;</li>
+
+					<li>о сроках действия можно узнать из раздела БОНУСЫ;</li>
+
+					<li>промокод Monday 25%.</li>
+				</ul>
+				<p>Wednesday bonus:</p>
+				<ul>
+					<li>дает 35% от депозита;</li>
+
+					<li>действует постоянно;</li>
+
+					<li>промокод Wednesday 35%.</li>
+				</ul>
+				<p>Бонусы доступны для зарегистрированных участников, играющих на гривны, на рубли и доллары. Если игрок, к примеру, житель Казахстана, то выберет ту валюту, которая ему актуальнее или ее проще обменять.</p>
+
+				<h3>Какое онлайн казино выбрать новичку?</h3>
+
+				<p>Большущий ассортимент качественных и интересных игровых казино вводит гемблеров в смятение по поводу того, какое же из них лучше выбрать для постоянного игрового процесса. Естественно, что Украина, а точнее пользователи из этой страны, стараются подобрать для себя украинские онлайн казино, Россия - российские и так далее. Но совсем не обязательно играть в казино, которое разработано определенной страной, важно, чтобы к нему был всегда простой доступ, удобная валюта и большой перечень игр. Так, почти вся Европа может успешно играть в ReelEmperor и получает не только максимальные выплаты в нем, но и качественное обслуживание, выгодные бонусы.</p>
+
+				<p>Характеристики, по которым стоит подбирать казино:</p>
+				<ol>
+					<li>Доступность - сайт казино не должен иметь запретов на доступ у пользователей.</li>
+
+					<li>Удобство - в казино можно играть, как на ПК, так и мобильных устройствах (в браузере или через скачанное приложение).</li>
+
+					<li>Бесплатный игровой процесс - возможность играть онлайн бесплатно важна, потому как с ее помощью игроки учатся, знакомятся с развлечениями и не тратятся в них.</li>
+
+					<li>Ассортимент игр - разнообразие развлечений позволяет каждому клиенту казино найти для себя наиболее подходящее и выгодное.</li>
+
+					<li>Бонусы - особый критерий, дающий гемблерам дополнительную возможность для совершения ставок и выиграть реальные деньги.</li>
+
+					<li>Квалифицированная помощь - наличие круглосуточной и оперативной команды техподдержки (помогают в технических вопросах и даже консультируют, как заработать).</li>
+
+					<li>Платежные системы - выбор из различных способов оплаты, среди которых каждый подбирает максимально удобную для себя.</li>
+
+					<li>Документационное сопровождение - казино должно работать легально, а поэтому важно предоставить игрокам информацию о лицензии, сертификатах и официальное решение о проверках аудиторскими фирмами.</li>
+
+					<li>Выбор ставок - возможность играть с минимальными ставками и крупными взносами, что регулируются игроком самостоятельно.</li>
+				</ol>
+				<p>Положительные отзывы опытных гемблеров и новичков в азартной сфере, которые есть в свободном доступе на различных интернет ресурсах, позволяют отнести Рил Эмперор в рейтинг самых удачных и перспективных виртуальных казино. В нем есть все вышеперечисленные игровые характеристики, что присущи только лучшим онлайн казино современности. Также игрокам предлагаются щедрые бонусы, играть разрешается с минимальным депозитом.</p>
+
+				<p>Очень важно при выборе виртуального казино еще и обратить внимание на его интерфейс и графическое оформление, ведь от них зависит комфорт игровых действий. Если не все, то большинство современных казино предлагают вниманию пользователей схожие по своей структуре интерфейсы. Так, сайт казино обязательно делится на страницы и разделы, переход по которым позволяет открывать разную информацию. Как правило, основная страница сайта казино всегда отображает рекламные баннеры, новости, ассортимент игр, информацию о деятельности и структурировано предлагает переходить в нужные игровые разделы. Чем больше информации излагается на сайте, тем быстрее игрок ознакомится с ней. Главное, что современные графические технологии не перегружают этим всем казино и позволяют знакомиться с ним постепенно.</p>
+
+				<h3>Что такое онлайн казино: преимущества удаленной игры</h3>
+
+				<p>Век информационных технологий и активной виртуальной деятельности позволил игровым казино успешно существовать в онлайн-режиме. Онлайн-казино могут представлять собой два варианта:</p>
+				<ol>
+					<li>Игровой сайт, который адаптировали под виртуальный режим, но когда-то он успешно функционировал в реальном времени в виде наземного казино.</li>
+
+					<li>Онлайн казино, что изначально создавалось под условия и мерки виртуального пространства, используя при этом все современные игровые функции и технологии.</li>
+				</ol>
+				<p>Суть любого онлайн казино заключается в предоставлении игрокам возможности не просто весело провести свой досуг, но и заработать на этом. Для игры от пользователя требуется доступ к Интернету или скачать специальное приложение на мобильное устройство. Многие современные казино разрешают своим посетителям вести бесплатный игровой процесс, что позволяет перед внесением денег на ставки, знакомиться с игровыми функциями выбранного развлечения. Так что возможность в казино онлайн играть бесплатно очень полезна и функциональна, особенно для новичков.</p>
+
+				<p>Важным вопросом в ведении платной игры в казино, является, каким же лучше способом совершать пополнения в нем и выводить деньги. Для этого в казино Рил Эмперор есть целая информационная вкладка МЕТОДЫ ОПЛАТЫ, где подробно описаны лимиты, платежные системы, сроки вывода и другое. Каждый игрок с легкостью сможет совершить депозит или же забрать деньги со счета тем способом, который ему более выгоден. Несмотря на то, что игра в казино исключительно виртуальная, способы оплаты могут использоваться как онлайн, так и вполне реальные. Например, можно задействовать виртуальные кошельки, банковские карты, банковские переводы, терминалы.</p>
+			</div>
+		</div>
+		<div class="footer_copyright">
+			© 2020 ReelEmperor Online Casino
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

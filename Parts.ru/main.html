@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+
+</head>
+
+<body>
+
+	<header class="header header-main">
+		<div class="header-top black">
+			<div class="container d-flex justify-content-between align-items-center">
+				<div class="logo d-flex align-items-center">
+					<a href="" class="logo_img">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="logo_info d-flex flex-column">
+						<span>Официальный партнер</span>
+						<span class="upper">AVANT, MULTIONE</span>
+					</div>
+				</div>
+
+				<!-- first version -->
+<!-- 				<nav class="desctop-nav">
+					<a href="#" class="d-md-flex d-lg-none toggleMenu">Меню<i class="fas fa-caret-down"></i></a>
+					<ul class="nav">
+						<li class="test">
+							<a href="">Главная</a>
+						</li>
+						<li class="test">
+							<a href="#">Каталог<i class="fas fa-chevron-right d-lg-none d-md-flex"></i></a>
+							<ul>
+								<li>
+									<a href="#">Минипогрузчики Avant<i class="fas fa-chevron-right"></i></a>
+									<ul>
+										<li>
+											<a href="">Avant 200<i class="fas fa-chevron-right"></i></a>
+											<ul>
+												<li>
+													<a href="">Товар 1</a>
+												</li>
+												<li>
+													<a href="">Товар 1</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="">Avant 300<i class="fas fa-chevron-right"></i></a>
+										</li>
+										<li>
+											<a href="">Avant 400<i class="fas fa-chevron-right"></i></a>
+										</li>
+										<li>
+											<a href="">Avant 500<i class="fas fa-chevron-right"></i></a>
+										</li>
+										<li>
+											<a href="">Avant 600<i class="fas fa-chevron-right"></i></a>
+										</li>
+										<li>
+											<a href="">Avant 700<i class="fas fa-chevron-right"></i></a>
+										</li>
+										<li>
+											<a href="">Avant 800<i class="fas fa-chevron-right"></i></a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Минипогрузчики Multione<i class="fas fa-chevron-right"></i></a>
+								</li>
+								<li>
+									<a href="#">Навесное оборудование<i class="fas fa-chevron-right"></i></a>
+								</li>
+								<li>
+									<a href="#">Оборудование для коммунальных и дорожных служб<i class="fas fa-chevron-right"></i></a>
+								</li>
+								<li>
+									<a href="#">Оборудование для сельскохозяйственных предприятий<i class="fas fa-chevron-right"></i></a>
+								</li>
+								<li>
+									<a href="#">Строительное монтажное оборудование, инструмент<i class="fas fa-chevron-right"></i></a>
+								</li>
+								<li>
+									<a href="#">Запасные части и аксуссуары<i class="fas fa-chevron-right"></i></a>
+								</li>
+							</ul>
+						</li>
+						<li class="test">
+							<a href="">О нас</a>
+						</li>
+						<li class="test">
+							<a href="">Оборудование</a>
+						</li>
+					</ul>
+				</nav> -->
+
+				<!-- second version -->
+				<nav class="nav">
+					<div id="button-menu" class="nav-mobile mobile-menu--js d-md-flex d-lg-none">Меню<i class="fas fa-caret-down"></i></div>
+					<ul class="nav_list">
+						<li class="nav_item"><a class="nav_link" href="">Главная</a></li>
+						<li class="nav_item nav_item-sub"><a class="nav_link no-link" href="">Каталог<i class="fas fa-chevron-right d-lg-none d-md-flex"></i></a>
+							<ul class="submenu submenu_1">
+								<li class="submenu_item"><a href="" class="submenu_link no-link">Минипогрузчики Avant<i class="fas fa-chevron-right"></i></a>
+									<ul class="submenu submenu_2">
+										<li class="submenu_item"><a href="" class="submenu_link no-link">Avant 200<i class="fas fa-chevron-right"></i></a>
+											<ul class="submenu submenu_3">
+												<li class="submenu_item">
+													<a href="" class="submenu_link">Товар 1</a>
+												</li>
+												<li class="submenu_item">
+													<a href="" class="submenu_link">Товар 2</a>
+												</li>
+											</ul>
+										</li>
+										<li class="submenu_item"><a href="" class="submenu_link no-link">Avant 300<i class="fas fa-chevron-right"></i></a></li>
+										<li class="submenu_item"><a href="" class="submenu_link no-link">Avant 400<i class="fas fa-chevron-right"></i></a></li>
+										<li class="submenu_item"><a href="" class="submenu_link no-link">Avant 500<i class="fas fa-chevron-right"></i></a></li>
+										<li class="submenu_item"><a href="" class="submenu_link no-link">Avant 600<i class="fas fa-chevron-right"></i></a></li>
+										<li class="submenu_item"><a href="" class="submenu_link no-link">Avant 700<i class="fas fa-chevron-right"></i></a></li>
+										<li class="submenu_item"><a href="" class="submenu_link no-link">Avant 800<i class="fas fa-chevron-right"></i></a></li>
+									</ul>
+								</li>
+								<li class="submenu_item"><a href="" class="submenu_link no-link">Минипогрузчики Multione<i class="fas fa-chevron-right"></i></a></li>
+								<li class="submenu_item"><a href="" class="submenu_link no-link">Навесное оборудование<i class="fas fa-chevron-right"></i></a></li>
+								<li class="submenu_item"><a href="" class="submenu_link no-link">Оборудование для коммунальных и дорожных служб<i class="fas fa-chevron-right"></i></a></li>
+								<li class="submenu_item"><a href="" class="submenu_link no-link">Оборудование для сельскохозяйственных предприятий<i class="fas fa-chevron-right"></i></a></li>
+								<li class="submenu_item"><a href="" class="submenu_link no-link">Строительное монтажное оборудование, инструмент<i class="fas fa-chevron-right"></i></a></li>
+								<li class="submenu_item"><a href="" class="submenu_link no-link">Запасные части и аксессуары<i class="fas fa-chevron-right"></i></a></li>
+							</ul>
+						</li>
+						<li class="nav_item"><a class="nav_link" href="">О нас</a></li>
+						<li class="nav_item"><a class="nav_link" href="">Оборудование</a></li>
+					</ul>
+				</nav>
+
+
+				<div class="block-contact d-flex align-items-center">
+					<a href="" data-fancybox data-src="#callback-popup" class="btn btn_transparent btn_transparent__white">Заказать звонок</a>		
+					<a href="tel:+7 962 256 07 36" class="block-contacts_phone">+7 962 256 07 36</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-slider header-slider--js">
+			<div class="header-slider_slide" style="background-image: url(img/bg-main.jpg);">
+				<div class="container">
+					<div class="slider-info d-flex justify-content-center flex-column align-items-center slider-info__center">
+						<div class="banner banner__main">
+							<div class="banner_top">
+								<div class="text-yellow"><strong>39parts</strong> - Официальный партнер <span class="upper text-white">AVANT, MULTIONE</span></div>
+							</div>
+							<div class="banner_bottom">
+								<div class="text-blue banner_title banner_title__big upper">Более 100 видов</div>
+								<div class="banner_title banner_title__sm upper">Навесного оборудования</div>
+							</div>
+						</div>
+						<div class="upper slider-info__center">В этом месте текст утп</div>
+						<a href="" class="btn btn_flag">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-slider_slide" style="background-image: url(img/bg-multi.jpg);">
+				<div class="container">
+					<div class="slider-info d-flex justify-content-center flex-column align-items-center slider-info__center">
+						<div class="banner banner__main">
+							<div class="banner_top">
+								<div class="text-yellow"><strong>39parts</strong> - Официальный партнер <span class="upper text-white">AVANT, MULTIONE</span></div>
+							</div>
+							<div class="banner_bottom">
+								<div class="text-blue banner_title banner_title__big upper">Более 100 видов</div>
+								<div class="banner_title banner_title__sm upper">Навесного оборудования</div>
+							</div>
+						</div>
+						<div class="upper slider-info__center">В этом месте текст утп</div>
+						<a href="" class="btn btn_flag">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-slider_slide" style="background-image: url(img/bg-main.jpg);">
+				<div class="container">
+					<div class="slider-info d-flex justify-content-center flex-column align-items-center slider-info__center">
+						<div class="banner banner__main">
+							<div class="banner_top">
+								<div class="text-yellow"><strong>39parts</strong> - Официальный партнер <span class="upper text-white">AVANT, MULTIONE</span></div>
+							</div>
+							<div class="banner_bottom">
+								<div class="text-blue banner_title banner_title__big upper">Более 100 видов</div>
+								<div class="banner_title banner_title__sm upper">Навесного оборудования</div>
+							</div>
+						</div>
+						<div class="upper slider-info__center">В этом месте текст утп</div>
+						<a href="" class="btn btn_flag">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="section section-technics">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="item-technic_wrap">
+						<a href="" class="item-technic item-technic__indent">
+							<div class="item-technic_img">
+								<img src="img/tech-track1.jpg" alt="">
+							</div>
+<!-- 							<div class="item-technic_logo">
+								<img src="img/logo-multi.png" alt="">
+							</div> -->
+						</a>
+						<a class="text-center" href="">Мнипогрузчики MultiOne</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="item-technic_wrap">
+						<a href="" class="item-technic item-technic__indent">
+							<div class="item-technic_img">
+								<img src="img/tech-track2.jpg" alt="">
+							</div>
+<!-- 							<div class="item-technic_logo">
+								<img src="img/logo-avant.png" alt="">
+							</div> -->
+						</a>
+						<a class="text-center" href="">Мнипогрузчики Avant</a>											
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="item-technic_wrap">
+						<a href="" class="item-technic">
+							<div class="item-technic_img">
+								<img src="img/tech-track3.jpg" alt="">
+							</div>
+						</a>
+						<a class="text-center" href="">Навесное оборудование MultiOne</a>						
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="item-technic_wrap">
+						<a href="" class="item-technic">
+							<div class="item-technic_img">
+								<img src="img/tech-track4.jpg" alt="">
+							</div>
+						</a>
+						<a class="text-center" href="">Навесное оборудование Avant</a>							
+					</div>
+				</div>
+
+			</div>	
+
+
+			<div class="row acord-button--js">
+				<div class="col-md-3">
+					<div class="item-technic_wrap">
+						<a href="" class="item-technic">
+							<div class="item-technic_img">
+								<img src="img/tech-track5.jpg" alt="">
+							</div>
+						</a>
+						<a class="text-center" href="">Оборудование для коммунальных и дорожных служб</a>							
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="item-technic_wrap">
+						<a href="" class="item-technic">
+							<div class="item-technic_img">
+								<img src="img/tech-track6.jpg" alt="">
+							</div>
+						</a>
+						<a class="text-center" href="">Оборудование для сельскохозяйственных предприятий</a>							
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="item-technic_wrap">
+						<a href="" class="item-technic">
+							<div class="item-technic_img">
+								<img src="img/tech-track7.jpg" alt="">
+							</div>
+						</a>
+						<a class="text-center" href="">Строительное монтажное оборудование, инструмент</a>							
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="item-technic_wrap">
+						<a href="" class="item-technic">
+							<div class="item-technic_img">
+								<img src="img/tech-track8.jpg" alt="">
+							</div>
+						</a>
+						<a class="text-center" href="">Запасные части и аксессуары</a>							
+					</div>
+				</div>
+			</div>	
+
+			<div class="d-md-none d-xs-block accordion accordion--js">Смотреть все категории<i class="fas fa-chevron-down"></i></div>
+
+		</div>
+	</div>
+
+	<div class="section-about">
+		<div class="section-about_bg" style="background-image: url(img/about.jpg);">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-6">
+						<div class="block-about">
+							<div class="btn btn_flag btn_flag__noactive">О нас</div>
+							<div class="block-about_info">
+								<p class="text">Благодаря своим особенно компактным размерам колесные погрузчики серии 12 от MultiOne открывают широкий спектр применения во всех областях строительной промышленности.</p>
+								<p class="text">Эти эффективные машины впечатляют своим динамическим полным приводом, высокой полезной нагрузкой, непревзойденной маневренностью и малым рабочим весом. </p>
+								<p class="text">Колесные погрузчики MultiOne имеют неразделенное шасси, которое предотвращает смещение центра тяжести даже при полном угле поворота. Другими словами, нет потери опрокидывающей нагрузки, когда погрузчик находится в управляемом положении Благодаря своим особенно компактным размерам колесные погрузчики серии 12 от MultiOne открывают широкий спектр применения во всех областях строительной промышленности.</p>
+							</div>
+						</div>
+						<div class="mobile-interact d-md-none d-xs-block">
+							<img src="img/about.jpg" alt="">
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section section_sphere">
+		<div class="container">
+			<h2 class="h2">Сферы применения</h2>
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<div class="sphere sphere__indent">
+						<div class="sphere_img">
+							<img src="img/sphere1.jpg" alt="">
+						</div>
+						<div class="sphere_border">
+							<img src="img/border-flag.svg" alt="">
+						</div>
+						<div class="sphere_descr">Коммунальное хозяйство и общественные места</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="sphere sphere__indent">
+						<div class="sphere_img">
+							<img src="img/sphere2.jpg" alt="">
+						</div>
+						<div class="sphere_border">
+							<img src="img/border-flag.svg" alt="">
+						</div>
+						<div class="sphere_descr">Сельское хозяйство и животноводство</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="sphere">
+						<div class="sphere_img">
+							<img src="img/sphere3.jpg" alt="">
+						</div>
+						<div class="sphere_border">
+							<img src="img/border-flag.svg" alt="">
+						</div>
+						<div class="sphere_descr">Строительство, для дома и сада</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="sphere">
+						<div class="sphere_img">
+							<img src="img/sphere4.jpg" alt="">
+						</div>
+						<div class="sphere_border">
+							<img src="img/border-flag.svg" alt="">
+						</div>
+						<div class="sphere_descr">Ландшафный дизайн и лесное хозяйство</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="section-form">
+		<div class="container">
+			<form action="" class="form form_consultation">
+				<div class="interactive interactive_arr">
+					<img src="img/interact.png" alt="">
+				</div>
+				<div class="interactive interactive_man">
+					<img src="img/man.png" alt="">
+				</div>
+				<h3 class="h3">Заявка на консультацию специалиста</h3>
+				<div class="description">Оставьте свои данные, и мы свяжемся с Вами, чтобы ответить на все вопросы</div>
+				<div class="input-wrap">
+					<input type="text" placeholder="Имя" required="">
+					<input type="tel" placeholder="Телефон" required="">
+					<button href="" class="btn btn_svg btn_svg_active">
+						<svg viewBox="0 0 277 58" id="bord_more_active" xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<linearGradient id="gradient" x2="0" y2="100%">
+									<stop stop-color="#FFD34D" offset="0" />
+									<stop stop-color="#FEC107" offset="1" />
+								</linearGradient>
+							</defs>
+							<defs>
+								<filter id="filter0_d" x="0" y="0" width="277px" height="78px" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+									<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+									<feOffset dy="6"/>
+									<feGaussianBlur stdDeviation="4"/>
+									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+								</filter>
+								<linearGradient id="paint0_linear" x1="141.5" y1="2" x2="141.5" y2="60" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#FFD34D"/>
+									<stop offset="1" stop-color="#FEC107"/>
+								</linearGradient>
+							</defs>
+							<path stroke='#ffd34d' fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+							<path id="hover" filter="url(#filter0_d)" fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+							<text x="86px" y="57%">Отправить</text> 
+						</svg>
+					</button>
+				</div>
+				<div class="radio-wrap">
+					<input type="checkbox" class="radio" id="radio" required="">
+					<label for="radio" class="consent">Даю согласие на обработку персональных данных (Ваши данные не будут переданны третьим лицам)</label>
+				</div>
+				<!-- 				<div class="consent"> <div class="rect"></div>Даю согласие на обработку персональных данных (Ваши данные не будут переданны третьим лицам)</div> -->
+			</form>
+		</div>
+	</section>
+
+	<div class="garant" style="background-image: url(img/garant-bg.jpg);">
+		<div class="garant_opa"></div>
+		<div class="container">
+			<div class="garant_wrap">
+				<div class="block-circle block-circle__indent">
+					<div class="block-circle_img">
+						<img src="img/sync.png" alt="">
+					</div>
+				</div>
+				<div class="garant_info">
+					<div class="garant_info-big">Гарантия до 2-х лет или 1 500 мото/часов</div>
+					<div class="garant_info-sm">Сервисное обслуживание</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section-leasing">
+		<div class="bg-interact">
+			<img src="img/photo-track.png" alt="">
+		</div>
+		<div class="container">
+			<div class="wrapper-block-insert">
+				<div class="block-insert upper block-leasing__block-insert">
+					<div class="block-insert_wrap">
+						<div class="block-insert_line">Есть Возможность</div>
+						<div class="block-insert_info">приобрести технику в лизинг</div>
+					</div>
+					<div class="line-bot">
+						<div class="line-bot_title">Закупки по:</div>
+						<div class="upper line-bot_tab">44-фз</div>	
+						<div class="upper line-bot_tab">223-фз</div>	
+					</div>
+				</div>
+			</div>
+			<div class="set-interact">
+				<img src="img/set-interact.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<section class="section section-new">
+		<div class="container">
+			<h2 class="h2">Новые модели</h2>
+
+			<div class="model-slider model-slider--js">
+
+				<div class="model-slider_item model">
+					<div class="model_wrap">
+						<div class="model_new">
+							<img src="img/new.png" alt="">
+						</div>
+						<div class="model_img">
+							<img src="img/model1.jpg" alt="">
+						</div>
+						<div class="model_descr">
+							<div class="model_title">Минипогрузчики грузоподъемностью от 250 до 800 кг</div>
+							<div class="model_info">
+								Описание модели: <br>
+								- телескопическая стрела; <br>
+								- компактные размеры; <br>
+								- низкие эксплуатационные расходы;
+							</div>
+						</div>
+						<a href="" class="btn btn_svg">
+							<svg viewBox="0 0 277 58" id="bord_more" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient id="gradient" x2="0" y2="100%">
+										<stop stop-color="#FFD34D" offset="0" />
+										<stop stop-color="#FEC107" offset="1" />
+									</linearGradient>
+								</defs>
+								<defs>
+									<filter id="filter0_d" x="0" y="0" width="277px" height="78px" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+										<feOffset dy="6"/>
+										<feGaussianBlur stdDeviation="4"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+									</filter>
+									<linearGradient id="paint0_linear" x1="141.5" y1="2" x2="141.5" y2="60" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFD34D"/>
+										<stop offset="1" stop-color="#FEC107"/>
+									</linearGradient>
+								</defs>
+								<path stroke='#ffd34d' fill="#fff" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<path id="hover" filter="url(#filter0_d)" fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<text x="86px" y="57%">Подробнее</text> 
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="model-slider_item model">
+					<div class="model_wrap">
+						<div class="model_new">
+							<img src="img/new.png" alt="">
+						</div>
+						<div class="model_img">
+							<img src="img/model2.jpg" alt="">
+						</div>
+						<div class="model_descr">
+							<div class="model_title">Минипогрузчики грузоподъемностью от 250 до 800 кг</div>
+							<div class="model_info">
+								Описание модели: <br>
+								- телескопическая стрела; <br>
+								- компактные размеры; <br>
+								- низкие эксплуатационные расходы;
+							</div>
+						</div>
+						<a href="" class="btn btn_svg">
+							<svg viewBox="0 0 277 58" id="bord_more" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient id="gradient" x2="0" y2="100%">
+										<stop stop-color="#FFD34D" offset="0" />
+										<stop stop-color="#FEC107" offset="1" />
+									</linearGradient>
+								</defs>
+								<defs>
+									<filter id="filter0_d" x="0" y="0" width="277px" height="78px" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+										<feOffset dy="6"/>
+										<feGaussianBlur stdDeviation="4"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+									</filter>
+									<linearGradient id="paint0_linear" x1="141.5" y1="2" x2="141.5" y2="60" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFD34D"/>
+										<stop offset="1" stop-color="#FEC107"/>
+									</linearGradient>
+								</defs>
+								<path stroke='#ffd34d' fill="#fff" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<path id="hover" filter="url(#filter0_d)" fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<text x="86px" y="57%">Подробнее</text> 
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="model-slider_item model">
+					<div class="model_wrap">
+						<div class="model_new">
+							<img src="img/new.png" alt="">
+						</div>
+						<div class="model_img">
+							<img src="img/model1.jpg" alt="">
+						</div>
+						<div class="model_descr">
+							<div class="model_title">Минипогрузчики грузоподъемностью от 250 до 800 кг</div>
+							<div class="model_info">
+								Описание модели: <br>
+								- телескопическая стрела; <br>
+								- компактные размеры; <br>
+								- низкие эксплуатационные расходы;
+							</div>
+						</div>
+						<a href="" class="btn btn_svg">
+							<svg viewBox="0 0 277 58" id="bord_more" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient id="gradient" x2="0" y2="100%">
+										<stop stop-color="#FFD34D" offset="0" />
+										<stop stop-color="#FEC107" offset="1" />
+									</linearGradient>
+								</defs>
+								<defs>
+									<filter id="filter0_d" x="0" y="0" width="277px" height="78px" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+										<feOffset dy="6"/>
+										<feGaussianBlur stdDeviation="4"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+									</filter>
+									<linearGradient id="paint0_linear" x1="141.5" y1="2" x2="141.5" y2="60" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFD34D"/>
+										<stop offset="1" stop-color="#FEC107"/>
+									</linearGradient>
+								</defs>
+								<path stroke='#ffd34d' fill="#fff" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<path id="hover" filter="url(#filter0_d)" fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<text x="86px" y="57%">Подробнее</text> 
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="model-slider_item model">
+					<div class="model_wrap">
+						<div class="model_new">
+							<img src="img/new.png" alt="">
+						</div>
+						<div class="model_img">
+							<img src="img/model2.jpg" alt="">
+						</div>
+						<div class="model_descr">
+							<div class="model_title">Минипогрузчики грузоподъемностью от 250 до 800 кг</div>
+							<div class="model_info">
+								Описание модели: <br>
+								- телескопическая стрела; <br>
+								- компактные размеры; <br>
+								- низкие эксплуатационные расходы;
+							</div>
+						</div>
+						<a href="" class="btn btn_svg">
+							<svg viewBox="0 0 277 58" id="bord_more" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient id="gradient" x2="0" y2="100%">
+										<stop stop-color="#FFD34D" offset="0" />
+										<stop stop-color="#FEC107" offset="1" />
+									</linearGradient>
+								</defs>
+								<defs>
+									<filter id="filter0_d" x="0" y="0" width="277px" height="78px" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+										<feOffset dy="6"/>
+										<feGaussianBlur stdDeviation="4"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+									</filter>
+									<linearGradient id="paint0_linear" x1="141.5" y1="2" x2="141.5" y2="60" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFD34D"/>
+										<stop offset="1" stop-color="#FEC107"/>
+									</linearGradient>
+								</defs>
+								<path stroke='#ffd34d' fill="#fff" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<path id="hover" filter="url(#filter0_d)" fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<text x="86px" y="57%">Подробнее</text> 
+							</svg>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<div class="block-version" style="background-image: url(img/bg-version.jpg);">
+		<div class="opacity"></div>
+		<div class="container">
+			<div class="wrapper-block-insert">
+				<div class="block-insert upper block-version__block-insert">
+					<div class="block-insert_wrap">
+						<div class="block-insert_line">Электрические версии погрузчиков,</div>
+						<div class="block-insert_info">Для работы в закрытых помещениях</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-wow-duration="2s" data-wow-offset="100" class="block-version_interactive wow fadeInLeft">
+			<img src="img/electro.png" alt="">
+		</div>
+	</div>
+
+	<!-- 	<img class="qwer animated" src="img/electro.png" alt=""> -->
+
+	<section class="section section-sertificats">
+		<h2 class="h2">Сертификаты</h2>
+		<div class="container">
+			<div class="sertificat-slider--js">
+				<a href="img/sertificat.png" data-fancybox="sertificats" class="sertificat-slide">
+					<img src="img/sertificat.png" alt="">
+				</a>
+				<a href="img/sertificat.png" data-fancybox="sertificats" class="sertificat-slide">
+					<img src="img/sertificat.png" alt="">
+				</a>
+				<a href="img/sertificat.png" data-fancybox="sertificats" class="sertificat-slide">
+					<img src="img/sertificat.png" alt="">
+				</a>
+				<a href="img/sertificat.png" data-fancybox="sertificats" class="sertificat-slide">
+					<img src="img/sertificat.png" alt="">
+				</a>
+				<a href="img/sertificat.png" data-fancybox="sertificats" class="sertificat-slide">
+					<img src="img/sertificat.png" alt="">
+				</a>
+				<a href="img/sertificat.png" data-fancybox="sertificats" class="sertificat-slide">
+					<img src="img/sertificat.png" alt="">
+				</a>
+				<a href="img/sertificat.png" data-fancybox="sertificats" class="sertificat-slide">
+					<img src="img/sertificat.png" alt="">
+				</a>
+				<a href="img/sertificat.png" data-fancybox="sertificats" class="sertificat-slide">
+					<img src="img/sertificat.png" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-form">
+		<div class="container">
+			<form action="" class="form form_consultation">
+				<div class="interactive interactive_arr">
+					<img src="img/interact.png" alt="">
+				</div>
+				<div class="interactive interactive_man">
+					<img src="img/man.png" alt="">
+				</div>
+				<h3 class="h3">Заявка на консультацию специалиста</h3>
+				<div class="description">Оставьте свои данные, и мы свяжемся с Вами, чтобы ответить на все вопросы</div>
+				<div class="input-wrap">
+					<input type="text" placeholder="Имя" required="">
+					<input type="tel" placeholder="Телефон" required="">
+					<button href="" class="btn btn_svg btn_svg_active">
+						<svg viewBox="0 0 277 58" id="bord_more_active" xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<linearGradient id="gradient" x2="0" y2="100%">
+									<stop stop-color="#FFD34D" offset="0" />
+									<stop stop-color="#FEC107" offset="1" />
+								</linearGradient>
+							</defs>
+							<defs>
+								<filter id="filter0_d" x="0" y="0" width="277px" height="78px" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+									<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+									<feOffset dy="6"/>
+									<feGaussianBlur stdDeviation="4"/>
+									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+								</filter>
+								<linearGradient id="paint0_linear" x1="141.5" y1="2" x2="141.5" y2="60" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#FFD34D"/>
+									<stop offset="1" stop-color="#FEC107"/>
+								</linearGradient>
+							</defs>
+							<path stroke='#ffd34d' fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+							<path id="hover" filter="url(#filter0_d)" fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+							<text x="86px" y="57%">Отправить</text> 
+						</svg>
+					</button>
+				</div>
+				<div class="radio-wrap">
+					<input type="checkbox" class="radio" id="radio_2" required="">
+					<label for="radio_2" class="consent">Даю согласие на обработку персональных данных (Ваши данные не будут переданны третьим лицам)</label>
+				</div>
+				<!-- 				<div class="consent"> <div class="rect"></div>Даю согласие на обработку персональных данных (Ваши данные не будут переданны третьим лицам)</div> -->
+			</form>
+		</div>
+	</section>
+
+	<section class="section section-contacts">
+		<h2 class="h2">Контакты</h2>
+		<div class="block-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17972.6702381237!2d37.56657093680127!3d55.73098518315877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9027318211%3A0x2aabc3ae09fd5c12!2z0J3QvtCy0L7QtNGW0LLQvtGH0LjQuSDQvNC-0L3QsNGB0YLQuNGA!5e0!3m2!1suk!2sua!4v1568906764086!5m2!1suk!2sua" width="945" height="336" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-6">
+					<div class="contacts-wrap">
+						<div class="contacts">
+							<div class="contacts_title contacts_title__address">Адрес:</div>
+							<div class="contacts_info">125424, г. Название, ул. Название улицы, д 89 стр 1а</div>
+							<div class="contacts_title contacts_title__phone">Телефоны:</div>
+							<div class="contacts_info contacts_phone">
+								+7 962 256 07 36 <br>
+								+7 962 256 07 36
+							</div>
+							<div class="contacts_title contacts_title__mail">Почта:</div>
+							<div class="contacts_info contacts_mail">manager@mail.ru</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contacts_interactive">
+			<img src="img/contacts.png" alt="">
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="header-top white">
+			<div class="container d-flex justify-content-between align-items-center footer-mob">
+				<div class="logo d-flex align-items-center">
+					<a href="" class="logo_img">
+						<img src="img/logo-white.svg" alt="">
+					</a>
+					<div class="logo_info d-flex flex-column">
+						<span>Официальный партнер</span>
+						<span class="upper">AVANT, MULTIONE</span>
+					</div>
+				</div>
+				<nav class="nav">
+					<ul class="nav_list d-flex">
+						<li class="nav_item active"><a class="nav_link" href="">Главная</a></li>
+						<li class="nav_item"><a class="nav_link" href="">Каталог</a></li>
+						<li class="nav_item"><a class="nav_link" href="">О нас</a></li>
+						<li class="nav_item"><a class="nav_link" href="">Оборудование</a></li>
+					</ul>
+				</nav>
+				<div class="block-contact d-flex align-items-center">
+					<a href="" data-fancybox data-src="#callback-popup" class="btn btn_transparent btn_transparent__black">Заказать звонок</a>		
+					<a href="tel:+7 962 256 07 36" class="block-contacts_phone">+7 962 256 07 36</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="btn-bord">
+		<div class="line"></div>
+	</div>
+
+	<div class="hidden">
+
+		<section id="callback-popup" class="section-form section-form-no_man">
+			<div class="container">
+				<form action="" class="form form_consultation">
+					<div class="interactive interactive_arr">
+						<img src="img/interact.png" alt="">
+					</div>
+					<h3 class="h3">Заказать звонок</h3>
+					<div class="description">Оставьте свои данные, и мы свяжемся с Вами, чтобы ответить на все вопросы</div>
+					<div class="input-wrap">
+						<input type="text" placeholder="Имя" required="">
+						<input type="tel" placeholder="Телефон" required="">
+						<button href="" data-fancybox data-src="#thanks" class="btn btn_svg btn_svg_active">
+							<svg viewBox="0 0 277 58" id="bord_more_active" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient id="gradient" x2="0" y2="100%">
+										<stop stop-color="#FFD34D" offset="0" />
+										<stop stop-color="#FEC107" offset="1" />
+									</linearGradient>
+								</defs>
+								<defs>
+									<filter id="filter0_d" x="0" y="0" width="277px" height="78px" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+										<feOffset dy="6"/>
+										<feGaussianBlur stdDeviation="4"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+									</filter>
+									<linearGradient id="paint0_linear" x1="141.5" y1="2" x2="141.5" y2="60" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFD34D"/>
+										<stop offset="1" stop-color="#FEC107"/>
+									</linearGradient>
+								</defs>
+								<path stroke='#ffd34d' fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<path id="hover" filter="url(#filter0_d)" fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<text x="86px" y="57%">Отправить</text> 
+							</svg>
+						</button>
+					</div>
+					<div class="radio-wrap">
+						<input type="checkbox" class="radio" id="radio_3" required="">
+						<label for="radio_3" class="consent">Даю согласие на обработку персональных данных (Ваши данные не будут переданны третьим лицам)</label>
+					</div>
+					<!-- 				<div class="consent"> <div class="rect"></div>Даю согласие на обработку персональных данных (Ваши данные не будут переданны третьим лицам)</div> -->
+				</form>
+			</div>
+		</section>
+
+		<section id="callback-popup-tech" class="section-form section-form-no_man">
+			<div class="container">
+				<form action="" class="form form_consultation">
+					<div class="interactive interactive_arr">
+						<img src="img/interact.png" alt="">
+					</div>
+					<h3 class="h3">Заявка на консультацию специалиста</h3>
+					<div class="description">Оставьте свои данные, и мы свяжемся с Вами, чтобы ответить на все вопросы</div>
+					<div class="input-wrap">
+						<input type="text" placeholder="Имя" required="">
+						<input type="tel" placeholder="Телефон" required="">
+						<button href="" data-fancybox data-src="#thanks" class="btn btn_svg btn_svg_active">
+							<svg viewBox="0 0 277 58" id="bord_more_active" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient id="gradient" x2="0" y2="100%">
+										<stop stop-color="#FFD34D" offset="0" />
+										<stop stop-color="#FEC107" offset="1" />
+									</linearGradient>
+								</defs>
+								<defs>
+									<filter id="filter0_d" x="0" y="0" width="277px" height="78px" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+										<feOffset dy="6"/>
+										<feGaussianBlur stdDeviation="4"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+									</filter>
+									<linearGradient id="paint0_linear" x1="141.5" y1="2" x2="141.5" y2="60" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFD34D"/>
+										<stop offset="1" stop-color="#FEC107"/>
+									</linearGradient>
+								</defs>
+								<path stroke='#ffd34d' fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<path id="hover" filter="url(#filter0_d)" fill="url(#gradient)" d="M0.5 0.5H266.644L276.471 29L266.644 57.5H0.5V0.5Z"/>
+								<text x="86px" y="57%">Отправить</text> 
+							</svg>
+						</button>
+					</div>
+					<div class="radio-wrap">
+						<input type="checkbox" class="radio" id="radio_4" required="">
+						<label for="radio_4" class="consent">Даю согласие на обработку персональных данных (Ваши данные не будут переданны третьим лицам)</label>
+					</div>
+					<!-- 				<div class="consent"> <div class="rect"></div>Даю согласие на обработку персональных данных (Ваши данные не будут переданны третьим лицам)</div> -->
+				</form>
+			</div>
+		</section>
+
+		<div id="thanks" class="popup-thanks">
+			<div class="popup_yellow">Ваша заявка успешно отправлена,</div>
+			<div class="popup_text"> в ближайшее время наш специалист с Вами свяжется</div>
+			<div class="set-interact">
+				<img src="img/set-interact.png" alt="">
+			</div>
+		</div>
+	</div>
+
+
+		<script src="js/scripts.min.js"></script>
+
+	</body>
+	</html>

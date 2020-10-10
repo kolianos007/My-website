@@ -1,0 +1,807 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	.header_navbar li
+		margin: 10px 15px
+
+	.header_phone .phone
+		font-size: 19px
+
+	.header_callback
+		margin-left: 0
+
+	.header_phone .ico_ph
+		top: -3px
+
+	h1
+		font-size: 45px
+
+	.section_img
+		margin-top: 100px
+
+	.section_img::after
+		transform: rotate(141deg)
+		box-shadow: 73px -75px 220px 119px rgba(51,153,204,.8)
+
+	.item_content
+		font-size: 14px
+
+	.owl-mobile .item_content
+		font-size: 14px
+
+	.owl-mobile .item:nth-child(odd) .item_img::after
+		width: 118px
+		bottom: -25px
+		right: -70px
+
+	.owl-mobile .item:nth-child(odd) .item_img::before
+		width: 118px
+		bottom: -25px
+		left: -70px
+
+	.wrapper_perc
+		font-size: 150px
+		top: calc(0% - 131px)
+		left: calc(50% - 170px)
+
+	.wrapper_in
+		padding: 100px 100px 60px 100px
+
+	.wrapper_content
+		font-size: 19px
+
+	.bl_people .item
+		width: 230px
+
+	.bl_people .item_name
+		font-size: 20px
+
+	.bl_people .item
+		margin-bottom: 5px
+		// margin: 2px
+
+	.bl_people .pos-centr .item
+		margin: 0 2px
+
+	.bl_tariff .item
+		width: 230px
+		padding-left: 15px
+		padding-right: 15px
+
+	.bl_tariff .item_name, .bl_tariff .item_price
+		font-size: 21px
+
+	.footer_navbar li:first-child
+		margin-left: 10px
+
+	.btn_go
+		padding: 11px 11px
+
+	.btn
+		font-size: 12px
+
+	.contacts .fa
+		margin-right: 8px
+
+	.footer .copyright
+		font-size: 10px
+
+	.contacts
+		margin-top: 25px
+
+	.address_img
+		margin-top: 5px
+
+	.address_content
+		font-size: 10px
+
+	.footer
+		padding-top: 20px
+		padding-bottom: 25px
+
+	.section_six .btn_bl
+		left: calc(50% - 177px)
+
+// ≥992px
++media-breakpoint-down(md)
+
+	.techn_img
+		img
+			width: 80%
+			&:nth-child(1)
+				margin-left: 40px
+
+	.header_logo
+		font-size: 20px
+		line-height: 20px
+
+	.header_navbar
+		font-size: 13px
+
+	.header_navbar li
+		margin: 5px 7px
+
+	.header_lang
+		line-height: 8px
+		font-size: 15px
+
+	.header_phone .ico_ph
+		top: -1px
+
+	.header_phone .phone
+		font-size: 14px
+
+	.header .callback
+		font-size: 15px
+
+	h1
+		font-size: 38px
+		line-height: 50px
+
+	.header_circle
+		width: 520px
+		height: 520px
+
+	.header_circle div:nth-child(1)
+		width: 400px
+		height: 400px
+
+	.header_bg
+		min-height: 622px
+		height: 622px
+
+	.item_content
+		font-size: 12px
+
+	.bl_dark
+		margin-bottom: 40px
+
+	h2
+		font-size: 40px
+
+	.section_img
+		margin-top: 150px
+
+	.section_img::after
+		box-shadow: 73px -61px 194px 75px rgba(51,153,204,.8)
+
+	.bl_light .item_content
+		line-height: 20px
+
+	.bl_other .item
+		width: 30%
+
+	.section_two__bg
+		padding-top: 45px
+		padding-bottom: 60px
+
+	.section_three__bg
+		padding-top: 40px
+		padding-bottom: 60px
+
+	.owl-mobile .item_content
+		line-height: 20px
+
+	.owl-mobile .item:nth-child(odd) .item_img::after
+		width: 91px
+		bottom: -31px
+		right: -21px
+
+	.owl-mobile .item:nth-child(odd) .item_img::before
+		width: 91px
+		bottom: -31px
+		left: -21px
+
+	.section_four__bg
+		padding-top: 40px
+
+	.techn:nth-child(odd) h3
+		margin-left: 0
+
+	.wrapper_perc
+		font-size: 100px
+		top: calc(0% - 90px)
+		left: calc(50% - 114px)
+
+	.wrapper::before, .wrapper::after
+		width: 178px
+
+	.wrapper_in::before, .wrapper_in::after
+		width: 155px
+
+	.wrapper_in
+		padding: 50px
+
+	.wrapper_content
+		font-size: 18px
+
+	.wrapper
+		margin: 130px 45px 60px 45px
+
+	.bl_people
+		justify-content: center
+
+	.bl_people .item
+		width: 260px
+		margin: 2px
+
+	.section_five
+		padding-top: 40px
+		padding-bottom: 80px
+
+	.bl_tariff
+		justify-content: center
+
+	.bl_tariff .item
+		width: 260px
+		margin: 5px
+
+	.footer_navbar li:first-child
+		margin-left: 5px
+
+	.section_six__bg
+		padding-top: 40px
+		padding-bottom: 60px
+
+	.btn_fcb
+		float: none
+		margin-left: -15px
+
+	.address
+		margin-left: 0
+
+	.btn_go 
+		padding: 8px 9px
+		margin-top: 5px
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+	.header_bottom
+		padding-top: 45px
+
+	.header_bg
+		min-height: auto
+		height: auto
+		// width: 100%
+		// border: none
+		// margin-left: 0
+		// border-radius: 0
+
+	.fa-sign-in
+		display: inline-block
+		color: #1B93B9
+		font-size: 20px
+
+	.header_btn
+		float: none
+		border: none
+		padding: 0
+		text-transform: uppercase
+		font-size: 10px
+		letter-spacing: 2px
+		font-family: "Gilroy-Regular", sans-serif
+
+	.sign_in
+		margin-top: 10px
+		align-content: center
+		align-items: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-end
+		.fa
+			margin-right: 5px
+
+	.header_circle
+		display: none
+
+	h1
+		font-size: 24px
+		line-height: 30px
+		margin-top: 20px
+		text-align: center
+		margin-bottom: 45px
+
+	.btn_bl
+		padding: 18px
+		font-size: 11px
+		left: calc(50% - 147px)
+
+	h6
+		font-size: 11px
+		text-align: center
+
+	.bl_dark
+		margin-top: 40px
+
+	.header_bg
+		padding-bottom: 60px
+
+	.item_dark
+		width: 100px
+		height: 100px
+		img
+			width: 60%
+			height: 50%
+
+	.item_dark::after
+		width: 120px
+		height: 120px
+
+	h2
+		font-size: 27px
+
+	.section_img
+		margin-top: 0
+
+	.section_img img
+		width: 70%	
+
+	.bl_light .item
+		width: 46%	
+
+	.bl_light .item_content
+		font-family: "Gilroy-Light", sans-serif
+		font-size: 14px
+
+	.bl_other .item_img
+		margin-bottom: 30px
+
+	.owl-mobile .item:nth-child(odd) .item_img::after, .owl-mobile .item:nth-child(odd) .item_img::before
+		display: none
+
+	.wrapper
+		margin: 0
+		margin-top: 40px
+		padding: 10px
+
+	.wrapper_perc
+		font-size: 60px
+		top: calc(0% - 55px)
+		left: calc(50% - 70px)
+
+	.wrapper_in::after, .wrapper_in::before
+		width: 165px
+
+	.wrapper_in
+		padding: 30px
+
+	.section_four__bg
+		padding-bottom: 40px
+
+	.bl_people, .bl_people .pos-centr
+		flex-direction: column
+
+	.bl_people .item
+		width: 100%
+		box-shadow: none
+		margin: 0
+		flex-direction: row
+
+	.bl_people .item_info
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		width: 50%
+		margin-top: 0
+
+	.bl_people .item:nth-child(even)
+		flex-direction: row-reverse
+		text-align: right
+		.item_contact
+			flex-direction: row-reverse
+			.fa
+				margin-left: 15px
+				margin-right: 0
+
+	.bl_people .item_contact span
+		font-size: 13px
+
+	.bl_people .item_contact
+		margin-top: 5px
+		margin-bottom: 5px
+		align-items: center
+	
+
+	.bl_people
+		margin-top: 0
+
+	.bl_people .item
+		padding-top: 20px
+		padding-bottom: 20px
+		align-items: center
+
+	.bl_people .item_name
+		font-size: 17px
+
+	.bl_tariff .item
+		width: 240px
+
+	.reg
+		font-size: 15px
+
+	.section_six .btn_bl
+		left: calc(50% - 147px)
+
+	.footer .dbl-clr
+		margin-top: 10px
+
+	.btn_fcb
+		border: 1px solid #fff
+		padding: 5px 10px
+
+	.contacts .btn_fcb
+		margin-left: 0
+
+	.contacts
+		margin-top: 10px
+
+	.footer .copyright
+		text-align: center
+		margin-top: 10px
+
+	.owl-mobile .item
+		width: 100%
+		display: block
+
+	.owl-mobile .item_img
+		margin: 0 auto
+
+	.owl-carousel .owl-item img
+		width: 60%
+
+	.owl-mobile .item_content
+		font-size: 18px
+
+	.owl-mobile .item_content
+		width: 70%
+		margin: 0 auto
+		margin-top: 30px
+
+	.bl_people .item_img
+		border-radius: 20px
+
+	.bl_people .item_img
+		img
+			width: 100%
+	.header_navbar
+		position: fixed
+		margin-top: -8px
+		background-color: #fff
+		width: 100%
+		height: 100vh
+		right: -100%
+		transition: 0.3s
+		z-index: 20
+		color: #111
+		&.active
+			right: 0
+		ul
+			margin-top: 60px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			li
+				margin: 0
+				border-bottom: 1px solid #E4E4E4
+				padding-left: 20px
+				padding-bottom: 10px
+				font-size: 18px
+				padding-top: 10px
+		.sign_in
+			justify-content: flex-start
+			margin-left: 20px
+			margin-bottom: 20px
+			margin-top: 20px
+			// .fa
+			// 	color: #111
+		.header_callback
+			margin-left: 20px
+		.callback
+			text-decoration: underline
+		.phone
+			font-size: 24px
+		.ico_ph
+			top: -5px
+			color: #111
+		.btn_go
+			font-size: 18px
+			text-transform: none
+			margin-top: 0
+		a
+			color: #111
+	.header_top
+		.row
+			> .col-md-5
+				width: 0
+				padding: 0
+	// .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before
+	// 			background-color: #111
+
+	.ico-close
+		display: inline-block
+		width: 26px
+		height: 26px
+		// margin-left: 236px
+		float: right
+		margin-right: 26px
+		margin-top: 10px
+		cursor: pointer
+
+	.header_top
+		padding-top: 8px
+
+
+
+	.form_reg
+		width: 308px
+		padding: 20px
+
+	.form_reg input
+		width: 268px
+
+	.form_reg .go_in .btn_go
+		border: 1px solid
+
+	.form_reg h4
+		font-size: 20px
+
+	.capt
+		margin-top: 20px
+		img
+			width: 100%
+
+	.form_restor
+		input[type="submit"]
+			display: block
+			margin: 0 auto
+
+	.form_reg
+		input
+			&:nth-child(odd)
+				margin-right: 15px
+			&:nth-child(n+5)
+				margin-bottom: 15px
+
+	.form_ret input:nth-child(odd)
+		margin: 0 auto
+
+	
+
+		
+
+
+
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+	h6
+		text-align: left
+		letter-spacing: 1.5px
+
+	.bl_dark, .bl_other
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 0
+
+	.bl_dark .item
+		width: 70%
+		margin-bottom: 40px
+
+	h1
+		text-align: left
+		font-size: 23px
+	
+	.header_bg
+		margin-left: 0
+		border: none
+		width: 100%
+		border-radius: 0
+
+	.btn_bl
+		font-size: 10px
+		left: calc(50% - 137px)
+
+	h2
+		font-size: 26px
+		line-height: 30px
+
+	.section_img::after
+		box-shadow: 48px -27px 153px 32px  rgba(51,153,204,.8)
+
+	.bl_light .item_light
+		width: 90px
+		height: 90px
+		img
+			width: 60%
+
+	.bl_light .item_content
+		font-size: 12px
+
+	.bl_light .item
+		width: 45%
+		margin-bottom: 20px
+
+	.bl_other .item
+		width: 70%
+
+	.section_two__bg
+		padding-bottom: 30px
+
+	.owl-prev, .owl-next
+		top: calc(50% - 205px)
+
+	.owl-mobile .item_content
+		font-family: "Gilroy-SemiBold", sans-serif
+
+	.owl-mobile .item_content
+		width: 80%
+
+	.section_three__bg
+		padding-bottom: 0
+
+	.techn h3
+		font-size: 19px
+		line-height: 23px
+	
+	.techn
+		.dbl-clr
+			margin-left: 20px
+
+	.techn
+		margin-top: 0
+		margin-bottom: 0
+
+	.techn_img
+		margin-right: 25px
+
+	.wrapper_perc
+		font-size: 52px
+		top: calc(0% - 47px)
+		left: calc(50% - 59px)
+
+	.wrapper::after, .wrapper::before
+		width: 80px
+
+	.wrapper_in::after, .wrapper_in::before
+		width: 68px
+
+	.wrapper_content
+		font-size: 12px
+
+	.wrapper_in
+		padding: 20px
+
+	.bl_people .item_img
+		width: 100px
+		height: 100px
+
+	.bl_people .item_info
+		width: 65%
+
+	.bl_people .item_contact span
+		font-size: 11px
+
+	.bl_people .item_info
+		padding-left: 10px
+		padding-right: 10px
+
+	.bl_people .item:nth-child(even) .item_contact .fa
+		margin-left: 12px
+
+	.bl_people .item_contact
+		margin-top: 2px
+		margin-bottom: 2px
+
+	.bl_people .item
+		padding-bottom: 0
+
+	.bl_people .pos-centr
+		margin: 0
+
+	.section_five
+		padding-bottom: 40px
+
+	.bl_tariff
+		margin-top: 20px
+		margin-bottom: 20px
+
+	.reg
+		font-size: 13px
+
+	.btn_bl
+		padding: 12px
+		font-size: 11px
+
+	.section_six .btn_bl
+		margin-top: 25px
+		left: calc(50% - 140px)
+
+	.bl_tariff .item
+		width: 270px
+
+	.bl_tariff .item
+		margin-bottom: 20px
+
+	.section_six__bg
+		padding-bottom: 30px
+
+	.footer .dbl-clr
+		margin-left: 0
+
+	.footer_navbar  ul
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+
+	.footer_navbar li, .footer_navbar li:first-child
+		margin: 0
+		line-height: 20px
+
+	.footer_navbar li:first-child
+		margin-top: 20px
+
+	.btn_fcb
+		padding: 10px
+		text-transform: none
+
+
+	.contacts .fa
+		font-size: 17px
+		top: 3px
+		position: relative
+
+	.address
+		margin-top: 20px
+		align-items: center
+
+	.address_content
+		font-size: 12px
+
+	.footer .copyright
+		text-align: left
+
+	.address_img
+		margin-top: -1px
+
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
